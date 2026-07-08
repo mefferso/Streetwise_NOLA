@@ -1,0 +1,40 @@
+name: Archive flood reports
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: streetwise-flood-archive
+  cancel-in-progress: true
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Archive current flood reports
+        run: python scripts/archive_flood_reports.py
+
+      - name: Commit archive update
+        run: |
+          if [[ -n "$(git status --porcelain data)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/latest_flood_reports.json data/archive/*.jsonl
+            git commit -m "Archive Streetwise flood reports"
+            git push
+          else
+            echo "No archive changes to commit."
+          fi
