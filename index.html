@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Streetwise NOLA Dashboard</title>
+
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="preconnect" href="https://cartodb-basemaps-a.global.ssl.fastly.net" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <div class="badge">NOLA</div>
+      <div>
+        <h1>Streetwise NOLA</h1>
+        <p>Live public ArcGIS feed viewer</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button id="refreshBtn" type="button">Refresh</button>
+      <label class="toggle">
+        <input id="autoRefreshToggle" type="checkbox" checked />
+        <span>Auto-refresh</span>
+      </label>
+      <a
+        class="source-link"
+        href="https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer?f=pjson"
+        target="_blank"
+        rel="noreferrer"
+      >Service metadata</a>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <section class="panel status-panel">
+        <h2>Status</h2>
+        <div id="statusLine" class="status-line">Loading…</div>
+        <div id="updatedLine" class="updated-line">Last update: —</div>
+      </section>
+
+      <section class="panel">
+        <h2>Layers</h2>
+        <div id="layerControls" class="layer-controls"></div>
+      </section>
+
+      <section class="panel reports-panel">
+        <div class="section-row">
+          <h2>Active reports</h2>
+          <span id="reportCount" class="count-pill">0</span>
+        </div>
+        <div id="reportList" class="report-list"></div>
+      </section>
+
+      <section class="panel debug-panel">
+        <details>
+          <summary>Debug / endpoints</summary>
+          <div class="debug-block">
+            <p class="muted">Base service</p>
+            <code id="serviceUrlCode"></code>
+          </div>
+          <div class="debug-block">
+            <p class="muted">Last query</p>
+            <code id="lastQueryCode">—</code>
+          </div>
+          <div class="debug-block">
+            <p class="muted">Discovered layers</p>
+            <pre id="metadataPreview">—</pre>
+          </div>
+        </details>
+      </section>
+    </aside>
+
+    <section class="map-wrap">
+      <div id="map"></div>
+      <div class="map-note">
+        Public Streetwise ArcGIS data. Not an official City of New Orleans product.
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
