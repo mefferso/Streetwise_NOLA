@@ -19,7 +19,7 @@
       <div class="badge">NOLA</div>
       <div>
         <h1>Streetwise NOLA</h1>
-        <p>Live public ArcGIS feed viewer</p>
+        <p>Live public flood report viewer</p>
       </div>
     </div>
 
@@ -31,10 +31,10 @@
       </label>
       <a
         class="source-link"
-        href="https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer?f=pjson"
+        href="https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1?f=pjson"
         target="_blank"
         rel="noreferrer"
-      >Service metadata</a>
+      >Flood layer metadata</a>
     </div>
   </header>
 
@@ -47,13 +47,13 @@
       </section>
 
       <section class="panel">
-        <h2>Layers</h2>
+        <h2>Layer</h2>
         <div id="layerControls" class="layer-controls"></div>
       </section>
 
       <section class="panel reports-panel">
         <div class="section-row">
-          <h2>Active reports</h2>
+          <h2>Active flood reports</h2>
           <span id="reportCount" class="count-pill">0</span>
         </div>
         <div id="reportList" class="report-list"></div>
@@ -61,18 +61,10 @@
 
       <section class="panel debug-panel">
         <details>
-          <summary>Debug / endpoints</summary>
+          <summary>Debug / endpoint</summary>
           <div class="debug-block">
-            <p class="muted">Base service</p>
-            <code id="serviceUrlCode"></code>
-          </div>
-          <div class="debug-block">
-            <p class="muted">Last query</p>
+            <p class="muted">Flood layer query</p>
             <code id="lastQueryCode">—</code>
-          </div>
-          <div class="debug-block">
-            <p class="muted">Discovered layers</p>
-            <pre id="metadataPreview">—</pre>
           </div>
         </details>
       </section>
@@ -81,7 +73,7 @@
     <section class="map-wrap">
       <div id="map"></div>
       <div class="map-note">
-        Public Streetwise ArcGIS data. Not an official City of New Orleans product.
+        Public Streetwise flood report data. Not an official City of New Orleans product.
       </div>
     </section>
   </main>
