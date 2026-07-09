@@ -2,8 +2,9 @@
 """Try to backfill Streetwise NOLA flood reports for a recent lookback window.
 
 This tests whether the public Streetwise ArcGIS flood layer can return older
-features using TimeCreate filters. If the layer only exposes active/current
-features, the output will show that pretty quickly.
+features using TimeCreate filters. It also runs a current/live `where=1=1`
+query in the same run so we can compare active features against the time-filtered
+lookback result.
 """
 
 from __future__ import annotations
@@ -24,6 +25,8 @@ OUT_DIR = Path("data")
 BACKFILL_DIR = OUT_DIR / "backfill"
 BACKFILL_PATH = BACKFILL_DIR / "last_30_days_flood_reports.json"
 SUMMARY_PATH = BACKFILL_DIR / "last_30_days_summary.json"
+CURRENT_PATH = BACKFILL_DIR / "current_layer_snapshot.json"
+LAYER_METADATA_PATH = BACKFILL_DIR / "layer_1_metadata.json"
 
 TIME_FIELDS_TO_TRY = [
     "TimeCreate",
@@ -38,7 +41,7 @@ TIME_FIELDS_TO_TRY = [
 
 
 def fetch_json(url: str) -> dict[str, Any]:
-    request = urllib.request.Request(url, headers={"User-Agent": "Streetwise-NOLA-Backfill/1.0"})
+    request = urllib.request.Request(url, headers={"User-Agent": "Streetwise-NOLA-Backfill/1.1"})
     with urllib.request.urlopen(request, timeout=45) as response:
         payload = response.read().decode("utf-8")
     data = json.loads(payload)
@@ -47,7 +50,12 @@ def fetch_json(url: str) -> dict[str, Any]:
     return data
 
 
-def build_query_url(where: str, result_offset: int = 0, result_record_count: int = 2000) -> str:
+def build_query_url(
+    where: str,
+    result_offset: int = 0,
+    result_record_count: int = 2000,
+    order_by_fields: str | None = None,
+) -> str:
     params = {
         "f": "json",
         "where": where,
@@ -55,11 +63,16 @@ def build_query_url(where: str, result_offset: int = 0, result_record_count: int
         "spatialRel": "esriSpatialRelIntersects",
         "outFields": "*",
         "outSR": "4326",
-        "orderByFields": "TimeCreate DESC",
         "resultOffset": str(result_offset),
         "resultRecordCount": str(result_record_count),
     }
+    if order_by_fields:
+        params["orderByFields"] = order_by_fields
     return f"{SERVICE_URL}/{FLOOD_LAYER_ID}/query?{urllib.parse.urlencode(params)}"
+
+
+def build_layer_metadata_url() -> str:
+    return f"{SERVICE_URL}/{FLOOD_LAYER_ID}?f=pjson"
 
 
 def arcgis_timestamp(dt: datetime) -> str:
@@ -125,15 +138,47 @@ def dedupe_reports(reports: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return unique
 
 
-def try_where(field_name: str, start: datetime, end: datetime) -> tuple[str, list[dict[str, Any]], dict[str, Any]]:
-    start_text = arcgis_timestamp(start)
-    end_text = arcgis_timestamp(end)
-    where = f"{field_name} >= timestamp '{start_text}' AND {field_name} <= timestamp '{end_text}'"
+def summarize_fields_from_metadata(metadata: dict[str, Any]) -> list[dict[str, Any]]:
+    fields = metadata.get("fields") or []
+    return [
+        {
+            "name": field.get("name"),
+            "type": field.get("type"),
+            "alias": field.get("alias"),
+            "nullable": field.get("nullable"),
+            "editable": field.get("editable"),
+        }
+        for field in fields
+    ]
+
+
+def query_current_layer() -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    where = "1=1"
     url = build_query_url(where)
     data = fetch_json(url)
     features = data.get("features") or []
     reports = [normalize_feature(feature) for feature in features]
     summary = {
+        "query_type": "current_live_layer",
+        "where": where,
+        "query_url": url,
+        "feature_count": len(features),
+        "exceeded_transfer_limit": data.get("exceededTransferLimit", False),
+        "fields_returned": sorted(list((features[0].get("attributes") or {}).keys())) if features else [],
+    }
+    return reports, summary
+
+
+def try_where(field_name: str, start: datetime, end: datetime) -> tuple[str, list[dict[str, Any]], dict[str, Any]]:
+    start_text = arcgis_timestamp(start)
+    end_text = arcgis_timestamp(end)
+    where = f"{field_name} >= timestamp '{start_text}' AND {field_name} <= timestamp '{end_text}'"
+    url = build_query_url(where, order_by_fields=f"{field_name} DESC")
+    data = fetch_json(url)
+    features = data.get("features") or []
+    reports = [normalize_feature(feature) for feature in features]
+    summary = {
+        "query_type": "time_filtered_lookback",
         "field_tested": field_name,
         "where": where,
         "query_url": url,
@@ -151,6 +196,19 @@ def main() -> int:
     summaries: list[dict[str, Any]] = []
     all_reports: list[dict[str, Any]] = []
     errors: list[dict[str, str]] = []
+
+    try:
+        metadata = fetch_json(build_layer_metadata_url())
+    except Exception as exc:
+        metadata = {"metadata_error": str(exc)}
+        errors.append({"field_tested": "layer_metadata", "error": str(exc)})
+
+    try:
+        current_reports, current_summary = query_current_layer()
+        summaries.append(current_summary)
+    except Exception as exc:
+        current_reports = []
+        errors.append({"field_tested": "current_live_layer_where_1_equals_1", "error": str(exc)})
 
     for field_name in TIME_FIELDS_TO_TRY:
         try:
@@ -170,22 +228,43 @@ def main() -> int:
         "end_time_utc": run_time.isoformat().replace("+00:00", "Z"),
         "service_url": SERVICE_URL,
         "layer_id": FLOOD_LAYER_ID,
+        "metadata_summary": {
+            "name": metadata.get("name"),
+            "type": metadata.get("type"),
+            "geometry_type": metadata.get("geometryType"),
+            "object_id_field": metadata.get("objectIdField"),
+            "time_info": metadata.get("timeInfo"),
+            "fields": summarize_fields_from_metadata(metadata),
+        },
         "summary": summaries,
         "errors": errors,
-        "total_records_before_dedupe": len(all_reports),
-        "total_unique_records": len(unique_reports),
+        "current_live_record_count": len(current_reports),
+        "total_time_filtered_records_before_dedupe": len(all_reports),
+        "total_time_filtered_unique_records": len(unique_reports),
         "reports": unique_reports,
     }
 
+    current_output = {
+        "run_time_utc": run_time.isoformat().replace("+00:00", "Z"),
+        "service_url": SERVICE_URL,
+        "layer_id": FLOOD_LAYER_ID,
+        "feature_count": len(current_reports),
+        "reports": current_reports,
+    }
     summary_output = {key: value for key, value in output.items() if key != "reports"}
 
     BACKFILL_DIR.mkdir(parents=True, exist_ok=True)
     BACKFILL_PATH.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     SUMMARY_PATH.write_text(json.dumps(summary_output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    CURRENT_PATH.write_text(json.dumps(current_output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    LAYER_METADATA_PATH.write_text(json.dumps(metadata, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
-    print(f"Backfill test complete. Unique records found: {len(unique_reports)}")
+    print(f"Backfill test complete. Current/live records: {len(current_reports)}")
+    print(f"Backfill test complete. Time-filtered unique records found: {len(unique_reports)}")
     print(f"Wrote: {BACKFILL_PATH}")
     print(f"Wrote: {SUMMARY_PATH}")
+    print(f"Wrote: {CURRENT_PATH}")
+    print(f"Wrote: {LAYER_METADATA_PATH}")
     if errors:
         print("Some field tests failed:")
         for error in errors:
