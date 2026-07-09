@@ -3,7 +3,7 @@
   "layer_id": 1,
   "raw_feature_count": 0,
   "reports": [],
-  "run_time_utc": "2026-07-09T00:42:03.240541Z",
+  "run_time_utc": "2026-07-09T00:42:34.169422Z",
   "service_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer",
   "source_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=1%3D1&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326"
 }
