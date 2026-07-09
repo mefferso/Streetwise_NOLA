@@ -1,54 +1,221 @@
 {
-  "end_time_utc": "2026-07-09T00:29:27.990784Z",
+  "current_live_record_count": 0,
+  "end_time_utc": "2026-07-09T00:34:26.546656Z",
   "errors": [
     {
-      "error": "{\n  \"code\": 400,\n  \"message\": \"Failed to execute query.\",\n  \"details\": []\n}",
+      "error": "{\n  \"code\": 400,\n  \"message\": \"Invalid or missing input parameters.\",\n  \"details\": []\n}",
       "field_tested": "CreateDate"
     },
     {
-      "error": "{\n  \"code\": 400,\n  \"message\": \"Failed to execute query.\",\n  \"details\": []\n}",
+      "error": "{\n  \"code\": 400,\n  \"message\": \"Invalid or missing input parameters.\",\n  \"details\": []\n}",
       "field_tested": "created_date"
     },
     {
-      "error": "{\n  \"code\": 400,\n  \"message\": \"Failed to execute query.\",\n  \"details\": []\n}",
+      "error": "{\n  \"code\": 400,\n  \"message\": \"Invalid or missing input parameters.\",\n  \"details\": []\n}",
       "field_tested": "Created"
     },
     {
-      "error": "{\n  \"code\": 400,\n  \"message\": \"Failed to execute query.\",\n  \"details\": []\n}",
+      "error": "{\n  \"code\": 400,\n  \"message\": \"Invalid or missing input parameters.\",\n  \"details\": []\n}",
       "field_tested": "created"
     },
     {
-      "error": "{\n  \"code\": 400,\n  \"message\": \"Failed to execute query.\",\n  \"details\": []\n}",
+      "error": "{\n  \"code\": 400,\n  \"message\": \"Invalid or missing input parameters.\",\n  \"details\": []\n}",
       "field_tested": "Updated"
     },
     {
-      "error": "{\n  \"code\": 400,\n  \"message\": \"Failed to execute query.\",\n  \"details\": []\n}",
+      "error": "{\n  \"code\": 400,\n  \"message\": \"Invalid or missing input parameters.\",\n  \"details\": []\n}",
       "field_tested": "LastUpdate"
     }
   ],
   "layer_id": 1,
   "lookback_days": 30,
-  "run_time_utc": "2026-07-09T00:29:27.990784Z",
+  "metadata_summary": {
+    "fields": [
+      {
+        "alias": "SHAPE",
+        "editable": null,
+        "name": "SHAPE",
+        "nullable": null,
+        "type": "esriFieldTypeGeometry"
+      },
+      {
+        "alias": "Agency",
+        "editable": null,
+        "name": "Agency",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "Incident",
+        "editable": null,
+        "name": "Incident",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "Type",
+        "editable": null,
+        "name": "Type",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "TypeText",
+        "editable": null,
+        "name": "TypeText",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "Priority",
+        "editable": null,
+        "name": "Priority",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "Address",
+        "editable": null,
+        "name": "Address",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "Zip",
+        "editable": null,
+        "name": "Zip",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "CommonName",
+        "editable": null,
+        "name": "CommonName",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "MapX",
+        "editable": null,
+        "name": "MapX",
+        "nullable": null,
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "alias": "MapY",
+        "editable": null,
+        "name": "MapY",
+        "nullable": null,
+        "type": "esriFieldTypeDouble"
+      },
+      {
+        "alias": "Beat",
+        "editable": null,
+        "name": "Beat",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "TimeCreate",
+        "editable": null,
+        "name": "TimeCreate",
+        "nullable": null,
+        "type": "esriFieldTypeDate"
+      },
+      {
+        "alias": "TimeCreateUTC",
+        "editable": null,
+        "name": "TimeCreateUTC",
+        "nullable": null,
+        "type": "esriFieldTypeDate"
+      },
+      {
+        "alias": "Dispatched",
+        "editable": null,
+        "name": "Dispatched",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "OnScene",
+        "editable": null,
+        "name": "OnScene",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "SelfInitiated",
+        "editable": null,
+        "name": "SelfInitiated",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "Comments",
+        "editable": null,
+        "name": "Comments",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "FAlarms",
+        "editable": null,
+        "name": "FAlarms",
+        "nullable": null,
+        "type": "esriFieldTypeSmallInteger"
+      },
+      {
+        "alias": "PrimaryUnit",
+        "editable": null,
+        "name": "PrimaryUnit",
+        "nullable": null,
+        "type": "esriFieldTypeString"
+      },
+      {
+        "alias": "ESRI_OID",
+        "editable": null,
+        "name": "ESRI_OID",
+        "nullable": null,
+        "type": "esriFieldTypeOID"
+      }
+    ],
+    "geometry_type": "esriGeometryPoint",
+    "name": "Flooded Streets",
+    "object_id_field": null,
+    "time_info": null,
+    "type": "Feature Layer"
+  },
+  "run_time_utc": "2026-07-09T00:34:26.546656Z",
   "service_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer",
-  "start_time_utc": "2026-06-09T00:29:27.990784Z",
+  "start_time_utc": "2026-06-09T00:34:26.546656Z",
   "summary": [
+    {
+      "exceeded_transfer_limit": false,
+      "feature_count": 0,
+      "fields_returned": [],
+      "query_type": "current_live_layer",
+      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=1%3D1&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000",
+      "where": "1=1"
+    },
     {
       "exceeded_transfer_limit": false,
       "feature_count": 0,
       "field_tested": "TimeCreate",
       "fields_returned": [],
-      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=TimeCreate+%3E%3D+timestamp+%272026-06-09+00%3A29%3A27%27+AND+TimeCreate+%3C%3D+timestamp+%272026-07-09+00%3A29%3A27%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&orderByFields=TimeCreate+DESC&resultOffset=0&resultRecordCount=2000",
-      "where": "TimeCreate >= timestamp '2026-06-09 00:29:27' AND TimeCreate <= timestamp '2026-07-09 00:29:27'"
+      "query_type": "time_filtered_lookback",
+      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=TimeCreate+%3E%3D+timestamp+%272026-06-09+00%3A34%3A26%27+AND+TimeCreate+%3C%3D+timestamp+%272026-07-09+00%3A34%3A26%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=TimeCreate+DESC",
+      "where": "TimeCreate >= timestamp '2026-06-09 00:34:26' AND TimeCreate <= timestamp '2026-07-09 00:34:26'"
     },
     {
       "exceeded_transfer_limit": false,
       "feature_count": 0,
       "field_tested": "timecreate",
       "fields_returned": [],
-      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=timecreate+%3E%3D+timestamp+%272026-06-09+00%3A29%3A27%27+AND+timecreate+%3C%3D+timestamp+%272026-07-09+00%3A29%3A27%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&orderByFields=TimeCreate+DESC&resultOffset=0&resultRecordCount=2000",
-      "where": "timecreate >= timestamp '2026-06-09 00:29:27' AND timecreate <= timestamp '2026-07-09 00:29:27'"
+      "query_type": "time_filtered_lookback",
+      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=timecreate+%3E%3D+timestamp+%272026-06-09+00%3A34%3A26%27+AND+timecreate+%3C%3D+timestamp+%272026-07-09+00%3A34%3A26%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=timecreate+DESC",
+      "where": "timecreate >= timestamp '2026-06-09 00:34:26' AND timecreate <= timestamp '2026-07-09 00:34:26'"
     }
   ],
-  "total_records_before_dedupe": 0,
-  "total_unique_records": 0
+  "total_time_filtered_records_before_dedupe": 0,
+  "total_time_filtered_unique_records": 0
 }

@@ -1,0 +1,248 @@
+{
+  "advancedQueryCapabilities": {
+    "supportsCountDistinct": true,
+    "supportsDistinct": true,
+    "supportsHavingClause": true,
+    "supportsOrderBy": true,
+    "supportsPagination": true,
+    "supportsQueryWithDistance": true,
+    "supportsReturningQueryExtent": true,
+    "supportsSqlExpression": true,
+    "supportsStatistics": true,
+    "supportsTrueCurve": true,
+    "useStandardizedQueries": true
+  },
+  "canModifyLayer": true,
+  "canScaleSymbols": false,
+  "capabilities": "Map,Query,Data",
+  "copyrightText": "",
+  "currentVersion": 10.91,
+  "dateFieldsTimeReference": null,
+  "defaultSubtypeCode": null,
+  "defaultVisibility": true,
+  "description": "",
+  "displayField": "CommonName",
+  "drawingInfo": {
+    "labelingInfo": null,
+    "renderer": {
+      "description": "",
+      "label": "",
+      "symbol": {
+        "angle": 0,
+        "color": [
+          0,
+          166,
+          69,
+          255
+        ],
+        "outline": {
+          "color": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "width": 1
+        },
+        "size": 4,
+        "style": "esriSMSCircle",
+        "type": "esriSMS",
+        "xoffset": 0,
+        "yoffset": 0
+      },
+      "type": "simple"
+    },
+    "transparency": 0
+  },
+  "extent": {
+    "spatialReference": {
+      "latestWkid": 4326,
+      "wkid": 4326
+    },
+    "xmax": -89.92141099999998,
+    "xmin": -90.09912768999999,
+    "ymax": 30.033400810000046,
+    "ymin": 29.967548240000042
+  },
+  "fields": [
+    {
+      "alias": "SHAPE",
+      "domain": null,
+      "name": "SHAPE",
+      "type": "esriFieldTypeGeometry"
+    },
+    {
+      "alias": "Agency",
+      "domain": null,
+      "length": 6,
+      "name": "Agency",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Incident",
+      "domain": null,
+      "length": 6,
+      "name": "Incident",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Type",
+      "domain": null,
+      "length": 20,
+      "name": "Type",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "TypeText",
+      "domain": null,
+      "length": 512,
+      "name": "TypeText",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Priority",
+      "domain": null,
+      "length": 20,
+      "name": "Priority",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Address",
+      "domain": null,
+      "length": 200,
+      "name": "Address",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Zip",
+      "domain": null,
+      "length": 200,
+      "name": "Zip",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "CommonName",
+      "domain": null,
+      "length": 256,
+      "name": "CommonName",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "MapX",
+      "domain": null,
+      "name": "MapX",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "MapY",
+      "domain": null,
+      "name": "MapY",
+      "type": "esriFieldTypeDouble"
+    },
+    {
+      "alias": "Beat",
+      "domain": null,
+      "length": 50,
+      "name": "Beat",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "TimeCreate",
+      "domain": null,
+      "length": 8,
+      "name": "TimeCreate",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "alias": "TimeCreateUTC",
+      "domain": null,
+      "length": 8,
+      "name": "TimeCreateUTC",
+      "type": "esriFieldTypeDate"
+    },
+    {
+      "alias": "Dispatched",
+      "domain": null,
+      "length": 1,
+      "name": "Dispatched",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "OnScene",
+      "domain": null,
+      "length": 1,
+      "name": "OnScene",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "SelfInitiated",
+      "domain": null,
+      "length": 1,
+      "name": "SelfInitiated",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "Comments",
+      "domain": null,
+      "length": 2147483647,
+      "name": "Comments",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "FAlarms",
+      "domain": null,
+      "name": "FAlarms",
+      "type": "esriFieldTypeSmallInteger"
+    },
+    {
+      "alias": "PrimaryUnit",
+      "domain": null,
+      "length": 100,
+      "name": "PrimaryUnit",
+      "type": "esriFieldTypeString"
+    },
+    {
+      "alias": "ESRI_OID",
+      "domain": null,
+      "name": "ESRI_OID",
+      "type": "esriFieldTypeOID"
+    }
+  ],
+  "geometryField": {
+    "alias": "SHAPE",
+    "name": "SHAPE",
+    "type": "esriFieldTypeGeometry"
+  },
+  "geometryType": "esriGeometryPoint",
+  "hasAttachments": false,
+  "hasLabels": false,
+  "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+  "id": 1,
+  "indexes": null,
+  "isDataVersioned": false,
+  "maxRecordCount": 1000,
+  "maxScale": 0,
+  "minScale": 0,
+  "name": "Flooded Streets",
+  "ownershipBasedAccessControlForFeatures": {
+    "allowOthersToQuery": true
+  },
+  "parentLayer": null,
+  "relationships": [],
+  "sourceSpatialReference": {
+    "latestWkid": 4326,
+    "wkid": 4326
+  },
+  "subLayers": [],
+  "subtypeField": null,
+  "subtypeFieldName": null,
+  "subtypes": [],
+  "supportedQueryFormats": "JSON, geoJSON",
+  "supportsAdvancedQueries": true,
+  "supportsCoordinatesQuantization": true,
+  "supportsDatumTransformation": true,
+  "supportsStatistics": true,
+  "type": "Feature Layer",
+  "typeIdField": null,
+  "useStandardizedQueries": true
+}
