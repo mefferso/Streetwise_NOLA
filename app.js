@@ -5,10 +5,9 @@ const DEFAULT_LAYERS = [
   {
     id: 1,
     key: 'flooding',
-    label: 'Reported Street Flooding',
+    label: 'Flooded Streets',
     color: '#42a5ff',
     enabled: true,
-    probable: false,
   },
 ];
 
@@ -16,7 +15,6 @@ const state = {
   layers: structuredClone(DEFAULT_LAYERS),
   layerGroups: new Map(),
   reports: [],
-  metadata: null,
   lastQueryUrl: null,
   timer: null,
 };
@@ -39,12 +37,9 @@ const els = {
   layerControls: document.getElementById('layerControls'),
   reportCount: document.getElementById('reportCount'),
   reportList: document.getElementById('reportList'),
-  serviceUrlCode: document.getElementById('serviceUrlCode'),
   lastQueryCode: document.getElementById('lastQueryCode'),
-  metadataPreview: document.getElementById('metadataPreview'),
 };
 
-els.serviceUrlCode.textContent = SERVICE_URL;
 els.refreshBtn.addEventListener('click', () => refreshAll({ fitBounds: false }));
 els.autoRefreshToggle.addEventListener('change', configureAutoRefresh);
 
@@ -61,7 +56,6 @@ async function refreshAll({ fitBounds = false } = {}) {
   clearMap();
 
   try {
-    await loadMetadata();
     const enabledLayers = state.layers.filter((layer) => layer.enabled);
     const responses = await Promise.allSettled(enabledLayers.map(queryLayer));
     const reports = [];
@@ -92,24 +86,6 @@ async function refreshAll({ fitBounds = false } = {}) {
     console.error(error);
     setStatus(`Error: ${error.message}`, true);
   }
-}
-
-async function loadMetadata() {
-  if (state.metadata) return state.metadata;
-  const url = `${SERVICE_URL}?f=pjson`;
-  const metadata = await fetchJson(url);
-  state.metadata = metadata;
-
-  if (Array.isArray(metadata.layers)) {
-    state.layers = state.layers.map((layer) => {
-      const metaLayer = metadata.layers.find((candidate) => candidate.id === layer.id);
-      return { ...layer, serviceName: metaLayer?.name || null };
-    });
-    els.metadataPreview.textContent = metadata.layers.map((layer) => `${layer.id}: ${layer.name}`).join('\n');
-  } else {
-    els.metadataPreview.textContent = JSON.stringify(metadata, null, 2).slice(0, 2400);
-  }
-  return metadata;
 }
 
 async function queryLayer(layer) {
@@ -158,7 +134,7 @@ function normalizeFeature(feature, layer) {
     id,
     layerId: layer.id,
     layerKey: layer.key,
-    layerLabel: layer.serviceName || layer.label,
+    layerLabel: layer.label,
     layerColor: layer.color,
     title: cleanValue(title),
     address: cleanValue(address),
@@ -248,14 +224,12 @@ function renderReports() {
 function renderLayerControls() {
   els.layerControls.innerHTML = state.layers.map((layer) => {
     const count = typeof layer.count === 'number' ? layer.count : '—';
-    const label = layer.serviceName || layer.label;
-    const note = `Layer ${layer.id}; flood reports only`;
     return `
       <label class="layer-row">
         <input type="checkbox" data-layer-id="${layer.id}" ${layer.enabled ? 'checked' : ''} />
         <span>
-          <span class="layer-name">${escapeHtml(label)}</span>
-          <span class="layer-meta">${escapeHtml(note)}</span>
+          <span class="layer-name">${escapeHtml(layer.label)}</span>
+          <span class="layer-meta">Streetwise MapServer/${layer.id}</span>
         </span>
         <span class="layer-count">${count}</span>
       </label>`;
