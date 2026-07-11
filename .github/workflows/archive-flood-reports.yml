@@ -1,11 +1,8 @@
 name: Archive flood reports
 
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -13,11 +10,12 @@ permissions:
 
 concurrency:
   group: streetwise-flood-archive
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   archive:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -28,18 +26,25 @@ jobs:
           python-version: '3.11'
 
       - name: Archive current flood reports
-        run: python scripts/archive_flood_reports.py
-
-      - name: Test 30 day backfill
-        run: python scripts/backfill_flood_reports.py
+        shell: bash
+        run: |
+          for attempt in 1 2 3; do
+            python scripts/archive_flood_reports.py && break
+            if [[ "$attempt" == "3" ]]; then
+              exit 1
+            fi
+            sleep 20
+          done
 
       - name: Commit archive update
+        shell: bash
         run: |
           if [[ -n "$(git status --porcelain data)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/latest_flood_reports.json data/archive/*.jsonl data/backfill/*.json
+            git add data/latest_flood_reports.json data/archive/*.jsonl data/events/*.json
             git commit -m "Archive Streetwise flood reports"
+            git pull --rebase
             git push
           else
             echo "No archive changes to commit."
