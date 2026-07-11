@@ -1,8 +1,119 @@
 {
-  "active_count": 43,
+  "active_count": 21,
   "date": "2026-07-11",
-  "event_count": 46,
+  "event_count": 49,
   "events": [
+    {
+      "active": true,
+      "address": "ULLOA ST / S CARROLLTON AV (1L04)",
+      "attributes": {
+        "Address": "ULLOA ST / S CARROLLTON AV (1L04)",
+        "Agency": "POLICE",
+        "Beat": "1L04",
+        "Comments": "2026-07-11 15:51:51.630: RTCC",
+        "CommonName": null,
+        "Dispatched": "N",
+        "ESRI_OID": 97,
+        "FAlarms": null,
+        "Incident": "011179",
+        "MapX": -90.10560696,
+        "MapY": 29.96969015,
+        "OnScene": "N",
+        "PrimaryUnit": null,
+        "Priority": "1C",
+        "SelfInitiated": "N",
+        "TimeCreate": 1783785098000,
+        "TimeCreateUTC": 1783803098000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70119"
+      },
+      "event_id": "incident-011179",
+      "first_seen_utc": "2026-07-11T21:06:37.353858Z",
+      "incident": "011179",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
+      "lat": 29.969690150000076,
+      "lon": -90.10560695999999,
+      "object_id": 97,
+      "observations": 1,
+      "time_create": 1783785098000,
+      "time_create_utc": 1783803098000,
+      "title": "21F"
+    },
+    {
+      "active": true,
+      "address": "BANKS ST (1L03) / S GENOIS ST",
+      "attributes": {
+        "Address": "BANKS ST (1L03) / S GENOIS ST",
+        "Agency": "POLICE",
+        "Beat": "1L03",
+        "Comments": null,
+        "CommonName": null,
+        "Dispatched": "N",
+        "ESRI_OID": 95,
+        "FAlarms": null,
+        "Incident": "011163",
+        "MapX": -90.09835771,
+        "MapY": 29.9687168,
+        "OnScene": "N",
+        "PrimaryUnit": null,
+        "Priority": "1C",
+        "SelfInitiated": "N",
+        "TimeCreate": 1783783898000,
+        "TimeCreateUTC": 1783801898000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70119"
+      },
+      "event_id": "incident-011163",
+      "first_seen_utc": "2026-07-11T21:06:37.353858Z",
+      "incident": "011163",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
+      "lat": 29.96871680000004,
+      "lon": -90.09835770999996,
+      "object_id": 95,
+      "observations": 1,
+      "time_create": 1783783898000,
+      "time_create_utc": 1783801898000,
+      "title": "21F"
+    },
+    {
+      "active": true,
+      "address": "S CARROLLTON AV / BANKS ST (3D02)",
+      "attributes": {
+        "Address": "S CARROLLTON AV / BANKS ST (3D02)",
+        "Agency": "POLICE",
+        "Beat": "3D02",
+        "Comments": "2026-07-11 15:24:27.640: RELYD BY 370B STALLED VEHS AT LOC",
+        "CommonName": null,
+        "Dispatched": "N",
+        "ESRI_OID": 94,
+        "FAlarms": null,
+        "Incident": "011153",
+        "MapX": -90.10335713,
+        "MapY": 29.9720906,
+        "OnScene": "N",
+        "PrimaryUnit": null,
+        "Priority": "1C",
+        "SelfInitiated": "N",
+        "TimeCreate": 1783783467000,
+        "TimeCreateUTC": 1783801467000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70119"
+      },
+      "event_id": "incident-011153",
+      "first_seen_utc": "2026-07-11T21:06:37.353858Z",
+      "incident": "011153",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
+      "lat": 29.972090600000058,
+      "lon": -90.10335712999995,
+      "object_id": 94,
+      "observations": 1,
+      "time_create": 1783783467000,
+      "time_create_utc": 1783801467000,
+      "title": "21F"
+    },
     {
       "active": true,
       "address": "PALMETTO ST / AIRLINE HWY",
@@ -31,11 +142,11 @@
       "event_id": "incident-011139",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011139",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.971602190000056,
       "lon": -90.11666735999995,
       "object_id": 93,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783782392000,
       "time_create_utc": 1783800392000,
       "title": "21F"
@@ -68,17 +179,17 @@
       "event_id": "incident-011129",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011129",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.97269963000008,
       "lon": -90.11657069999995,
       "object_id": 90,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783781844000,
       "time_create_utc": 1783799844000,
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "DANTE ST / ZIMPEL ST",
       "attributes": {
         "Address": "DANTE ST / ZIMPEL ST",
@@ -115,7 +226,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "ST CHARLES AV / LAW RD",
       "attributes": {
         "Address": "ST CHARLES AV / LAW RD",
@@ -152,7 +263,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "ST CHARLES AV / BROADWAY ST",
       "attributes": {
         "Address": "ST CHARLES AV / BROADWAY ST",
@@ -189,7 +300,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "OAK ST / S CARROLLTON AV (2K01)",
       "attributes": {
         "Address": "OAK ST / S CARROLLTON AV (2K01)",
@@ -253,17 +364,17 @@
       "event_id": "incident-011105",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011105",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.972090560000026,
       "lon": -90.11419879999994,
       "object_id": 80,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783780628000,
       "time_create_utc": 1783798628000,
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "MISTLETOE ST / EDINBURGH ST",
       "attributes": {
         "Address": "MISTLETOE ST / EDINBURGH ST",
@@ -300,7 +411,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "HAMILTON ST / OLIVE ST",
       "attributes": {
         "Address": "HAMILTON ST / OLIVE ST",
@@ -337,7 +448,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "HAMILTON ST / EARHART BLVD (2S01)",
       "attributes": {
         "Address": "HAMILTON ST / EARHART BLVD (2S01)",
@@ -374,7 +485,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "EAGLE ST / HICKORY ST",
       "attributes": {
         "Address": "EAGLE ST / HICKORY ST",
@@ -411,7 +522,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "DANTE ST / STROELITZ ST",
       "attributes": {
         "Address": "DANTE ST / STROELITZ ST",
@@ -448,7 +559,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "COLAPISSA ST / AUDUBON ST",
       "attributes": {
         "Address": "COLAPISSA ST / AUDUBON ST",
@@ -512,11 +623,11 @@
       "event_id": "incident-011093",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011093",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 30.010802040000044,
       "lon": -90.11150321999997,
       "object_id": 71,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783780303000,
       "time_create_utc": 1783798303000,
       "title": "TO THE 500 BLK"
@@ -549,11 +660,11 @@
       "event_id": "incident-011092",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011092",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.977119840000057,
       "lon": -90.09246192999996,
       "object_id": 70,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783780248000,
       "time_create_utc": 1783798248000,
       "title": "21F"
@@ -586,11 +697,11 @@
       "event_id": "incident-011090",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011090",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 30.011534820000065,
       "lon": -90.10955248999994,
       "object_id": 69,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783780243000,
       "time_create_utc": 1783798243000,
       "title": "21F"
@@ -623,11 +734,11 @@
       "event_id": "incident-011088",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011088",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 30.010211730000037,
       "lon": -90.12114365999997,
       "object_id": 68,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783780056000,
       "time_create_utc": 1783798056000,
       "title": "21F"
@@ -660,17 +771,17 @@
       "event_id": "incident-011086",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011086",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 30.00683544000003,
       "lon": -90.11428271999995,
       "object_id": 67,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783779942000,
       "time_create_utc": 1783797942000,
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "FIG ST / BROADWAY ST",
       "attributes": {
         "Address": "FIG ST / BROADWAY ST",
@@ -707,7 +818,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "BELFAST ST / MONROE ST",
       "attributes": {
         "Address": "BELFAST ST / MONROE ST",
@@ -771,17 +882,17 @@
       "event_id": "incident-011080",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011080",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.975714590000052,
       "lon": -90.10205685999995,
       "object_id": 63,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783779737000,
       "time_create_utc": 1783797737000,
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "3100 BLK EARHART BLVD",
       "attributes": {
         "Address": "3100 BLK EARHART BLVD",
@@ -824,7 +935,7 @@
         "Address": "WISNER BLVD / DE SAIX BLVD (3I06)",
         "Agency": "POLICE",
         "Beat": "3I06",
-        "Comments": "2026-07-11 14:16:28.273: NORTH BOUND VEH STUCK IN THE WATER",
+        "Comments": "2026-07-11 14:16:28.273: NORTH BOUND VEH STUCK IN THE WATER; 2026-07-11 16:05:23.727: CB VIA 3185536800 REPORTING FLOOD IN AREA STS VEH LOOK LIKE IT BROKE DOWN",
         "CommonName": null,
         "Dispatched": "Y",
         "ESRI_OID": 59,
@@ -845,17 +956,17 @@
       "event_id": "incident-011074",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011074",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.98928360000008,
       "lon": -90.08807505999994,
       "object_id": 59,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783779388000,
       "time_create_utc": 1783797388000,
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "OAK ST / DANTE ST",
       "attributes": {
         "Address": "OAK ST / DANTE ST",
@@ -892,7 +1003,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "ST CHARLES AV / HENRY CLAY AV (2E03)",
       "attributes": {
         "Address": "ST CHARLES AV / HENRY CLAY AV (2E03)",
@@ -956,11 +1067,11 @@
       "event_id": "incident-011060",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011060",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 30.006277230000023,
       "lon": -90.11724705999995,
       "object_id": 53,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783778913000,
       "time_create_utc": 1783796913000,
       "title": "21F"
@@ -993,17 +1104,17 @@
       "event_id": "incident-011056",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011056",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.966086680000046,
       "lon": -90.09430156999997,
       "object_id": 51,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783778758000,
       "time_create_utc": 1783796758000,
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "I-10 ONRAMP / S CARROLLTON AV (6N02)",
       "attributes": {
         "Address": "I-10 ONRAMP / S CARROLLTON AV (6N02)",
@@ -1040,7 +1151,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "7600 BLK MAPLE ST",
       "attributes": {
         "Address": "7600 BLK MAPLE ST",
@@ -1077,7 +1188,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "7500 OAK ST",
       "attributes": {
         "Address": "7500 OAK ST",
@@ -1114,7 +1225,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "ST CHARLES AV / FELICITY ST (6E03)",
       "attributes": {
         "Address": "ST CHARLES AV / FELICITY ST (6E03)",
@@ -1151,7 +1262,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "LOUISIANA AV / CARONDELET ST (6Q02)",
       "attributes": {
         "Address": "LOUISIANA AV / CARONDELET ST (6Q02)",
@@ -1188,7 +1299,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "AUDUBON BLVD / WILLOW ST",
       "attributes": {
         "Address": "AUDUBON BLVD / WILLOW ST",
@@ -1225,7 +1336,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "WILLOW ST / CALHOUN ST",
       "attributes": {
         "Address": "WILLOW ST / CALHOUN ST",
@@ -1262,7 +1373,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "3400 BLK BROADWAY ST",
       "attributes": {
         "Address": "3400 BLK BROADWAY ST",
@@ -1326,11 +1437,11 @@
       "event_id": "incident-011042",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011042",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.969078590000038,
       "lon": -90.10952699999996,
       "object_id": 42,
-      "observations": 1,
+      "observations": 2,
       "time_create": 1783778274000,
       "time_create_utc": 1783796274000,
       "title": "21F"
@@ -1363,17 +1474,17 @@
       "event_id": "incident-011040",
       "first_seen_utc": "2026-07-11T18:58:04.262960Z",
       "incident": "011040",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.97437683000004,
       "lon": -90.09818202999998,
       "object_id": 41,
-      "observations": 2,
+      "observations": 3,
       "time_create": 1783778201000,
       "time_create_utc": 1783796201000,
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "BROADWAY ST / WILLOW ST",
       "attributes": {
         "Address": "BROADWAY ST / WILLOW ST",
@@ -1437,11 +1548,11 @@
       "event_id": "incident-011037",
       "first_seen_utc": "2026-07-11T18:56:17.756640Z",
       "incident": "011037",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.957316560000038,
       "lon": -90.07539859999997,
       "object_id": 39,
-      "observations": 5,
+      "observations": 6,
       "time_create": 1783778095000,
       "time_create_utc": 1783796095000,
       "title": "21F"
@@ -1474,11 +1585,11 @@
       "event_id": "incident-011024",
       "first_seen_utc": "2026-07-11T18:56:17.756640Z",
       "incident": "011024",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.97103788000004,
       "lon": -90.11351742999994,
       "object_id": 36,
-      "observations": 5,
+      "observations": 6,
       "time_create": 1783777628000,
       "time_create_utc": 1783795628000,
       "title": "21F"
@@ -1548,11 +1659,11 @@
       "event_id": "incident-011015",
       "first_seen_utc": "2026-07-11T18:44:26.906519Z",
       "incident": "011015",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.991799540000045,
       "lon": -90.10963998999995,
       "object_id": 34,
-      "observations": 6,
+      "observations": 7,
       "time_create": 1783777164000,
       "time_create_utc": 1783795164000,
       "title": "21F"
@@ -1595,7 +1706,7 @@
       "title": "ST CLAUDE AV BRIDGE EAST"
     },
     {
-      "active": true,
+      "active": false,
       "address": "PRYTANIA ST / DELACHAISE ST",
       "attributes": {
         "Address": "PRYTANIA ST / DELACHAISE ST",
@@ -1696,16 +1807,16 @@
       "event_id": "incident-011001",
       "first_seen_utc": "2026-07-11T18:37:11.458846Z",
       "incident": "011001",
-      "last_seen_utc": "2026-07-11T20:09:23.512110Z",
+      "last_seen_utc": "2026-07-11T21:06:37.353858Z",
       "lat": 29.967979140000068,
       "lon": -90.10783734999995,
       "object_id": 28,
-      "observations": 7,
+      "observations": 8,
       "time_create": 1783776528000,
       "time_create_utc": 1783794528000,
       "title": "OVERPASS S CARROLLTON EAST"
     }
   ],
-  "last_archive_run_utc": "2026-07-11T20:09:23.512110Z",
+  "last_archive_run_utc": "2026-07-11T21:06:37.353858Z",
   "timezone": "America/Chicago"
 }
