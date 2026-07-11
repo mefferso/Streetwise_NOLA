@@ -1,6 +1,6 @@
 {
-  "current_live_record_count": 7,
-  "end_time_utc": "2026-07-11T18:56:32.698084Z",
+  "current_live_record_count": 8,
+  "end_time_utc": "2026-07-11T18:57:19.304406Z",
   "errors": [
     {
       "error": "{\n  \"code\": 400,\n  \"message\": \"Invalid or missing input parameters.\",\n  \"details\": []\n}",
@@ -186,6 +186,36 @@
     "type": "Feature Layer"
   },
   "reports": [
+    {
+      "address": "BROADWAY ST / WILLOW ST",
+      "attributes": {
+        "Address": "BROADWAY ST / WILLOW ST",
+        "Agency": "POLICE",
+        "Beat": "2L02",
+        "Comments": "2026-07-11 13:55:56.360: GORDON / TMC.... FLOODING AT LOC",
+        "CommonName": null,
+        "Dispatched": "N",
+        "ESRI_OID": 40,
+        "FAlarms": null,
+        "Incident": "011039",
+        "MapX": -90.12174694,
+        "MapY": 29.9438059,
+        "OnScene": "N",
+        "PrimaryUnit": null,
+        "Priority": "1C",
+        "SelfInitiated": "N",
+        "TimeCreate": 1783778156000,
+        "TimeCreateUTC": 1783796156000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70118"
+      },
+      "lat": 29.94380590000003,
+      "lon": -90.12174693999998,
+      "object_id": null,
+      "time_create": 1783778156000,
+      "title": "21F"
+    },
     {
       "address": "CANAL ST / LA SALLE ST",
       "attributes": {
@@ -397,13 +427,13 @@
       "title": "OVERPASS S CARROLLTON EAST"
     }
   ],
-  "run_time_utc": "2026-07-11T18:56:32.698084Z",
+  "run_time_utc": "2026-07-11T18:57:19.304406Z",
   "service_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer",
-  "start_time_utc": "2026-06-11T18:56:32.698084Z",
+  "start_time_utc": "2026-06-11T18:57:19.304406Z",
   "summary": [
     {
       "exceeded_transfer_limit": false,
-      "feature_count": 7,
+      "feature_count": 8,
       "fields_returned": [
         "Address",
         "Agency",
@@ -432,7 +462,7 @@
     },
     {
       "exceeded_transfer_limit": false,
-      "feature_count": 7,
+      "feature_count": 8,
       "field_tested": "TimeCreate",
       "fields_returned": [
         "Address",
@@ -457,12 +487,12 @@
         "Zip"
       ],
       "query_type": "time_filtered_lookback",
-      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=TimeCreate+%3E%3D+timestamp+%272026-06-11+18%3A56%3A32%27+AND+TimeCreate+%3C%3D+timestamp+%272026-07-11+18%3A56%3A32%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=TimeCreate+DESC",
-      "where": "TimeCreate >= timestamp '2026-06-11 18:56:32' AND TimeCreate <= timestamp '2026-07-11 18:56:32'"
+      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=TimeCreate+%3E%3D+timestamp+%272026-06-11+18%3A57%3A19%27+AND+TimeCreate+%3C%3D+timestamp+%272026-07-11+18%3A57%3A19%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=TimeCreate+DESC",
+      "where": "TimeCreate >= timestamp '2026-06-11 18:57:19' AND TimeCreate <= timestamp '2026-07-11 18:57:19'"
     },
     {
       "exceeded_transfer_limit": false,
-      "feature_count": 7,
+      "feature_count": 8,
       "field_tested": "timecreate",
       "fields_returned": [
         "Address",
@@ -487,10 +517,10 @@
         "Zip"
       ],
       "query_type": "time_filtered_lookback",
-      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=timecreate+%3E%3D+timestamp+%272026-06-11+18%3A56%3A32%27+AND+timecreate+%3C%3D+timestamp+%272026-07-11+18%3A56%3A32%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=timecreate+DESC",
-      "where": "timecreate >= timestamp '2026-06-11 18:56:32' AND timecreate <= timestamp '2026-07-11 18:56:32'"
+      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=timecreate+%3E%3D+timestamp+%272026-06-11+18%3A57%3A19%27+AND+timecreate+%3C%3D+timestamp+%272026-07-11+18%3A57%3A19%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=timecreate+DESC",
+      "where": "timecreate >= timestamp '2026-06-11 18:57:19' AND timecreate <= timestamp '2026-07-11 18:57:19'"
     }
   ],
-  "total_time_filtered_records_before_dedupe": 14,
-  "total_time_filtered_unique_records": 7
+  "total_time_filtered_records_before_dedupe": 16,
+  "total_time_filtered_unique_records": 8
 }
