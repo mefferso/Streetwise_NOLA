@@ -51,6 +51,22 @@
         <div id="layerControls" class="layer-controls"></div>
       </section>
 
+      <section class="panel archive-panel">
+        <h2>View</h2>
+        <div class="view-tabs">
+          <button id="liveViewBtn" class="view-tab active" type="button">Live</button>
+          <button id="archiveViewBtn" class="view-tab" type="button">Archive</button>
+        </div>
+        <div id="archiveControls" class="archive-controls" hidden>
+          <label for="archiveDate">Archive date</label>
+          <div class="archive-date-row">
+            <input id="archiveDate" type="date" />
+            <button id="loadArchiveBtn" type="button">Load</button>
+          </div>
+          <div id="archiveStatus" class="muted">Choose a date to view preserved reports.</div>
+        </div>
+      </section>
+
       <section class="panel reports-panel">
         <div class="section-row">
           <h2>Active flood reports</h2>
