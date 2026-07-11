@@ -182,11 +182,9 @@ function renderPopup(report) {
   const time = formatTime(report.timeValue, report.timeRaw);
   const rows = [
     `<div class="popup-title">${escapeHtml(report.title)}</div>`,
-    `<div class="popup-row"><strong>Layer:</strong> ${escapeHtml(report.layerLabel)}</div>`,
   ];
   if (report.address) rows.push(`<div class="popup-row"><strong>Address:</strong> ${escapeHtml(report.address)}</div>`);
   if (time) rows.push(`<div class="popup-row"><strong>Time:</strong> ${escapeHtml(time)}</div>`);
-  rows.push(`<div class="popup-row"><strong>Lat/Lon:</strong> ${report.lat.toFixed(5)}, ${report.lng.toFixed(5)}</div>`);
   return rows.join('');
 }
 
@@ -290,17 +288,49 @@ function cleanValue(value) {
 
 function parseArcGisTime(value) {
   if (value === null || value === undefined || value === '') return null;
-  if (typeof value === 'number') {
-    const ms = value < 10_000_000_000 ? value * 1000 : value;
-    const date = new Date(ms);
-    return Number.isNaN(date.getTime()) ? null : date.getTime();
+  const ms = typeof value === 'number'
+    ? (value < 10_000_000_000 ? value * 1000 : value)
+    : new Date(value).getTime();
+  if (Number.isNaN(ms)) return null;
+
+  // Streetwise stores New Orleans wall-clock time in a UTC-shaped ArcGIS value.
+  // Reinterpret it in America/Chicago so CDT/CST are handled automatically.
+  return reinterpretUtcWallClock(ms, 'America/Chicago');
+}
+
+function reinterpretUtcWallClock(ms, timeZone) {
+  let corrected = ms;
+  for (let index = 0; index < 2; index += 1) {
+    corrected = ms - getTimeZoneOffsetMs(new Date(corrected), timeZone);
   }
-  const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? null : date.getTime();
+  return corrected;
+}
+
+function getTimeZoneOffsetMs(date, timeZone) {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hourCycle: 'h23',
+  }).formatToParts(date);
+  const values = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+  const representedAsUtc = Date.UTC(
+    Number(values.year),
+    Number(values.month) - 1,
+    Number(values.day),
+    Number(values.hour),
+    Number(values.minute),
+    Number(values.second),
+  );
+  return Math.round((representedAsUtc - date.getTime()) / 60_000) * 60_000;
 }
 
 function formatTime(timeValue, raw) {
-  if (timeValue) return new Date(timeValue).toLocaleString();
+  if (timeValue) return new Date(timeValue).toLocaleString('en-US', { timeZone: 'America/Chicago' });
   if (raw) return String(raw);
   return '';
 }
