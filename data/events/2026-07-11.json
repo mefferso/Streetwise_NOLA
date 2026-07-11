@@ -1,10 +1,47 @@
 {
-  "active_count": 15,
+  "active_count": 4,
   "date": "2026-07-11",
-  "event_count": 49,
+  "event_count": 50,
   "events": [
     {
       "active": true,
+      "address": "I-10 E",
+      "attributes": {
+        "Address": "I-10 E",
+        "Agency": "POLICE",
+        "Beat": "3A02",
+        "Comments": null,
+        "CommonName": "S CARROLLTON OVERPASS EAST",
+        "Dispatched": "N",
+        "ESRI_OID": 102,
+        "FAlarms": null,
+        "Incident": "011262",
+        "MapX": -90.10783735,
+        "MapY": 29.96797914,
+        "OnScene": "Y",
+        "PrimaryUnit": "233B",
+        "Priority": "1C",
+        "SelfInitiated": "Y",
+        "TimeCreate": 1783791138000,
+        "TimeCreateUTC": 1783809138000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70119"
+      },
+      "event_id": "incident-011262",
+      "first_seen_utc": "2026-07-11T23:07:51.984925Z",
+      "incident": "011262",
+      "last_seen_utc": "2026-07-11T23:07:51.984925Z",
+      "lat": 29.967979140000068,
+      "lon": -90.10783734999995,
+      "object_id": 102,
+      "observations": 1,
+      "time_create": 1783791138000,
+      "time_create_utc": 1783809138000,
+      "title": "S CARROLLTON OVERPASS EAST"
+    },
+    {
+      "active": false,
       "address": "ULLOA ST / S CARROLLTON AV (1L04)",
       "attributes": {
         "Address": "ULLOA ST / S CARROLLTON AV (1L04)",
@@ -41,7 +78,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "BANKS ST (1L03) / S GENOIS ST",
       "attributes": {
         "Address": "BANKS ST (1L03) / S GENOIS ST",
@@ -596,7 +633,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "300 BLK PORTEOUS ST",
       "attributes": {
         "Address": "300 BLK PORTEOUS ST",
@@ -633,7 +670,7 @@
       "title": "TO THE 500 BLK"
     },
     {
-      "active": true,
+      "active": false,
       "address": "ORLEANS AV (1M03) / TAFT PL",
       "attributes": {
         "Address": "ORLEANS AV (1M03) / TAFT PL",
@@ -670,7 +707,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "6600 BLK LOUISVILLE ST",
       "attributes": {
         "Address": "6600 BLK LOUISVILLE ST",
@@ -707,7 +744,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "TACOMA ST / BELLAIRE DR",
       "attributes": {
         "Address": "TACOMA ST / BELLAIRE DR",
@@ -744,7 +781,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "6357 WEST END BLVD",
       "attributes": {
         "Address": "6357 WEST END BLVD",
@@ -882,11 +919,11 @@
       "event_id": "incident-011080",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011080",
-      "last_seen_utc": "2026-07-11T22:05:42.891900Z",
+      "last_seen_utc": "2026-07-11T23:07:51.984925Z",
       "lat": 29.975714590000052,
       "lon": -90.10205685999995,
       "object_id": 63,
-      "observations": 3,
+      "observations": 4,
       "time_create": 1783779737000,
       "time_create_utc": 1783797737000,
       "title": "21F"
@@ -935,7 +972,7 @@
         "Address": "WISNER BLVD / DE SAIX BLVD (3I06)",
         "Agency": "POLICE",
         "Beat": "3I06",
-        "Comments": "2026-07-11 14:16:28.273: NORTH BOUND VEH STUCK IN THE WATER; 2026-07-11 16:05:23.727: CB VIA 3185536800 REPORTING FLOOD IN AREA STS VEH LOOK LIKE IT BROKE DOWN",
+        "Comments": "2026-07-11 14:16:28.273: NORTH BOUND VEH STUCK IN THE WATER; 2026-07-11 16:05:23.727: CB VIA 3185536800 REPORTING FLOOD IN AREA STS VEH LOOK LIKE IT BROKE DOWN; 2026-07-11 17:22:58.203: C/B VIA ASHLEY  601-347-3726 SEVERE FLOODING AT LOC",
         "CommonName": null,
         "Dispatched": "Y",
         "ESRI_OID": 59,
@@ -956,11 +993,11 @@
       "event_id": "incident-011074",
       "first_seen_utc": "2026-07-11T20:09:23.512110Z",
       "incident": "011074",
-      "last_seen_utc": "2026-07-11T22:05:42.891900Z",
+      "last_seen_utc": "2026-07-11T23:07:51.984925Z",
       "lat": 29.98928360000008,
       "lon": -90.08807505999994,
       "object_id": 59,
-      "observations": 3,
+      "observations": 4,
       "time_create": 1783779388000,
       "time_create_utc": 1783797388000,
       "title": "21F"
@@ -1040,7 +1077,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "154 26TH ST",
       "attributes": {
         "Address": "154 26TH ST",
@@ -1077,7 +1114,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "S LOPEZ ST / BANKS ST (1L02)",
       "attributes": {
         "Address": "S LOPEZ ST / BANKS ST (1L02)",
@@ -1410,7 +1447,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "I-10 E ONRAMP / S CARROLLTON AV EXIT",
       "attributes": {
         "Address": "I-10 E ONRAMP / S CARROLLTON AV EXIT",
@@ -1447,7 +1484,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "3900 BLK IBERVILLE ST",
       "attributes": {
         "Address": "3900 BLK IBERVILLE ST",
@@ -1521,7 +1558,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "CANAL ST / LA SALLE ST",
       "attributes": {
         "Address": "CANAL ST / LA SALLE ST",
@@ -1786,7 +1823,7 @@
         "Address": "I-10 E",
         "Agency": "POLICE",
         "Beat": "3A02",
-        "Comments": "2026-07-11 13:28:48.677: RTCC ADVD FLOODING; 2026-07-11 13:32:16.133: RTCC ADVD VEHS GETTING STUCK TRYING TO PASS; 2026-07-11 13:32:25.170: 330B NTFD; 2026-07-11 13:42:50.823: ADVD VEHS COMING THRU D3 SIDE GETTING STUCK IN FLOOD WATER (NP/230B); 2026-07-11 13:43:38.537: 230B ADVD 2 VEHS STRANDED ON RIVER BOUND SIDE; 2026-07-11 14:02:39.690: <Incid #:FFD26071100036802  Incid Type: FLOOD/R(NOFD)>; 2026-07-11 14:05:01.647: IMAP NTFD; 2026-07-11 14:08:49.897: < PD ADV ENJ WENT THE WRONDG WAY >; 2026-07-11 14:58:53.023: STILL EN ROUTE (NP/233B); 2026-07-11 15:00:27.090: STILLWRKING (NP/311B); 2026-07-11 15:00:27.090: STILLWRKING (NP/335B)",
+        "Comments": "2026-07-11 13:28:48.677: RTCC ADVD FLOODING; 2026-07-11 13:32:16.133: RTCC ADVD VEHS GETTING STUCK TRYING TO PASS; 2026-07-11 13:32:25.170: 330B NTFD; 2026-07-11 13:42:50.823: ADVD VEHS COMING THRU D3 SIDE GETTING STUCK IN FLOOD WATER (NP/230B); 2026-07-11 13:43:38.537: 230B ADVD 2 VEHS STRANDED ON RIVER BOUND SIDE; 2026-07-11 14:02:39.690: <Incid #:FFD26071100036802  Incid Type: FLOOD/R(NOFD)>; 2026-07-11 14:05:01.647: IMAP NTFD; 2026-07-11 14:08:49.897: < PD ADV ENJ WENT THE WRONDG WAY >; 2026-07-11 14:58:53.023: STILL EN ROUTE (NP/233B); 2026-07-11 15:00:27.090: STILLWRKING (NP/311B); 2026-07-11 15:00:27.090: STILLWRKING (NP/335B); 2026-07-11 17:25:40.150: Reopen: 311B ADV ROAD IS STILL FLOODED",
         "CommonName": "OVERPASS S CARROLLTON EAST",
         "Dispatched": "Y",
         "ESRI_OID": 28,
@@ -1795,7 +1832,7 @@
         "MapX": -90.10783735,
         "MapY": 29.96797914,
         "OnScene": "Y",
-        "PrimaryUnit": "249B",
+        "PrimaryUnit": "311B",
         "Priority": "1C",
         "SelfInitiated": "N",
         "TimeCreate": 1783776528000,
@@ -1807,16 +1844,16 @@
       "event_id": "incident-011001",
       "first_seen_utc": "2026-07-11T18:37:11.458846Z",
       "incident": "011001",
-      "last_seen_utc": "2026-07-11T22:05:42.891900Z",
+      "last_seen_utc": "2026-07-11T23:07:51.984925Z",
       "lat": 29.967979140000068,
       "lon": -90.10783734999995,
       "object_id": 28,
-      "observations": 9,
+      "observations": 10,
       "time_create": 1783776528000,
       "time_create_utc": 1783794528000,
       "title": "OVERPASS S CARROLLTON EAST"
     }
   ],
-  "last_archive_run_utc": "2026-07-11T22:05:42.891900Z",
+  "last_archive_run_utc": "2026-07-11T23:07:51.984925Z",
   "timezone": "America/Chicago"
 }
