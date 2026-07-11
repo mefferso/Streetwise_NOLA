@@ -17,6 +17,8 @@ const state = {
   reports: [],
   lastQueryUrl: null,
   timer: null,
+  mode: 'live',
+  archiveDate: null,
 };
 
 const map = L.map('map', {
@@ -38,20 +40,41 @@ const els = {
   reportCount: document.getElementById('reportCount'),
   reportList: document.getElementById('reportList'),
   lastQueryCode: document.getElementById('lastQueryCode'),
+  liveViewBtn: document.getElementById('liveViewBtn'),
+  archiveViewBtn: document.getElementById('archiveViewBtn'),
+  archiveControls: document.getElementById('archiveControls'),
+  archiveDate: document.getElementById('archiveDate'),
+  loadArchiveBtn: document.getElementById('loadArchiveBtn'),
+  archiveStatus: document.getElementById('archiveStatus'),
 };
 
 els.refreshBtn.addEventListener('click', () => refreshAll({ fitBounds: false }));
 els.autoRefreshToggle.addEventListener('change', configureAutoRefresh);
+els.liveViewBtn.addEventListener('click', () => setViewMode('live'));
+els.archiveViewBtn.addEventListener('click', () => setViewMode('archive'));
+els.loadArchiveBtn.addEventListener('click', () => loadArchive(els.archiveDate.value, { fitBounds: true }));
+els.archiveDate.addEventListener('change', () => loadArchive(els.archiveDate.value, { fitBounds: true }));
 
 init();
 
 async function init() {
+  state.archiveDate = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/Chicago',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date());
+  els.archiveDate.value = state.archiveDate;
   renderLayerControls();
   configureAutoRefresh();
   await refreshAll({ fitBounds: true });
 }
 
 async function refreshAll({ fitBounds = false } = {}) {
+  if (state.mode === 'archive') {
+    await loadArchive(els.archiveDate.value, { fitBounds });
+    return;
+  }
   setStatus('Loading Streetwise flood layer…');
   clearMap();
 
@@ -86,6 +109,70 @@ async function refreshAll({ fitBounds = false } = {}) {
     console.error(error);
     setStatus(`Error: ${error.message}`, true);
   }
+}
+
+function setViewMode(mode) {
+  state.mode = mode;
+  els.liveViewBtn.classList.toggle('active', mode === 'live');
+  els.archiveViewBtn.classList.toggle('active', mode === 'archive');
+  els.archiveControls.hidden = mode !== 'archive';
+  els.autoRefreshToggle.disabled = mode === 'archive';
+  configureAutoRefresh();
+  if (mode === 'archive') loadArchive(els.archiveDate.value, { fitBounds: true });
+  else refreshAll({ fitBounds: true });
+}
+
+async function loadArchive(date, { fitBounds = false } = {}) {
+  if (!date) return;
+  state.archiveDate = date;
+  setStatus(`Loading archive for ${date}…`);
+  clearMap();
+
+  try {
+    const response = await fetch(`data/events/${date}.json?ts=${Date.now()}`, { cache: 'no-store' });
+    if (response.status === 404) throw new Error('No archived reports were captured for this date.');
+    if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+    const catalog = await response.json();
+    const reports = (catalog.events || []).map(normalizeArchivedEvent).filter(Boolean);
+    reports.forEach(addReportToMap);
+    state.reports = reports;
+    renderReports();
+    if (fitBounds) fitToReports(reports);
+
+    const activeCount = reports.filter((report) => report.active).length;
+    setStatus(`${reports.length} archived flood report${reports.length === 1 ? '' : 's'} for ${date}`);
+    els.updatedLine.textContent = `Archive through: ${formatActualTime(catalog.last_archive_run_utc) || '—'}`;
+    els.archiveStatus.textContent = `${reports.length} unique; ${activeCount} still active at the last capture.`;
+  } catch (error) {
+    state.reports = [];
+    renderReports();
+    setStatus(error.message, true);
+    els.updatedLine.textContent = 'Archive: unavailable';
+    els.archiveStatus.textContent = error.message;
+  }
+}
+
+function normalizeArchivedEvent(event) {
+  if (typeof event.lat !== 'number' || typeof event.lon !== 'number') return null;
+  return {
+    id: event.event_id,
+    layerId: 1,
+    layerKey: 'flooding',
+    layerLabel: 'Flooded Streets',
+    layerColor: '#42a5ff',
+    title: cleanValue(event.title || event.attributes?.Type || 'Flood report'),
+    address: cleanValue(event.address),
+    timeRaw: event.time_create,
+    timeValue: parseArcGisTime(event.time_create),
+    lat: event.lat,
+    lng: event.lon,
+    attributes: event.attributes || {},
+    archive: true,
+    active: Boolean(event.active),
+    firstSeen: event.first_seen_utc,
+    lastSeen: event.last_seen_utc,
+    observations: event.observations || 1,
+  };
 }
 
 async function queryLayer(layer) {
@@ -185,6 +272,11 @@ function renderPopup(report) {
   ];
   if (report.address) rows.push(`<div class="popup-row"><strong>Address:</strong> ${escapeHtml(report.address)}</div>`);
   if (time) rows.push(`<div class="popup-row"><strong>Time:</strong> ${escapeHtml(time)}</div>`);
+  if (report.archive) {
+    rows.push(`<div class="popup-row"><strong>Status:</strong> ${report.active ? 'Active at last capture' : 'Cleared from live layer'}</div>`);
+    rows.push(`<div class="popup-row"><strong>First seen:</strong> ${escapeHtml(formatActualTime(report.firstSeen))}</div>`);
+    rows.push(`<div class="popup-row"><strong>Last seen:</strong> ${escapeHtml(formatActualTime(report.lastSeen))}</div>`);
+  }
   return rows.join('');
 }
 
@@ -197,6 +289,9 @@ function renderReports() {
   els.reportList.innerHTML = state.reports.map((report) => {
     const time = formatTime(report.timeValue, report.timeRaw) || 'Time unavailable';
     const extra = pickInterestingAttributes(report.attributes);
+    const archiveStatus = report.archive
+      ? `<div class="report-archive-status ${report.active ? 'active' : 'cleared'}">${report.active ? 'Active at last capture' : 'Cleared'} · Last seen ${escapeHtml(formatActualTime(report.lastSeen))}</div>`
+      : '';
     return `
       <article class="report-card" data-report-id="${escapeHtml(String(report.id))}">
         <div class="report-title">
@@ -205,6 +300,7 @@ function renderReports() {
         </div>
         <div class="report-address">${escapeHtml(report.address || report.layerLabel)}</div>
         <div class="report-time">${escapeHtml(time)}</div>
+        ${archiveStatus}
         ${extra ? `<div class="report-extra">${escapeHtml(extra)}</div>` : ''}
       </article>`;
   }).join('');
@@ -265,7 +361,9 @@ function highlightReport(reportId) {
 
 function configureAutoRefresh() {
   if (state.timer) window.clearInterval(state.timer);
-  state.timer = els.autoRefreshToggle.checked ? window.setInterval(() => refreshAll({ fitBounds: false }), AUTO_REFRESH_MS) : null;
+  state.timer = state.mode === 'live' && els.autoRefreshToggle.checked
+    ? window.setInterval(() => refreshAll({ fitBounds: false }), AUTO_REFRESH_MS)
+    : null;
 }
 
 function setStatus(message, isError = false) {
@@ -333,6 +431,14 @@ function formatTime(timeValue, raw) {
   if (timeValue) return new Date(timeValue).toLocaleString('en-US', { timeZone: 'America/Chicago' });
   if (raw) return String(raw);
   return '';
+}
+
+function formatActualTime(value) {
+  if (!value) return '';
+  const date = new Date(value);
+  return Number.isNaN(date.getTime())
+    ? String(value)
+    : date.toLocaleString('en-US', { timeZone: 'America/Chicago' });
 }
 
 function pickInterestingAttributes(attrs) {
