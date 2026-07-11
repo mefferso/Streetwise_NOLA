@@ -1,6 +1,6 @@
 {
-  "current_live_record_count": 0,
-  "end_time_utc": "2026-07-11T17:32:16.039254Z",
+  "current_live_record_count": 2,
+  "end_time_utc": "2026-07-11T18:37:11.771631Z",
   "errors": [
     {
       "error": "{\n  \"code\": 400,\n  \"message\": \"Invalid or missing input parameters.\",\n  \"details\": []\n}",
@@ -185,37 +185,100 @@
     "time_info": null,
     "type": "Feature Layer"
   },
-  "run_time_utc": "2026-07-11T17:32:16.039254Z",
+  "run_time_utc": "2026-07-11T18:37:11.771631Z",
   "service_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer",
-  "start_time_utc": "2026-06-11T17:32:16.039254Z",
+  "start_time_utc": "2026-06-11T18:37:11.771631Z",
   "summary": [
     {
       "exceeded_transfer_limit": false,
-      "feature_count": 0,
-      "fields_returned": [],
+      "feature_count": 2,
+      "fields_returned": [
+        "Address",
+        "Agency",
+        "Beat",
+        "Comments",
+        "CommonName",
+        "Dispatched",
+        "ESRI_OID",
+        "FAlarms",
+        "Incident",
+        "MapX",
+        "MapY",
+        "OnScene",
+        "PrimaryUnit",
+        "Priority",
+        "SelfInitiated",
+        "TimeCreate",
+        "TimeCreateUTC",
+        "Type",
+        "TypeText",
+        "Zip"
+      ],
       "query_type": "current_live_layer",
       "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=1%3D1&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000",
       "where": "1=1"
     },
     {
       "exceeded_transfer_limit": false,
-      "feature_count": 0,
+      "feature_count": 2,
       "field_tested": "TimeCreate",
-      "fields_returned": [],
+      "fields_returned": [
+        "Address",
+        "Agency",
+        "Beat",
+        "Comments",
+        "CommonName",
+        "Dispatched",
+        "ESRI_OID",
+        "FAlarms",
+        "Incident",
+        "MapX",
+        "MapY",
+        "OnScene",
+        "PrimaryUnit",
+        "Priority",
+        "SelfInitiated",
+        "TimeCreate",
+        "TimeCreateUTC",
+        "Type",
+        "TypeText",
+        "Zip"
+      ],
       "query_type": "time_filtered_lookback",
-      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=TimeCreate+%3E%3D+timestamp+%272026-06-11+17%3A32%3A16%27+AND+TimeCreate+%3C%3D+timestamp+%272026-07-11+17%3A32%3A16%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=TimeCreate+DESC",
-      "where": "TimeCreate >= timestamp '2026-06-11 17:32:16' AND TimeCreate <= timestamp '2026-07-11 17:32:16'"
+      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=TimeCreate+%3E%3D+timestamp+%272026-06-11+18%3A37%3A11%27+AND+TimeCreate+%3C%3D+timestamp+%272026-07-11+18%3A37%3A11%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=TimeCreate+DESC",
+      "where": "TimeCreate >= timestamp '2026-06-11 18:37:11' AND TimeCreate <= timestamp '2026-07-11 18:37:11'"
     },
     {
       "exceeded_transfer_limit": false,
-      "feature_count": 0,
+      "feature_count": 2,
       "field_tested": "timecreate",
-      "fields_returned": [],
+      "fields_returned": [
+        "Address",
+        "Agency",
+        "Beat",
+        "Comments",
+        "CommonName",
+        "Dispatched",
+        "ESRI_OID",
+        "FAlarms",
+        "Incident",
+        "MapX",
+        "MapY",
+        "OnScene",
+        "PrimaryUnit",
+        "Priority",
+        "SelfInitiated",
+        "TimeCreate",
+        "TimeCreateUTC",
+        "Type",
+        "TypeText",
+        "Zip"
+      ],
       "query_type": "time_filtered_lookback",
-      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=timecreate+%3E%3D+timestamp+%272026-06-11+17%3A32%3A16%27+AND+timecreate+%3C%3D+timestamp+%272026-07-11+17%3A32%3A16%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=timecreate+DESC",
-      "where": "timecreate >= timestamp '2026-06-11 17:32:16' AND timecreate <= timestamp '2026-07-11 17:32:16'"
+      "query_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=timecreate+%3E%3D+timestamp+%272026-06-11+18%3A37%3A11%27+AND+timecreate+%3C%3D+timestamp+%272026-07-11+18%3A37%3A11%27&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=2000&orderByFields=timecreate+DESC",
+      "where": "timecreate >= timestamp '2026-06-11 18:37:11' AND timecreate <= timestamp '2026-07-11 18:37:11'"
     }
   ],
-  "total_time_filtered_records_before_dedupe": 0,
-  "total_time_filtered_unique_records": 0
+  "total_time_filtered_records_before_dedupe": 4,
+  "total_time_filtered_unique_records": 2
 }
