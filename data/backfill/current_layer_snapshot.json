@@ -1,5 +1,5 @@
 {
-  "feature_count": 6,
+  "feature_count": 7,
   "layer_id": 1,
   "reports": [
     {
@@ -8,7 +8,7 @@
         "Address": "I-10 E",
         "Agency": "POLICE",
         "Beat": "3A02",
-        "Comments": "2026-07-11 13:28:48.677: RTCC ADVD FLOODING; 2026-07-11 13:32:16.133: RTCC ADVD VEHS GETTING STUCK TRYING TO PASS; 2026-07-11 13:32:25.170: 330B NTFD; 2026-07-11 13:42:50.823: ADVD VEHS COMING THRU D3 SIDE GETTING STUCK IN FLOOD WATER (NP/230B)",
+        "Comments": "2026-07-11 13:28:48.677: RTCC ADVD FLOODING; 2026-07-11 13:32:16.133: RTCC ADVD VEHS GETTING STUCK TRYING TO PASS; 2026-07-11 13:32:25.170: 330B NTFD; 2026-07-11 13:42:50.823: ADVD VEHS COMING THRU D3 SIDE GETTING STUCK IN FLOOD WATER (NP/230B); 2026-07-11 13:43:38.537: 230B ADVD 2 VEHS STRANDED ON RIVER BOUND SIDE",
         "CommonName": "OVERPASS S CARROLLTON EAST",
         "Dispatched": "Y",
         "ESRI_OID": 28,
@@ -46,7 +46,7 @@
         "Incident": "011009",
         "MapX": -90.09077929,
         "MapY": 29.92969961,
-        "OnScene": "N",
+        "OnScene": "Y",
         "PrimaryUnit": "635B",
         "Priority": "1C",
         "SelfInitiated": "N",
@@ -91,36 +91,6 @@
       "object_id": null,
       "time_create": 1783776980000,
       "title": "21F"
-    },
-    {
-      "address": "ST CLAUDE BRIDGE EASTBOUND",
-      "attributes": {
-        "Address": "ST CLAUDE BRIDGE EASTBOUND",
-        "Agency": "POLICE",
-        "Beat": "5D04",
-        "Comments": "2026-07-11 13:36:42.310: FLOODING AT END OF BRIDGE.... NEAR REYNES AND ST CLAUDE AT MIDDLE OF BRIDGRE AT SISTER/ ST CLAUDE AND POLAND/ ST CLAUDE; 2026-07-11 13:40:37.137: PER RTCC",
-        "CommonName": "ST CLAUDE AV BRIDGE EAST",
-        "Dispatched": "Y",
-        "ESRI_OID": 33,
-        "FAlarms": null,
-        "Incident": "011012",
-        "MapX": -90.02764982,
-        "MapY": 29.96387509,
-        "OnScene": "N",
-        "PrimaryUnit": "547B",
-        "Priority": "1C",
-        "SelfInitiated": "N",
-        "TimeCreate": 1783777002000,
-        "TimeCreateUTC": 1783795002000,
-        "Type": "21F",
-        "TypeText": "FLOOD EVENT",
-        "Zip": "70117"
-      },
-      "lat": 29.963875090000045,
-      "lon": -90.02764981999997,
-      "object_id": null,
-      "time_create": 1783777002000,
-      "title": "ST CLAUDE AV BRIDGE EAST"
     },
     {
       "address": "HOMEDALE ST / CANAL BLVD",
@@ -181,8 +151,68 @@
       "object_id": null,
       "time_create": 1783777276000,
       "title": "21F"
+    },
+    {
+      "address": "AIRLINE HWY / MONROE ST",
+      "attributes": {
+        "Address": "AIRLINE HWY / MONROE ST",
+        "Agency": "POLICE",
+        "Beat": "3A02",
+        "Comments": null,
+        "CommonName": null,
+        "Dispatched": "N",
+        "ESRI_OID": 36,
+        "FAlarms": null,
+        "Incident": "011024",
+        "MapX": -90.11351743,
+        "MapY": 29.97103788,
+        "OnScene": "N",
+        "PrimaryUnit": null,
+        "Priority": "1C",
+        "SelfInitiated": "N",
+        "TimeCreate": 1783777628000,
+        "TimeCreateUTC": 1783795628000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70118"
+      },
+      "lat": 29.97103788000004,
+      "lon": -90.11351742999994,
+      "object_id": null,
+      "time_create": 1783777628000,
+      "title": "21F"
+    },
+    {
+      "address": "CANAL ST / LA SALLE ST",
+      "attributes": {
+        "Address": "CANAL ST / LA SALLE ST",
+        "Agency": "POLICE",
+        "Beat": "8J04",
+        "Comments": "2026-07-11 13:54:55.517: BOTH SIDE OF THE STREET... WATER COMING UP TO TRAACKS.... ALL THE VEHS DRIVING IN THE LEFT LANE",
+        "CommonName": null,
+        "Dispatched": "N",
+        "ESRI_OID": 39,
+        "FAlarms": null,
+        "Incident": "011037",
+        "MapX": -90.0753986,
+        "MapY": 29.95731656,
+        "OnScene": "N",
+        "PrimaryUnit": null,
+        "Priority": "1C",
+        "SelfInitiated": "N",
+        "TimeCreate": 1783778095000,
+        "TimeCreateUTC": 1783796095000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70112"
+      },
+      "lat": 29.957316560000038,
+      "lon": -90.07539859999997,
+      "object_id": null,
+      "time_create": 1783778095000,
+      "title": "21F"
     }
   ],
-  "run_time_utc": "2026-07-11T18:44:27.213487Z",
+  "run_time_utc": "2026-07-11T18:56:18.159731Z",
   "service_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer"
 }
