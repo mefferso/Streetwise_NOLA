@@ -136,7 +136,9 @@ async function loadArchive(date, { fitBounds = false } = {}) {
     const reports = (catalog.events || []).map(normalizeArchivedEvent).filter(Boolean);
     reports.forEach(addReportToMap);
     state.reports = reports;
+    state.layers[0].count = reports.length;
     renderReports();
+    renderLayerControls();
     if (fitBounds) fitToReports(reports);
 
     const activeCount = reports.filter((report) => report.active).length;
@@ -145,7 +147,9 @@ async function loadArchive(date, { fitBounds = false } = {}) {
     els.archiveStatus.textContent = `${reports.length} unique; ${activeCount} still active at the last capture.`;
   } catch (error) {
     state.reports = [];
+    state.layers[0].count = 0;
     renderReports();
+    renderLayerControls();
     setStatus(error.message, true);
     els.updatedLine.textContent = 'Archive: unavailable';
     els.archiveStatus.textContent = error.message;
