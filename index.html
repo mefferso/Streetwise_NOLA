@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Streetwise NOLA Dashboard</title>
+  <title>Déjà Flood</title>
 
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="preconnect" href="https://cartodb-basemaps-a.global.ssl.fastly.net" />
@@ -18,8 +18,8 @@
     <div class="brand">
       <div class="badge">NOLA</div>
       <div>
-        <h1>Streetwise NOLA</h1>
-        <p>Live public flood report viewer</p>
+        <h1>Déjà Flood</h1>
+        <p>Puddle Intelligence for Southeast Louisiana</p>
       </div>
     </div>
 
@@ -29,12 +29,6 @@
         <input id="autoRefreshToggle" type="checkbox" checked />
         <span>Auto-refresh</span>
       </label>
-      <a
-        class="source-link"
-        href="https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1?f=pjson"
-        target="_blank"
-        rel="noreferrer"
-      >Flood layer metadata</a>
     </div>
   </header>
 
@@ -75,15 +69,6 @@
         <div id="reportList" class="report-list"></div>
       </section>
 
-      <section class="panel debug-panel">
-        <details>
-          <summary>Debug / endpoint</summary>
-          <div class="debug-block">
-            <p class="muted">Flood layer query</p>
-            <code id="lastQueryCode">—</code>
-          </div>
-        </details>
-      </section>
     </aside>
 
     <section class="map-wrap">
