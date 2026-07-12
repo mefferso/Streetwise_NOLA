@@ -268,9 +268,8 @@ function addReportToMap(report) {
 function renderPopup(report) {
   const time = formatTime(report.timeValue, report.timeRaw);
   const rows = [
-    `<div class="popup-title">${escapeHtml(report.title)}</div>`,
+    `<div class="popup-title">${escapeHtml(report.address || report.layerLabel)}</div>`,
   ];
-  if (report.address) rows.push(`<div class="popup-row"><strong>Address:</strong> ${escapeHtml(report.address)}</div>`);
   if (time) rows.push(`<div class="popup-row"><strong>Time:</strong> ${escapeHtml(time)}</div>`);
   if (report.archive) {
     rows.push(`<div class="popup-row"><strong>Status:</strong> ${report.active ? 'Active at last capture' : 'Cleared from live layer'}</div>`);
@@ -296,9 +295,8 @@ function renderReports() {
       <article class="report-card" data-report-id="${escapeHtml(String(report.id))}">
         <div class="report-title">
           <span class="layer-dot" style="background:${report.layerColor}"></span>
-          <span>${escapeHtml(report.title)}</span>
+          <span>${escapeHtml(report.address || report.layerLabel)}</span>
         </div>
-        <div class="report-address">${escapeHtml(report.address || report.layerLabel)}</div>
         <div class="report-time">${escapeHtml(time)}</div>
         ${archiveStatus}
         ${extra ? `<div class="report-extra">${escapeHtml(extra)}</div>` : ''}
