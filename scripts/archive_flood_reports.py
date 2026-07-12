@@ -21,6 +21,7 @@ OUT_DIR = Path("data")
 ARCHIVE_DIR = OUT_DIR / "archive"
 EVENTS_DIR = OUT_DIR / "events"
 LATEST_PATH = OUT_DIR / "latest_flood_reports.json"
+HEARTBEAT_INTERVAL_SECONDS = 6 * 60 * 60
 
 
 def build_query_url() -> str:
@@ -114,7 +115,10 @@ def main() -> int:
     local_date = run_time.astimezone(LOCAL_ZONE).date().isoformat()
     query_url = build_query_url()
     features = fetch_json(query_url).get("features") or []
-    reports = [normalize_feature(feature) for feature in features]
+    reports = sorted(
+        (normalize_feature(feature) for feature in features),
+        key=lambda report: report["event_id"],
+    )
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
@@ -129,13 +133,30 @@ def main() -> int:
         "feature_count": len(reports),
         "reports": reports,
     }
-    LATEST_PATH.write_text(json.dumps(snapshot, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    previous_snapshot = load_json(LATEST_PATH, {})
+    previous_reports = previous_snapshot.get("reports")
+    previous_run_raw = previous_snapshot.get("run_time_utc")
+    try:
+        previous_run = datetime.fromisoformat(previous_run_raw.replace("Z", "+00:00")) if previous_run_raw else None
+    except (TypeError, ValueError):
+        previous_run = None
 
-    daily_snapshot_path = ARCHIVE_DIR / f"{local_date}.jsonl"
-    with daily_snapshot_path.open("a", encoding="utf-8") as handle:
-        handle.write(json.dumps(snapshot, sort_keys=True) + "\n")
+    reports_changed = previous_reports != reports
+    new_local_day = previous_snapshot.get("local_date") != local_date
+    heartbeat_due = (
+        previous_run is None
+        or (run_time - previous_run).total_seconds() >= HEARTBEAT_INTERVAL_SECONDS
+    )
+    capture_snapshot = reports_changed or new_local_day or heartbeat_due
+
+    if capture_snapshot:
+        LATEST_PATH.write_text(json.dumps(snapshot, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        daily_snapshot_path = ARCHIVE_DIR / f"{local_date}.jsonl"
+        with daily_snapshot_path.open("a", encoding="utf-8") as handle:
+            handle.write(json.dumps(snapshot, sort_keys=True) + "\n")
 
     events_path = EVENTS_DIR / f"{local_date}.json"
+    catalog_existed = events_path.exists()
     catalog = load_json(events_path, {
         "date": local_date,
         "timezone": "America/Chicago",
@@ -143,6 +164,10 @@ def main() -> int:
         "event_count": 0,
         "events": [],
     })
+    original_catalog = {
+        key: value for key, value in catalog.items()
+        if key != "last_archive_run_utc"
+    }
     events_by_id = {event["event_id"]: event for event in catalog.get("events", [])}
 
     for event in events_by_id.values():
@@ -176,10 +201,18 @@ def main() -> int:
         "active_count": sum(1 for event in events if event.get("active")),
         "events": events,
     })
-    events_path.write_text(json.dumps(catalog, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    updated_catalog = {
+        key: value for key, value in catalog.items()
+        if key != "last_archive_run_utc"
+    }
+    catalog_changed = not catalog_existed or updated_catalog != original_catalog
+    if catalog_changed:
+        events_path.write_text(json.dumps(catalog, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 
-    print(f"Archived {len(reports)} active reports; {len(events)} unique events for {local_date}")
-    print(f"Daily event catalog: {events_path}")
+    snapshot_status = "captured" if capture_snapshot else "unchanged; raw snapshot skipped"
+    catalog_status = "updated" if catalog_changed else "unchanged"
+    print(f"Checked {len(reports)} active reports; raw snapshot {snapshot_status}")
+    print(f"Daily event catalog {catalog_status}: {events_path}")
     return 0
 
 
