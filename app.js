@@ -15,7 +15,6 @@ const state = {
   layers: structuredClone(DEFAULT_LAYERS),
   layerGroups: new Map(),
   reports: [],
-  lastQueryUrl: null,
   timer: null,
   mode: 'live',
   archiveDate: null,
@@ -39,7 +38,6 @@ const els = {
   layerControls: document.getElementById('layerControls'),
   reportCount: document.getElementById('reportCount'),
   reportList: document.getElementById('reportList'),
-  lastQueryCode: document.getElementById('lastQueryCode'),
   liveViewBtn: document.getElementById('liveViewBtn'),
   archiveViewBtn: document.getElementById('archiveViewBtn'),
   archiveControls: document.getElementById('archiveControls'),
@@ -189,8 +187,6 @@ async function queryLayer(layer) {
     outSR: '4326',
   });
   const url = `${SERVICE_URL}/${layer.id}/query?${params.toString()}`;
-  state.lastQueryUrl = url;
-  els.lastQueryCode.textContent = url;
 
   const data = await fetchJson(url);
   if (data.error) throw new Error(data.error.message || JSON.stringify(data.error));
