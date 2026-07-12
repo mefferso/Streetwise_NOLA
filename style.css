@@ -105,8 +105,7 @@ h1 {
   justify-content: flex-end;
 }
 
-button,
-.source-link {
+button {
   border: 1px solid var(--yellow);
   background: var(--yellow);
   color: #171717;
@@ -118,8 +117,7 @@ button,
   font-size: 14px;
 }
 
-button:hover,
-.source-link:hover {
+button:hover {
   filter: brightness(1.07);
 }
 
@@ -371,30 +369,6 @@ button:hover,
   pointer-events: none;
 }
 
-.debug-panel summary {
-  cursor: pointer;
-  color: var(--yellow);
-  font-weight: 900;
-}
-
-.debug-block {
-  margin-top: 10px;
-}
-
-code,
-pre {
-  display: block;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-break: break-word;
-  margin-top: 5px;
-  padding: 9px;
-  border-radius: 10px;
-  background: #111;
-  color: #d8d8d8;
-  border: 1px solid var(--border);
-  font-size: 12px;
-}
 
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
