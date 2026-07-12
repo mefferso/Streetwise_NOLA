@@ -165,7 +165,7 @@ def main() -> int:
         "events": [],
     })
     original_catalog = {
-        key: value for key, value in catalog.items()
+        key: value for key, value in json.loads(json.dumps(catalog)).items()
         if key != "last_archive_run_utc"
     }
     events_by_id = {event["event_id"]: event for event in catalog.get("events", [])}
