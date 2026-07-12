@@ -1,6 +1,6 @@
-# Streetwise NOLA
+# Déjà Flood
 
-A lightweight live dashboard for New Orleans Streetwise flood reports.
+Puddle Intelligence for Southeast Louisiana — a lightweight live and archived dashboard for New Orleans Streetwise flood reports.
 
 This project is a static web app that queries the public Streetwise ArcGIS REST service and plots active reported street flooding on a Leaflet map.
 
@@ -11,7 +11,6 @@ This project is a static web app that queries the public Streetwise ArcGIS REST 
 - Leaflet map with clickable flood report markers
 - Side panel with report cards and timestamps
 - Manual refresh and optional auto-refresh
-- Service metadata/debug panel for digging into available layers and fields
 - Optional GitHub Actions archive of active flood reports
 
 ## Known data source
