@@ -37,7 +37,7 @@ In this app, layer queries use `outFields=*` and request `outSR=4326` so coordin
 
 ## Archive
 
-The repo includes a GitHub Actions workflow that can archive the current active flood reports every 15 minutes.
+The repo includes a GitHub Actions workflow that checks the current active flood reports every 10 minutes. Raw snapshots are saved only when the report set changes, at the start of a new local day, or as a six-hour heartbeat. This avoids storing identical data 144 times per day while preserving a record that the feed was still being checked.
 
 Workflow:
 
