@@ -1,5 +1,5 @@
 {
-  "active_count": 3,
+  "active_count": 0,
   "date": "2026-07-11",
   "event_count": 50,
   "events": [
@@ -892,7 +892,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "100 N SOLOMON ST",
       "attributes": {
         "Address": "100 N SOLOMON ST",
@@ -966,7 +966,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "WISNER BLVD / DE SAIX BLVD (3I06)",
       "attributes": {
         "Address": "WISNER BLVD / DE SAIX BLVD (3I06)",
@@ -1817,7 +1817,7 @@
       "title": "21F"
     },
     {
-      "active": true,
+      "active": false,
       "address": "I-10 E",
       "attributes": {
         "Address": "I-10 E",
@@ -1854,6 +1854,6 @@
       "title": "OVERPASS S CARROLLTON EAST"
     }
   ],
-  "last_archive_run_utc": "2026-07-12T00:09:42.782598Z",
+  "last_archive_run_utc": "2026-07-12T03:57:41.748277Z",
   "timezone": "America/Chicago"
 }
