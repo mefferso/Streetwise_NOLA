@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Archive Streetwise NOLA flood reports from the current City GIS service.
+"""Archive New Orleans CAD flood reports from the City's Rainwater service.
 
-The original eocgis Streetwise_Live service stopped returning flood features after
-July 11, 2026 while still returning successful/empty responses.  Streetwise now
-publishes flood data from the City's Staging/Flood_Events MapServer.  This
-archiver uses the 48-hour layer for reliable near-real-time capture and performs
-a daily sync from the historic layer so short-lived events are not lost.
+The original Streetwise_Live flood layer stopped returning features after July
+11, 2026, and the replacement Staging/Flood_Events layers did not contain newer
+records.  The Rainwater/Flooding MapServer exposes live, last-24-hour, and
+all-time 21F layers.  Poll the first two frequently and reconcile recent history
+daily so short-lived events are not lost.
 """
 
 from __future__ import annotations
@@ -22,10 +22,10 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
-SERVICE_URL = "https://gis.nola.gov/arcgis/rest/services/Staging/Flood_Events/MapServer"
-LIVE_LAYER_ID = 1          # 21 F - Last 4 hours
-RECENT_LAYER_ID = 3        # 21 F - Last 48 hours
-HISTORIC_LAYER_ID = 4      # 21 F - Historic Flood Incidents
+SERVICE_URL = "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer"
+LIVE_LAYER_ID = 1          # Flooded Streets (Live 21F)
+RECENT_LAYER_ID = 2        # 21F Last 24 Hours
+HISTORIC_LAYER_ID = 3      # 21F Historical All Time
 LOCAL_ZONE = ZoneInfo("America/Chicago")
 OUT_DIR = Path("data")
 ARCHIVE_DIR = OUT_DIR / "archive"
@@ -53,12 +53,15 @@ def build_query_url(layer_id: int, *, offset: int = 0) -> str:
         "outSR": "4326",
         "resultOffset": str(offset),
         "resultRecordCount": str(PAGE_SIZE),
+        # The historical view contains repeated OIDs. A stable secondary sort
+        # makes offset pagination deterministic even when the view is imperfect.
+        "orderByFields": "TimeCreate ASC,ESRI_OID ASC",
     }
     return f"{SERVICE_URL}/{layer_id}/query?{urllib.parse.urlencode(params)}"
 
 
 def fetch_json(url: str) -> dict[str, Any]:
-    request = urllib.request.Request(url, headers={"User-Agent": "Streetwise-NOLA-Archive/3.0"})
+    request = urllib.request.Request(url, headers={"User-Agent": "Streetwise-NOLA-Archive/4.0"})
     with urllib.request.urlopen(request, timeout=45) as response:
         data = json.loads(response.read().decode("utf-8"))
     if "error" in data:
@@ -105,12 +108,17 @@ def first_present(attrs: dict[str, Any], keys: list[str]) -> Any:
     return None
 
 
-def parse_local_datetime(value: Any) -> datetime | None:
+def parse_local_datetime(value: Any, *, value_is_utc: bool = False) -> datetime | None:
     if value in (None, ""):
         return None
     if isinstance(value, (int, float)):
         seconds = float(value) / 1000 if float(value) > 10_000_000_000 else float(value)
-        return datetime.fromtimestamp(seconds, timezone.utc).astimezone(LOCAL_ZONE)
+        parsed = datetime.fromtimestamp(seconds, timezone.utc)
+        if value_is_utc:
+            return parsed.astimezone(LOCAL_ZONE)
+        # City CAD's TimeCreate is a New Orleans wall clock serialized as if it
+        # were UTC. Preserve the displayed clock fields, then attach the zone.
+        return parsed.replace(tzinfo=None).replace(tzinfo=LOCAL_ZONE)
 
     text = str(value).strip()
     if not text:
@@ -121,6 +129,8 @@ def parse_local_datetime(value: Any) -> datetime | None:
         parsed = datetime.fromisoformat(text.replace("Z", "+00:00"))
         if parsed.tzinfo is None:
             parsed = parsed.replace(tzinfo=LOCAL_ZONE)
+        elif not value_is_utc:
+            parsed = parsed.replace(tzinfo=None).replace(tzinfo=LOCAL_ZONE)
         return parsed.astimezone(LOCAL_ZONE)
     except ValueError:
         pass
@@ -156,16 +166,23 @@ def event_datetime(attrs: dict[str, Any]) -> datetime | None:
         "TimeCreateUTC", "TimeCreate", "OpenedDateTime", "openedDateTime",
         "TimeClosed", "closedDateTime", "ClosedDateTime",
     ):
-        parsed = parse_local_datetime(attrs.get(key))
+        parsed = parse_local_datetime(attrs.get(key), value_is_utc=(key == "TimeCreateUTC"))
         if parsed:
             return parsed
     return None
 
 
+def local_wall_clock_epoch_ms(when: datetime) -> int:
+    """Serialize local clock fields in the same UTC-shaped form as City CAD."""
+    wall_clock = when.astimezone(LOCAL_ZONE).replace(tzinfo=timezone.utc)
+    return int(wall_clock.timestamp() * 1000)
+
+
 def stable_event_id(attrs: dict[str, Any], address: Any, when: datetime | None) -> str:
     incident = first_present(attrs, ["Incident", "incident", "CaseRef", "caseRef"])
     if incident:
-        return f"incident-{incident}"
+        local_date = when.strftime("%Y%m%d") if when else "unknown-date"
+        return f"incident-{local_date}-{incident}"
     seed = "|".join([
         str(address or "").strip().upper(),
         when.isoformat() if when else "",
@@ -183,20 +200,48 @@ def normalize_feature(feature: dict[str, Any], source_layer: int) -> dict[str, A
     address = first_present(attrs, ["Address", "address", "Location", "location", "Street", "Block"])
     when = event_datetime(attrs)
     title = first_present(attrs, ["CommonName", "Title", "TypeText", "Type", "Description", "Address"])
+    raw_time_create = first_present(attrs, ["TimeCreate", "timecreate"])
+    raw_time_create_utc = first_present(attrs, ["TimeCreateUTC", "timecreateutc"])
     return {
         "event_id": stable_event_id(attrs, address, when),
         "incident": first_present(attrs, ["Incident", "incident", "CaseRef"]),
         "object_id": first_present(attrs, ["OBJECTID", "ESRI_OID", "ObjectId", "objectid", "FID"]),
         "title": title,
         "address": address,
-        "time_create": int(when.timestamp() * 1000) if when else None,
-        "time_create_utc": int(when.astimezone(timezone.utc).timestamp() * 1000) if when else None,
+        "time_create": (
+            raw_time_create
+            if raw_time_create is not None
+            else (local_wall_clock_epoch_ms(when) if when else None)
+        ),
+        "time_create_utc": (
+            raw_time_create_utc
+            if raw_time_create_utc is not None
+            else (int(when.astimezone(timezone.utc).timestamp() * 1000) if when else None)
+        ),
         "event_time_local": when.isoformat() if when else None,
         "lat": lat,
         "lon": lon,
         "attributes": attrs,
         "source_layer": source_layer,
     }
+
+
+def deduplicate_reports(reports: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Collapse repeated rows from the City's all-time database view."""
+    by_id: dict[str, dict[str, Any]] = {}
+    for report in reports:
+        event_id = report["event_id"]
+        existing = by_id.get(event_id)
+        if existing is None:
+            by_id[event_id] = report
+            continue
+        existing_score = sum(
+            value not in (None, "") for value in existing.get("attributes", {}).values()
+        )
+        report_score = sum(value not in (None, "") for value in report.get("attributes", {}).values())
+        if report_score > existing_score:
+            by_id[event_id] = report
+    return list(by_id.values())
 
 
 def load_json(path: Path, default: dict[str, Any]) -> dict[str, Any]:
@@ -210,6 +255,8 @@ def load_json(path: Path, default: dict[str, Any]) -> dict[str, Any]:
 
 def historic_sync_due(run_time: datetime) -> bool:
     state = load_json(HISTORIC_STATE_PATH, {})
+    if state.get("service_url") != SERVICE_URL or state.get("layer_id") != HISTORIC_LAYER_ID:
+        return True
     raw = state.get("last_success_utc")
     if not raw:
         return True
@@ -241,8 +288,21 @@ def merge_catalog_event(
     before = json.dumps(catalog, sort_keys=True)
     events_by_id = {event.get("event_id"): event for event in catalog.get("events", []) if event.get("event_id")}
 
-    event_id = report["event_id"]
+    incoming_event_id = report["event_id"]
+    event_id = incoming_event_id
     existing = events_by_id.get(event_id)
+    # Existing archives used incident-only IDs. Reuse an old ID when it is the
+    # same incident on the same daily catalog, preventing duplicates during the
+    # transition to date-qualified IDs.
+    if existing is None and report.get("incident"):
+        existing = next(
+            (event for event in events_by_id.values() if event.get("incident") == report.get("incident")),
+            None,
+        )
+        if existing and existing.get("event_id"):
+            event_id = existing["event_id"]
+            report = {**report, "event_id": event_id}
+    is_active = incoming_event_id in active_ids or event_id in active_ids
     first_seen = existing.get("first_seen_utc") if existing else None
     if not first_seen:
         first_seen = report.get("event_time_local") or run_iso
@@ -251,9 +311,9 @@ def merge_catalog_event(
     events_by_id[event_id] = {
         **report,
         "first_seen_utc": first_seen,
-        "last_seen_utc": run_iso if event_id in active_ids else (existing.get("last_seen_utc") if existing else (report.get("event_time_local") or run_iso)),
+        "last_seen_utc": run_iso if is_active else (existing.get("last_seen_utc") if existing else (report.get("event_time_local") or run_iso)),
         "observations": observations,
-        "active": event_id in active_ids,
+        "active": is_active,
     }
 
     events = sorted(
@@ -304,12 +364,16 @@ def main() -> int:
 
     live_features = fetch_layer(LIVE_LAYER_ID)
     recent_features = fetch_layer(RECENT_LAYER_ID)
-    live_reports = [normalize_feature(feature, LIVE_LAYER_ID) for feature in live_features]
-    recent_reports = [normalize_feature(feature, RECENT_LAYER_ID) for feature in recent_features]
+    live_reports = deduplicate_reports(
+        [normalize_feature(feature, LIVE_LAYER_ID) for feature in live_features]
+    )
+    recent_reports = deduplicate_reports(
+        [normalize_feature(feature, RECENT_LAYER_ID) for feature in recent_features]
+    )
     active_ids = {report["event_id"] for report in live_reports}
 
-    # Current snapshot is based on the 48-hour layer.  This is deliberately more
-    # forgiving than the old "active only" source and protects against short events.
+    # Current snapshot is based on the 24-hour layer. This is deliberately more
+    # forgiving than the live-only source and protects against short events.
     reports = sorted(recent_reports, key=lambda report: report.get("time_create_utc") or 0, reverse=True)
     snapshot = {
         "run_time_utc": run_iso,
@@ -349,7 +413,9 @@ def main() -> int:
     historic_count = 0
     if historic_sync_due(run_time):
         historic_features = fetch_layer(HISTORIC_LAYER_ID)
-        historic_reports = [normalize_feature(feature, HISTORIC_LAYER_ID) for feature in historic_features]
+        historic_reports = deduplicate_reports(
+            [normalize_feature(feature, HISTORIC_LAYER_ID) for feature in historic_features]
+        )
         cutoff = run_time.astimezone(LOCAL_ZONE) - timedelta(days=HISTORIC_LOOKBACK_DAYS)
         for report in historic_reports:
             when = parse_local_datetime(report.get("event_time_local"))
@@ -371,8 +437,8 @@ def main() -> int:
 
     rebuild_index()
     snapshot_status = "captured" if capture_snapshot else "unchanged; raw snapshot skipped"
-    print(f"Live 4-hour records: {len(live_reports)}")
-    print(f"Recent 48-hour records: {len(recent_reports)}; raw snapshot {snapshot_status}")
+    print(f"Live 21F records: {len(live_reports)}")
+    print(f"Recent 24-hour records: {len(recent_reports)}; raw snapshot {snapshot_status}")
     if historic_count:
         print(f"Historic sync considered {historic_count} recent records")
     print(f"Event catalogs changed for {len(changed_dates)} date(s)")

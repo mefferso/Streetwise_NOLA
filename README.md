@@ -2,7 +2,7 @@
 
 Puddle Intelligence for Southeast Louisiana — a lightweight live and archived dashboard for New Orleans Streetwise flood reports.
 
-This project is a static web app that queries the public Streetwise ArcGIS REST service and plots active reported street flooding on a Leaflet map.
+This project is a static web app that queries the City of New Orleans' public 21F ArcGIS service and plots active reported street flooding on a Leaflet map.
 
 ## Current v0 features
 
@@ -13,31 +13,47 @@ This project is a static web app that queries the public Streetwise ArcGIS REST 
 - Manual refresh and optional auto-refresh
 - Optional GitHub Actions archive of active flood reports
 
-## Known data source
+## Current data source
 
 Base service:
 
 ```text
-https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer
+https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer
 ```
 
-Known reported flooding layer:
+Layers used by the app and archive:
 
 ```text
-MapServer/1
+MapServer/1  Flooded Streets (Live 21F)
+MapServer/2  21F Last 24 Hours
+MapServer/3  21F Historical All Time
 ```
 
-Known working query discovered from Streetwise:
+Example live query:
 
 ```text
-https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer/1/query?f=json&where=1%3D1&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=Address%2CCommonName%2CTimeCreate&outSR=102100
+https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer/1/query?f=json&where=1%3D1&returnGeometry=true&outFields=%2A&outSR=4326
 ```
 
-In this app, layer queries use `outFields=*` and request `outSR=4326` so coordinates can be plotted directly as latitude/longitude when the service supports it.
+The old `Streetwise/Streetwise_Live/MapServer/1` source stopped returning flood
+features after July 11, 2026 while its traffic layer remained live. The temporary
+`Staging/Flood_Events` source also had no records after that date. A September
+2026 forensic review found the separate `Rainwater/Flooding` service, whose
+all-time layer contains one publicly recoverable post-cutoff report from
+September 4, 2026. The archive now uses that service for live capture and daily
+historical reconciliation.
+
+City CAD's `TimeCreate` field is a New Orleans wall clock serialized in a
+UTC-shaped value. The archiver preserves that convention and derives true UTC
+when `TimeCreateUTC` is absent.
 
 ## Archive
 
-The repo includes a GitHub Actions workflow that checks the current active flood reports every 10 minutes. Raw snapshots are saved only when the report set changes, at the start of a new local day, or as a six-hour heartbeat. This avoids storing identical data 144 times per day while preserving a record that the feed was still being checked.
+The repo includes a GitHub Actions workflow that checks the live and last-24-hour
+flood layers every 10 minutes. Raw snapshots are saved only when the report set
+changes, at the start of a new local day, or as a six-hour heartbeat. A daily
+reconciliation against the all-time layer catches short-lived events that a
+scheduled poll may miss.
 
 Workflow:
 
@@ -56,9 +72,13 @@ Generated files after the workflow runs:
 ```text
 data/latest_flood_reports.json
 data/archive/YYYY-MM-DD.jsonl
+data/events/YYYY-MM-DD.json
+data/archive_index.json
 ```
 
-Important: this archive only captures whatever the public Streetwise flood layer returns at each run. It is not a historical backfill and it is not raw Hyfi sensor telemetry unless that data eventually appears in the public layer.
+Important: this archive captures only what the public City layers publish. It is
+not raw HYFI/underpass sensor telemetry, and the public historical layer does not
+contain most 21F reports missing between July 12 and September 11, 2026.
 
 ## Files
 
@@ -104,8 +124,8 @@ The workflow is already committed. Make sure Actions are enabled for the repo. Y
 
 ## Next targets
 
-- Confirm every MapServer layer from the service metadata endpoint
-- Search for hidden or separate Hyfi/raw water sensor feeds
+- Monitor the Rainwater history layer for delayed City backfills
+- Request an authoritative 21F export from the City's CAD/GIS administrators for the remaining July 12–present gap
 - Add hydrographs if sensor time-series data becomes available
 - Add optional rainfall/radar/QPE overlays later
 

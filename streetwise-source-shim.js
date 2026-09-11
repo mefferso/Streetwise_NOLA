@@ -1,10 +1,8 @@
-// Compatibility shim for the Streetwise source migration in July 2026.
-// app.js originally targeted eocgis.nola.gov:6443/Streetwise_Live, which now
-// returns successful but empty flood-layer responses.  Redirect those requests
-// to the City's current Flood_Events service without duplicating app logic.
+// Compatibility shim for cached app.js copies that still target Streetwise_Live.
+// Redirect those requests to the City's Rainwater 21F service.
 (() => {
   const LEGACY = 'https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer';
-  const CURRENT = 'https://gis.nola.gov/arcgis/rest/services/Staging/Flood_Events/MapServer';
+  const CURRENT = 'https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer';
   const nativeFetch = window.fetch.bind(window);
 
   window.fetch = (input, init) => {

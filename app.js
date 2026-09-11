@@ -1,4 +1,4 @@
-const SERVICE_URL = 'https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer';
+const SERVICE_URL = 'https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer';
 const AUTO_REFRESH_MS = 120_000;
 
 const DEFAULT_LAYERS = [
@@ -73,7 +73,7 @@ async function refreshAll({ fitBounds = false } = {}) {
     await loadArchive(els.archiveDate.value, { fitBounds });
     return;
   }
-  setStatus('Loading Streetwise flood layer…');
+  setStatus('Loading City 21F flood layer…');
   clearMap();
 
   try {
@@ -97,7 +97,7 @@ async function refreshAll({ fitBounds = false } = {}) {
     const activeText = `${reports.length} active flood report${reports.length === 1 ? '' : 's'}`;
     if (errors.length) {
       setStatus(`${activeText}; ${errors.length} layer error${errors.length === 1 ? '' : 's'}`, true);
-      console.warn('Streetwise layer errors:', errors);
+      console.warn('City flood layer errors:', errors);
     } else {
       setStatus(activeText);
     }
@@ -321,7 +321,7 @@ function renderLayerControls() {
         <input type="checkbox" data-layer-id="${layer.id}" ${layer.enabled ? 'checked' : ''} />
         <span>
           <span class="layer-name">${escapeHtml(layer.label)}</span>
-          <span class="layer-meta">Streetwise MapServer/${layer.id}</span>
+          <span class="layer-meta">Rainwater MapServer/${layer.id}</span>
         </span>
         <span class="layer-count">${count}</span>
       </label>`;

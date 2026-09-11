@@ -11,7 +11,9 @@ permissions:
   contents: write
 
 concurrency:
-  group: streetwise-flood-backfill
+  # Serialize with the scheduled archiver because both workflows update the
+  # daily catalogs and archive index on main.
+  group: streetwise-flood-archive
   cancel-in-progress: false
 
 jobs:

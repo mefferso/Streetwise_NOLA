@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""One-shot historical backfill for Streetwise NOLA flood incidents.
+"""One-shot historical backfill for New Orleans 21F flood incidents.
 
-Pull the City's Historic Flood Incidents layer and rebuild daily event catalogs
-from 2026-07-12 forward. This is intentionally separate from the normal poller
-so a missed-source period can be repaired immediately and repeatably.
+Pull the City Rainwater service's all-time 21F layer and rebuild daily event
+catalogs from 2026-07-12 forward. This is intentionally separate from the normal
+poller so a missed-source period can be repaired immediately and repeatably.
 """
 
 from __future__ import annotations
@@ -14,9 +14,11 @@ from zoneinfo import ZoneInfo
 
 from archive_flood_reports import (
     HISTORIC_LAYER_ID,
+    SERVICE_URL,
     EVENTS_DIR,
     LOCAL_ZONE,
     fetch_layer,
+    deduplicate_reports,
     normalize_feature,
     parse_local_datetime,
     merge_catalog_event,
@@ -34,7 +36,9 @@ def main() -> int:
     EVENTS_DIR.mkdir(parents=True, exist_ok=True)
 
     features = fetch_layer(HISTORIC_LAYER_ID)
-    reports = [normalize_feature(feature, HISTORIC_LAYER_ID) for feature in features]
+    reports = deduplicate_reports(
+        [normalize_feature(feature, HISTORIC_LAYER_ID) for feature in features]
+    )
 
     considered = 0
     skipped_old = 0
@@ -68,7 +72,9 @@ def main() -> int:
     summary = {
         'run_time_utc': run_iso,
         'source_layer': HISTORIC_LAYER_ID,
+        'service_url': SERVICE_URL,
         'source_feature_count': len(features),
+        'source_unique_event_count': len(reports),
         'start_date_local': START_DATE.date().isoformat(),
         'records_backfilled_or_checked': considered,
         'records_skipped_before_start': skipped_old,
