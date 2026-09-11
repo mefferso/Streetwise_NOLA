@@ -6,7 +6,7 @@
   <title>Déjà Flood</title>
 
   <link rel="preconnect" href="https://unpkg.com" />
-  <link rel="preconnect" href="https://cartodb-basemaps-a.global.ssl.fastly.net" />
+  <link rel="preconnect" href="https://server.arcgisonline.com" />
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -80,6 +80,27 @@
   </main>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    // CARTO's formerly keyless dark basemap now returns an "API KEY REQUIRED"
+    // watermark. Keep the app's existing Leaflet code untouched, but transparently
+    // swap that retired endpoint for Esri's public dark-gray canvas tiles.
+    (() => {
+      const originalTileLayer = L.tileLayer;
+      L.tileLayer = function patchedTileLayer(url, options) {
+        if (typeof url === 'string' && url.includes('basemaps.cartocdn.com/dark_all')) {
+          return originalTileLayer(
+            'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',
+            {
+              ...(options || {}),
+              maxZoom: 16,
+              attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+            },
+          );
+        }
+        return originalTileLayer(url, options);
+      };
+    })();
+  </script>
   <script src="app.js"></script>
 </body>
 </html>
