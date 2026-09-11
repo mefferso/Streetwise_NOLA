@@ -1,0 +1,46 @@
+name: Temporary ArcGIS forensic probe
+
+on:
+  push:
+    branches:
+      - forensic-july12-recovery-20260911
+    paths:
+      - scripts/forensic_arcgis_probe.py
+      - .github/workflows/forensic-arcgis-probe.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: streetwise-forensic-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out diagnostic branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run read-only public data probe
+        run: python scripts/forensic_arcgis_probe.py --output forensics/arcgis_probe.json
+
+      - name: Commit diagnostic evidence
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forensics/arcgis_probe.json
+          if git diff --cached --quiet; then
+            echo "No diagnostic evidence changed."
+            exit 0
+          fi
+          git commit -m "Record ArcGIS forensic probe results"
+          git push
