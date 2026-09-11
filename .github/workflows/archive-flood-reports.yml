@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/archive_flood_reports.py'
+      - '.github/workflows/archive-flood-reports.yml'
 
 permissions:
   contents: write
