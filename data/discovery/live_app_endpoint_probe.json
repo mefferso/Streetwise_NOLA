@@ -1,0 +1,330 @@
+{
+  "endpoints": [
+    {
+      "body_preview": "{\n \"error\": {\n  \"code\": 404,\n  \"message\": \"Service 21f_12hours/MapServer not found \",\n  \"details\": []\n }\n}",
+      "content_type": "text/plain;charset=UTF-8",
+      "error": {
+        "code": 404,
+        "details": [],
+        "message": "Service 21f_12hours/MapServer not found "
+      },
+      "json_keys": [
+        "error"
+      ],
+      "name": "legacy_21f_12hours",
+      "status": 200,
+      "url": "http://cop.nola.gov:6080/arcgis/rest/services/21f_12hours/MapServer/0"
+    },
+    {
+      "body_preview": "{\n \"error\": {\n  \"code\": 404,\n  \"message\": \"Service Traffic_Incident/MapServer not found \",\n  \"details\": []\n }\n}",
+      "content_type": "text/plain;charset=UTF-8",
+      "error": {
+        "code": 404,
+        "details": [],
+        "message": "Service Traffic_Incident/MapServer not found "
+      },
+      "json_keys": [
+        "error"
+      ],
+      "name": "legacy_traffic",
+      "status": 200,
+      "url": "http://cop.nola.gov:6080/arcgis/rest/services/Traffic_Incident/MapServer/0"
+    },
+    {
+      "body_preview": "{\n \"currentVersion\": 10.91,\n \"id\": 0,\n \"name\": \"Flood_Sensor\",\n \"type\": \"Feature Layer\",\n \"description\": \"\",\n \"geometryType\": \"esriGeometryPoint\",\n \"sourceSpatialReference\": {\n  \"wkid\": 4326,\n  \"latestWkid\": 4326\n },\n \"copyrightText\": \"\",\n \"parentLayer\": null,\n \"subLayers\": [],\n \"minScale\": 0,\n \"maxScale\": 0,\n \"drawingInfo\": {\n  \"renderer\": {\n   \"type\": \"simple\",\n   \"symbol\": {\n    \"type\": \"esriSMS\",\n    \"style\": \"esriSMSCircle\",\n    \"color\": [\n     51,\n     145,\n     0,\n     255\n    ],\n    \"size\": 4,\n    \"angle\": 0,\n    \"xoffset\": 0,\n    \"yoffset\": 0,\n    \"outline\": {\n     \"color\": [\n      0,\n      0,\n      0,\n      255\n     ],\n     \"width\": 1\n    }\n   },\n   \"label\": \"\",\n   \"description\": \"\"\n  },\n  \"transparency\": 0,\n  \"labelingInfo\": null\n },\n \"defaultVisibility\": true,\n \"extent\": {\n  \"xmin\": -90.130259,\n  \"ymin\": 29.908002,\n  \"xmax\": -89.9721159,\n  \"ymax\": 30.04089375,\n  \"spatialReference\": {\n   \"wkid\": 4326,\n   \"latestWkid\": 4326\n  }\n },\n \"hasAttachments\": false,\n \"htmlPopupType\": \"esriServerHTMLPopupTypeAsHTMLText\",\n \"displayField\": \"site_name\",\n \"typeIdField\": null,\n \"subtypeFieldName\": null,\n \"subtypeField\": null,\n \"defaultSubtypeCode\": null,\n \"fields\": [\n  {\n   \"name\": \"timestamp\",\n   \"type\": \"esriFieldTypeDate\",\n   \"alias\": \"timestamp\",\n   \"length\": 8,\n   \"domain\": null\n  },\n  {\n   \"name\": \"site\",\n   \"type\": \"esriFieldTypeString\",\n   \"alias\": \"site\",\n   \"length\": 25,\n   \"domain\": null\n  },\n  {\n   \"name\": \"site_name\",\n   \"type\": \"esriFieldTypeString\",\n   \"alias\": \"sit",
+      "content_type": "text/plain;charset=UTF-8",
+      "displayField": "site_name",
+      "fields": [
+        {
+          "alias": "timestamp",
+          "domain": null,
+          "length": 8,
+          "name": "timestamp",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "alias": "site",
+          "domain": null,
+          "length": 25,
+          "name": "site",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "site_name",
+          "domain": null,
+          "length": 50,
+          "name": "site_name",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "water_level",
+          "domain": null,
+          "name": "water_level",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "bed_height",
+          "domain": null,
+          "name": "bed_height",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "sensor_height",
+          "domain": null,
+          "name": "sensor_height",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "site_status",
+          "domain": null,
+          "length": 50,
+          "name": "site_status",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "mount_type",
+          "domain": null,
+          "length": 25,
+          "name": "mount_type",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "x",
+          "domain": null,
+          "name": "x",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "y",
+          "domain": null,
+          "name": "y",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "longitude",
+          "domain": null,
+          "name": "longitude",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "latitude",
+          "domain": null,
+          "name": "latitude",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "ESRI_OID",
+          "domain": null,
+          "name": "ESRI_OID",
+          "type": "esriFieldTypeOID"
+        },
+        {
+          "alias": "Shape",
+          "domain": null,
+          "name": "Shape",
+          "type": "esriFieldTypeGeometry"
+        }
+      ],
+      "geometryType": "esriGeometryPoint",
+      "json_keys": [
+        "advancedQueryCapabilities",
+        "canModifyLayer",
+        "canScaleSymbols",
+        "capabilities",
+        "copyrightText",
+        "currentVersion",
+        "dateFieldsTimeReference",
+        "defaultSubtypeCode",
+        "defaultVisibility",
+        "description",
+        "displayField",
+        "drawingInfo",
+        "extent",
+        "fields",
+        "geometryField",
+        "geometryType",
+        "hasAttachments",
+        "hasLabels",
+        "htmlPopupType",
+        "id",
+        "indexes",
+        "isDataVersioned",
+        "maxRecordCount",
+        "maxScale",
+        "minScale",
+        "name",
+        "ownershipBasedAccessControlForFeatures",
+        "parentLayer",
+        "relationships",
+        "sourceSpatialReference",
+        "subLayers",
+        "subtypeField",
+        "subtypeFieldName",
+        "subtypes",
+        "supportedQueryFormats",
+        "supportsAdvancedQueries",
+        "supportsCoordinatesQuantization",
+        "supportsDatumTransformation",
+        "supportsStatistics",
+        "type",
+        "typeIdField",
+        "useStandardizedQueries"
+      ],
+      "maxRecordCount": 1000,
+      "name": "Flood_Sensor",
+      "query_error": null,
+      "query_exceededTransferLimit": true,
+      "query_feature_count": 50,
+      "query_preview": "{\"displayFieldName\":\"site_name\",\"fieldAliases\":{\"timestamp\":\"timestamp\",\"site\":\"site\",\"site_name\":\"site_name\",\"water_level\":\"water_level\",\"bed_height\":\"bed_height\",\"sensor_height\":\"sensor_height\",\"site_status\":\"site_status\",\"mount_type\":\"mount_type\",\"x\":\"x\",\"y\":\"y\",\"longitude\":\"longitude\",\"latitude\":\"latitude\",\"ESRI_OID\":\"ESRI_OID\"},\"geometryType\":\"esriGeometryPoint\",\"spatialReference\":{\"wkid\":4326,\"latestWkid\":4326},\"fields\":[{\"name\":\"timestamp\",\"type\":\"esriFieldTypeDate\",\"alias\":\"timestamp\",\"length\":8},{\"name\":\"site\",\"type\":\"esriFieldTypeString\",\"alias\":\"site\",\"length\":25},{\"name\":\"site_name\",\"type\":\"esriFieldTypeString\",\"alias\":\"site_name\",\"length\":50},{\"name\":\"water_level\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"water_level\"},{\"name\":\"bed_height\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"bed_height\"},{\"name\":\"sensor_height\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"sensor_height\"},{\"name\":\"site_status\",\"type\":\"esriFieldTypeString\",\"alias\":\"site_status\",\"length\":50},{\"name\":\"mount_type\",\"type\":\"esriFieldTypeString\",\"alias\":\"mount_type\",\"length\":25},{\"name\":\"x\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"x\"},{\"name\":\"y\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"y\"},{\"name\":\"longitude\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"longitude\"},{\"name\":\"latitude\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"latitude\"},{\"name\":\"ESRI_OID\",\"type\":\"esriFieldTypeOID\",\"alias\":\"ESRI_OID\"}],\"features\":[{\"attributes\":{\"timestamp\":1789055102000,\"site\":\"76XFXWRR+8QQJ\",\"site_name\":\"Benefit St and Marigny St\",\"water_level\":null,\"bed_height\":-1.3766,\"sensor_height\":2.6379999999999999,\"site_status\":\"Maintenancerequired\",\"mount_type\":\"WOOD-EX-VR\",\"x\":3684536.5040000002,\"y\":544408.51100000006,\"longitude\":-90.058029000000005,\"latitude\":29.990842000000001,\"ESRI_OID\":3},\"geometry\":{\"x\":-90.058029000000005,\"y\":29.990842000000001}},{\"attributes\":{\"timestamp\":1789121702000,\"site\":\"76XFXVRX+79CP\",\"site_name\":\"25B DPS 7 Upstream\",\"water_level\":null,\"bed_height\":-3.9868999999999999,\"sensor_height\":-1.3707,\"site_status\":\"Offline temporarily\",\"mount_type\":\"CON-EX-HR\",\"x\":3670743.702,\"y\":544203.61100000003,\"longitude\":-90.101604140000006,\"latitude\":29.990693480000001,\"ESRI_OID\":4},\"geometry\":{\"x\":-90.101604140000006,\"y\":29.990693480000001}},{\"attributes\":{\"timestamp\":1789121702000,\"site\":\"76XFWVQW+MH24\",\"site_name\":\"35 Napoleon Ave & Willow St\",\"water_level\":-0.0080985438999999996,\"bed_height\":-1.4419999999999999,\"sensor_height\":2.9460000000000002,\"site_status\":\"Installed\",\"mount_type\":\"WOOD-EX-VR\",\"x\":3670311.943,\"y\":525444.52000000002,\"longitude\":-90.103604000000004,\"latitude\":29.939125000000001,\"ESRI_OID\":5},\"geometry\":{\"x\":-90.103604000000004,\"y\":29.939125000000001}},{\"attributes\":{\"timestamp\":1789121702000,\"site\":\"76XFWVVH+7P4C\",\"site_name\":\"14 Broadway St & Willow St (Audubon)\",\"water_level\":-0.027032758899999999,\"bed_height\":-0.51900000000000002,\"sensor_height\":3.915,\"site_status\":\"Installed\",\"mount_type\":\"WOOD-EX-VR\",\"x\":3664886.2340000002,\"y\":526846.20299999998,\"longitude\":-90.120686849999998,\"latitude\":29.943138170000001,\"ESRI_OID\":6},\"geometry\":{\"x\":-90.120686849999998,\"y\":29.943138170000001}},{\"attributes\":{\"timestamp\":1789121702000,\"site\":\"76XFWVVV+WWW9\",\"site_name\":\"36 Jena St & Galvez St\",\"water_level\":-0.041309916199999998,\"bed_height\":-1.706,\"sensor_height\":3.161,\"site_status\":\"Installed\",\"mount_type\":\"WOOD-EX-VR\",\"x\":3669795.5279999999,\"y\":527524.31900000002,\"longitude\":-90.105164000000002,\"latitude\":29.944859000000001,\"ESRI_OID\":7},\"geometry\":{\"x\":-90.105164000000002,\"y\":29.944859000000001}},{\"attributes\":{\"timestamp\":1789121702000,\"site\":\"76XFWVWP+79R5\",\"site_name\":\"13 S Claiborne & Calhoun St\",\"water_level\":-0.055774280000000002,\"bed_height\":-1.167,\"sensor_height\":3.2789999999999999,\"site_status\":\"Installed\",\"mount_type\":\"WOOD-EX-VR\",\"x\":3666963.5460000001,\"y\":527810.77099999995,\"longitude\":-90.114095829999997,\"latitude\":29.94572981,\"ESRI_OID\":8},\"geometry\":{\"x\":-90.114095829999997,\"y\":29.94572981}},{\"attributes\":{\"timestamp\":1789121702000,\"site\":\"76XFWWW2+7872\",\"site_n",
+      "query_status": 200,
+      "status": 200,
+      "type": "Feature Layer",
+      "url": "https://eocgis.nola.gov/server/rest/services/HYFI/MapServer/0"
+    },
+    {
+      "body_preview": "{\"features\":[]}\n",
+      "content_type": "application/json",
+      "features": [],
+      "json_keys": [
+        "features"
+      ],
+      "name": "flood_alerts",
+      "status": 200,
+      "url": "https://gis.nola.gov/apps/flood_alerts/api/get_alerts"
+    },
+    {
+      "body_preview": "{\n \"currentVersion\": 10.91,\n \"id\": 0,\n \"name\": \"NOHSEPGIS.dbo.Contrail_RealTime_View\",\n \"type\": \"Feature Layer\",\n \"description\": \"\",\n \"geometryType\": \"esriGeometryPoint\",\n \"sourceSpatialReference\": {\n  \"wkid\": 103060,\n  \"latestWkid\": 6479\n },\n \"copyrightText\": \"\",\n \"parentLayer\": null,\n \"subLayers\": [],\n \"minScale\": 0,\n \"maxScale\": 0,\n \"drawingInfo\": {\n  \"renderer\": {\n   \"type\": \"simple\",\n   \"symbol\": {\n    \"type\": \"esriSMS\",\n    \"style\": \"esriSMSCircle\",\n    \"color\": [\n     0,\n     8,\n     156,\n     255\n    ],\n    \"size\": 4,\n    \"angle\": 0,\n    \"xoffset\": 0,\n    \"yoffset\": 0,\n    \"outline\": {\n     \"color\": [\n      0,\n      0,\n      0,\n      255\n     ],\n     \"width\": 1\n    }\n   },\n   \"label\": \"\",\n   \"description\": \"\"\n  },\n  \"transparency\": 0,\n  \"labelingInfo\": null\n },\n \"defaultVisibility\": true,\n \"extent\": {\n  \"xmin\": 3666697.8450452983,\n  \"ymin\": 535409.3266068101,\n  \"xmax\": 3694224.2224071324,\n  \"ymax\": 560021.5162274837,\n  \"spatialReference\": {\n   \"wkid\": 103060,\n   \"latestWkid\": 6479\n  }\n },\n \"hasAttachments\": false,\n \"htmlPopupType\": \"esriServerHTMLPopupTypeAsHTMLText\",\n \"displayField\": \"Site\",\n \"typeIdField\": null,\n \"subtypeFieldName\": null,\n \"subtypeField\": null,\n \"defaultSubtypeCode\": null,\n \"fields\": [\n  {\n   \"name\": \"Site\",\n   \"type\": \"esriFieldTypeString\",\n   \"alias\": \"Site\",\n   \"length\": 254,\n   \"domain\": null\n  },\n  {\n   \"name\": \"Sensor_Key\",\n   \"type\": \"esriFieldTypeString\",\n   \"alias\": \"Sensor_Key\",\n   \"length\": 254,\n   \"domain\": null\n  },\n  {\n   \"name\": \"Shap",
+      "content_type": "text/plain;charset=UTF-8",
+      "displayField": "Site",
+      "fields": [
+        {
+          "alias": "Site",
+          "domain": null,
+          "length": 254,
+          "name": "Site",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Sensor_Key",
+          "domain": null,
+          "length": 254,
+          "name": "Sensor_Key",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "Shape",
+          "domain": null,
+          "name": "Shape",
+          "type": "esriFieldTypeGeometry"
+        },
+        {
+          "alias": "rounded_float_value",
+          "domain": null,
+          "name": "rounded_float_value",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "data_quality",
+          "domain": null,
+          "length": 50,
+          "name": "data_quality",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "reading_time",
+          "domain": null,
+          "length": 8,
+          "name": "reading_time",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "alias": "receive_time",
+          "domain": null,
+          "length": 8,
+          "name": "receive_time",
+          "type": "esriFieldTypeDate"
+        },
+        {
+          "alias": "Latitude",
+          "domain": null,
+          "name": "Latitude",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "Longitude",
+          "domain": null,
+          "name": "Longitude",
+          "type": "esriFieldTypeDouble"
+        },
+        {
+          "alias": "Sensor",
+          "domain": null,
+          "length": 254,
+          "name": "Sensor",
+          "type": "esriFieldTypeString"
+        },
+        {
+          "alias": "ESRI_OID",
+          "domain": null,
+          "name": "ESRI_OID",
+          "type": "esriFieldTypeOID"
+        }
+      ],
+      "geometryType": "esriGeometryPoint",
+      "json_keys": [
+        "advancedQueryCapabilities",
+        "canModifyLayer",
+        "canScaleSymbols",
+        "capabilities",
+        "copyrightText",
+        "currentVersion",
+        "dateFieldsTimeReference",
+        "defaultSubtypeCode",
+        "defaultVisibility",
+        "description",
+        "displayField",
+        "drawingInfo",
+        "extent",
+        "fields",
+        "geometryField",
+        "geometryType",
+        "hasAttachments",
+        "hasLabels",
+        "htmlPopupType",
+        "id",
+        "indexes",
+        "isDataVersioned",
+        "maxRecordCount",
+        "maxScale",
+        "minScale",
+        "name",
+        "ownershipBasedAccessControlForFeatures",
+        "parentLayer",
+        "relationships",
+        "sourceSpatialReference",
+        "subLayers",
+        "subtypeField",
+        "subtypeFieldName",
+        "subtypes",
+        "supportedQueryFormats",
+        "supportsAdvancedQueries",
+        "supportsCoordinatesQuantization",
+        "supportsDatumTransformation",
+        "supportsStatistics",
+        "type",
+        "typeIdField",
+        "useStandardizedQueries"
+      ],
+      "maxRecordCount": 1000,
+      "name": "NOHSEPGIS.dbo.Contrail_RealTime_View",
+      "query_error": null,
+      "query_exceededTransferLimit": null,
+      "query_feature_count": 11,
+      "query_preview": "{\"displayFieldName\":\"Site\",\"fieldAliases\":{\"Site\":\"Site\",\"Sensor_Key\":\"Sensor_Key\",\"rounded_float_value\":\"rounded_float_value\",\"data_quality\":\"data_quality\",\"reading_time\":\"reading_time\",\"receive_time\":\"receive_time\",\"Latitude\":\"Latitude\",\"Longitude\":\"Longitude\",\"Sensor\":\"Sensor\",\"ESRI_OID\":\"ESRI_OID\"},\"geometryType\":\"esriGeometryPoint\",\"spatialReference\":{\"wkid\":4326,\"latestWkid\":4326},\"fields\":[{\"name\":\"Site\",\"type\":\"esriFieldTypeString\",\"alias\":\"Site\",\"length\":254},{\"name\":\"Sensor_Key\",\"type\":\"esriFieldTypeString\",\"alias\":\"Sensor_Key\",\"length\":254},{\"name\":\"rounded_float_value\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"rounded_float_value\"},{\"name\":\"data_quality\",\"type\":\"esriFieldTypeString\",\"alias\":\"data_quality\",\"length\":50},{\"name\":\"reading_time\",\"type\":\"esriFieldTypeDate\",\"alias\":\"reading_time\",\"length\":8},{\"name\":\"receive_time\",\"type\":\"esriFieldTypeDate\",\"alias\":\"receive_time\",\"length\":8},{\"name\":\"Latitude\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"Latitude\"},{\"name\":\"Longitude\",\"type\":\"esriFieldTypeDouble\",\"alias\":\"Longitude\"},{\"name\":\"Sensor\",\"type\":\"esriFieldTypeString\",\"alias\":\"Sensor\",\"length\":254},{\"name\":\"ESRI_OID\",\"type\":\"esriFieldTypeOID\",\"alias\":\"ESRI_OID\"}],\"features\":[{\"attributes\":{\"Site\":\"Broad Master\",\"Sensor_Key\":\"a3f205b7-4c53-4415-a2d0-89c468aab0f1\",\"rounded_float_value\":0.0,\"data_quality\":\"A\",\"reading_time\":1789085729000,\"receive_time\":1789085729000,\"Latitude\":29.98855,\"Longitude\":-90.067035,\"Sensor\":\"Water Level\",\"ESRI_OID\":2},\"geometry\":{\"x\":-90.067040612427405,\"y\":29.988555422061079}},{\"attributes\":{\"Site\":\"Gentilly @ 610\",\"Sensor_Key\":\"cf45d673-69d9-4587-a52d-e572effa3fbf\",\"rounded_float_value\":0.0,\"data_quality\":\"A\",\"reading_time\":1789085757000,\"receive_time\":1789085757000,\"Latitude\":29.990172,\"Longitude\":-90.0716,\"Sensor\":\"Water Level\",\"ESRI_OID\":3},\"geometry\":{\"x\":-90.071605614378257,\"y\":29.990177421751795}},{\"attributes\":{\"Site\":\"Franklin Master\",\"Sensor_Key\":\"91a1f91e-0656-4f15-9353-0434a45757f6\",\"rounded_float_value\":0.0,\"data_quality\":\"A\",\"reading_time\":1789088215000,\"receive_time\":1789088215000,\"Latitude\":29.990929,\"Longitude\":-90.049213,\"Sensor\":\"Water Level\",\"ESRI_OID\":4},\"geometry\":{\"x\":-90.049218608492524,\"y\":29.990934422561288}},{\"attributes\":{\"Site\":\"Marconi Master\",\"Sensor_Key\":\"5e2a4973-bfaf-4b46-adab-7c9a5b71bdf7\",\"rounded_float_value\":0.0,\"data_quality\":\"A\",\"reading_time\":1789090844000,\"receive_time\":1789090844000,\"Latitude\":29.993833,\"Longitude\":-90.100575,\"Sensor\":\"Water Level\",\"ESRI_OID\":5},\"geometry\":{\"x\":-90.100580622604937,\"y\":29.993838421407844}},{\"attributes\":{\"Site\":\"City Park Master\",\"Sensor_Key\":\"0ace9d6c-9db4-4d7d-8e53-75565867c623\",\"rounded_float_value\":0.0,\"data_quality\":\"A\",\"reading_time\":1789114343000,\"receive_time\":1789114343000,\"Latitude\":29.981561,\"Longitude\":-90.11367,\"Sensor\":\"Water Level\",\"ESRI_OID\":6},\"geometry\":{\"x\":-90.113675624684959,\"y\":29.981566418586493}},{\"attributes\":{\"Site\":\"Gentilly @ Peoples Master/West Remote\",\"Sensor_Key\":\"d3fa8f5c-000d-4186-830a-8b10705348c8\",\"rounded_float_value\":0.0,\"data_quality\":\"A\",\"reading_time\":1789117339000,\"receive_time\":1789117339000,\"Latitude\":30.002649,\"Longitude\":-90.0457,\"Sensor\":\"Water Level\",\"ESRI_OID\":1},\"geometry\":{\"x\":-90.045705608058043,\"y\":30.002654425681218}},{\"attributes\":{\"Site\":\"Carrollton Master\",\"Sensor_Key\":\"f82135b6-4dd4-4ce9-9cf3-f0153b28a1e6\",\"rounded_float_value\":0.0,\"data_quality\":\"A\",\"reading_time\":1789120322000,\"receive_time\":1789120322000,\"Latitude\":29.967822,\"Longitude\":-90.10803,\"Sensor\":\"Water Level\",\"ESRI_OID\":11},\"geometry\":{\"x\":-90.108035622627042,\"y\":29.967827416130945}},{\"attributes\":{\"Site\":\"Paris Master\",\"Sensor_Key\":\"59ad18e4-c17d-4dd6-8418-2adb3ee39e01\",\"rounded_float_value\":0.0,\"data_quality\":\"A\",\"reading_time\":1789120650000,\"receive_time\":1789120650000,\"Latitude\":29.990608,\"Longitude\":-90.072837,\"Sensor\":\"Water Level\",\"ESRI_OID\":7},\"geometry\":{\"x\":-90.072842614694551,\"y\":29.990613421608753}},{\"attributes\":{\"Site\":\"Saint Bernard Master\",\"Sensor_Key\":\"099e7415-a2a7-491c-ad27-98a2fe01e67",
+      "query_status": 200,
+      "status": 200,
+      "type": "Feature Layer",
+      "url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/FWS_WaterLevel/MapServer/0"
+    }
+  ]
+}
