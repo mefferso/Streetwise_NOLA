@@ -42,7 +42,7 @@ jobs:
           if [[ -n "$(git status --porcelain data)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/latest_flood_reports.json data/archive/*.jsonl data/events/*.json
+            git add data
             git commit -m "Archive Streetwise flood reports"
             git pull --rebase
             git push
