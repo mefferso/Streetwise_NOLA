@@ -39,8 +39,10 @@ KEYWORDS = (
 
 SERVICE_ROOTS = (
     "https://gis.nola.gov/arcgis/rest/services",
+    "https://maps.nola.gov/server/rest/services",
     "https://eocgis.nola.gov:6443/arcgis/rest/services",
     "https://eocgis.nola.gov/arcgis/rest/services",
+    "https://eocgis.nola.gov/server/rest/services",
 )
 
 KNOWN_SERVICE_URLS = (
@@ -52,6 +54,16 @@ KNOWN_SERVICE_URLS = (
     "https://gis.nola.gov/arcgis/rest/services/Streetwise/Streetwise_Live/FeatureServer",
     "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer",
     "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/FeatureServer",
+    "https://eocgis.nola.gov/server/rest/services/All_Flooding_as_20240201/MapServer",
+    "https://eocgis.nola.gov/server/rest/services/All_Flooding_as_20240201/FeatureServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Traffic_Inc_21_UPASS/MapServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Traffic_Inc_21_UPASS/FeatureServer",
+    "https://gis.nola.gov/arcgis/rest/services/apps/Open311Cases/MapServer",
+    "https://gis.nola.gov/arcgis/rest/services/apps/Open311Cases/FeatureServer",
+    "https://gis.nola.gov/arcgis/rest/services/Infrastructure/Open311Cases/MapServer",
+    "https://gis.nola.gov/arcgis/rest/services/Infrastructure/Open311Cases/FeatureServer",
+    "https://utility.arcgis.com/usrsvcs/servers/74697a2718c34ed999afe232d4e85fb1/rest/services/COP/ActiveCAD/MapServer",
+    "https://utility.arcgis.com/usrsvcs/servers/74697a2718c34ed999afe232d4e85fb1/rest/services/COP/ActiveCAD/FeatureServer",
 )
 
 
