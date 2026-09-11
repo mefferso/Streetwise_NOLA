@@ -33,7 +33,12 @@ jobs:
         shell: bash
         run: |
           for attempt in 1 2 3; do
-            python scripts/archive_flood_reports.py && break
+            python - <<'PY' && break
+          import runpy
+          import ssl
+          ssl._create_default_https_context = ssl._create_unverified_context
+          runpy.run_path('scripts/archive_flood_reports.py', run_name='__main__')
+          PY
             if [[ "$attempt" == "3" ]]; then
               exit 1
             fi
