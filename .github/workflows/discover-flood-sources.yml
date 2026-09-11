@@ -1,0 +1,43 @@
+name: Discover flood data sources
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/discover_flood_sources.py'
+      - '.github/workflows/discover-flood-sources.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Enumerate and inspect public flood-related GIS sources
+        run: python scripts/discover_flood_sources.py
+
+      - name: Commit discovery report
+        shell: bash
+        run: |
+          if [[ -n "$(git status --porcelain data/discovery)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/discovery
+            git commit -m "Record flood-source forensic discovery"
+            git pull --rebase
+            git push
+          else
+            echo "No discovery changes to commit."
+          fi
