@@ -222,8 +222,7 @@
             },
             {
               "field": "closedDateTime",
-              "post_cutoff_error": "The read operation timed out",
-              "stats_error": "The read operation timed out"
+              "post_cutoff_count": 0
             }
           ],
           "errors": [],
@@ -284,7 +283,7 @@
     },
     {
       "errors": [
-        "The read operation timed out"
+        "{\"code\": 500, \"message\": null, \"details\": []}"
       ],
       "layers": [],
       "url": "https://gis.nola.gov/arcgis/rest/services/Staging/Flood_Events/FeatureServer"
@@ -294,9 +293,7 @@
       "layers": [
         {
           "date_fields": [],
-          "errors": [
-            "count: The read operation timed out"
-          ],
+          "errors": [],
           "fields": [
             {
               "name": "OBJECTID",
@@ -344,7 +341,8 @@
             }
           ],
           "id": 0,
-          "name": "wyf_parcels"
+          "name": "wyf_parcels",
+          "total_count": 151233
         }
       ],
       "mapName": "Layers",
@@ -353,7 +351,7 @@
     },
     {
       "errors": [
-        "The read operation timed out"
+        "{\"code\": 500, \"message\": null, \"details\": []}"
       ],
       "layers": [],
       "url": "https://gis.nola.gov/arcgis/rest/services/dev/WhereYaFloodin/FeatureServer"

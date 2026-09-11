@@ -1,0 +1,304 @@
+{
+  "cutoff": "2026-07-12 00:00:00",
+  "services": [
+    {
+      "errors": [],
+      "layers": [
+        {
+          "date_fields": [],
+          "errors": [
+            "count: {\"code\": 400, \"message\": \"Invalid or missing input parameters.\", \"details\": []}"
+          ],
+          "id": 0,
+          "name": "21F",
+          "total_count": null
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeClosed",
+              "post_cutoff_error": "{\"code\": -2147220985, \"message\": \"Failed to execute query.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 1,
+          "name": "21 F - Last 4 hours",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeClosed",
+              "post_cutoff_error": "{\"code\": -2147220985, \"message\": \"Failed to execute query.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 2,
+          "name": "21 F - Last 24 hours",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeClosed",
+              "post_cutoff_error": "{\"code\": -2147220985, \"message\": \"Failed to execute query.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 3,
+          "name": "21 F - Last 48 hours",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeClosed",
+              "max": "2016-01-07 13:53:59",
+              "min": "2013-09-19 00:36:13",
+              "post_cutoff_error": "{\"code\": -2147220985, \"message\": \"Failed to execute query.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 4,
+          "name": "21 F - Historic Flood Incidents ",
+          "total_count": 128
+        },
+        {
+          "date_fields": [],
+          "errors": [
+            "count: {\"code\": 400, \"message\": \"Invalid or missing input parameters.\", \"details\": []}"
+          ],
+          "id": 5,
+          "name": "311 Related Street Flooding ",
+          "total_count": null
+        },
+        {
+          "date_fields": [
+            {
+              "field": "OpenedDateTime",
+              "post_cutoff_count": 0
+            }
+          ],
+          "errors": [],
+          "id": 6,
+          "name": "Open 311 Cases",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "OpenedDateTime",
+              "post_cutoff_count": 0
+            },
+            {
+              "field": "closedDateTime",
+              "post_cutoff_count": 0
+            }
+          ],
+          "errors": [],
+          "id": 7,
+          "name": "Closed 311 Cases",
+          "total_count": 0
+        }
+      ],
+      "url": "https://gis.nola.gov/arcgis/rest/services/Staging/Flood_Events/MapServer"
+    },
+    {
+      "errors": [
+        "{\"code\": 500, \"message\": null, \"details\": []}"
+      ],
+      "layers": [],
+      "url": "https://gis.nola.gov/arcgis/rest/services/Staging/Flood_Events/FeatureServer"
+    },
+    {
+      "errors": [],
+      "layers": [
+        {
+          "date_fields": [],
+          "errors": [],
+          "id": 0,
+          "name": "wyf_parcels",
+          "total_count": 151233
+        }
+      ],
+      "url": "https://gis.nola.gov/arcgis/rest/services/dev/WhereYaFloodin/MapServer"
+    },
+    {
+      "errors": [
+        "{\"code\": 500, \"message\": null, \"details\": []}"
+      ],
+      "layers": [],
+      "url": "https://gis.nola.gov/arcgis/rest/services/dev/WhereYaFloodin/FeatureServer"
+    },
+    {
+      "errors": [],
+      "layers": [
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 11,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeCreateUTC",
+              "post_cutoff_count": 11,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 0,
+          "name": "Traffic Accident",
+          "total_count": 11
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeCreateUTC",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 1,
+          "name": "Flooded Streets",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeCreateUTC",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 2,
+          "name": "Placeholder Ice",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeDispatch",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeOnScene",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeClosed",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 3,
+          "name": "Street Closed",
+          "total_count": 0
+        }
+      ],
+      "url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer"
+    },
+    {
+      "errors": [
+        "{\"code\": 500, \"message\": null, \"details\": []}"
+      ],
+      "layers": [],
+      "url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/FeatureServer"
+    },
+    {
+      "errors": [],
+      "layers": [
+        {
+          "date_fields": [
+            {
+              "field": "reading_time",
+              "post_cutoff_count": 11,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "receive_time",
+              "post_cutoff_count": 11,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 0,
+          "name": "Underpass Water Heights",
+          "total_count": 11
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeCreateUTC",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 1,
+          "name": "Flooded Streets (Live 21F)",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 2,
+          "name": "21F Last 24 Hours",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 1,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "id": 3,
+          "name": "21F Historical All Time",
+          "total_count": 3484
+        }
+      ],
+      "url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer"
+    },
+    {
+      "errors": [
+        "{\"code\": 500, \"message\": null, \"details\": []}"
+      ],
+      "layers": [],
+      "url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/FeatureServer"
+    }
+  ]
+}
