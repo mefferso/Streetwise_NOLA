@@ -1,11 +1,15 @@
 {
-  "date_count_changed": 0,
-  "dates_changed": [],
-  "records_backfilled_or_checked": 0,
-  "records_skipped_before_start": 128,
+  "date_count_changed": 1,
+  "dates_changed": [
+    "2026-09-04"
+  ],
+  "records_backfilled_or_checked": 1,
+  "records_skipped_before_start": 2993,
   "records_skipped_without_time": 0,
-  "run_time_utc": "2026-09-11T13:30:50.534086Z",
-  "source_feature_count": 128,
-  "source_layer": 4,
+  "run_time_utc": "2026-09-11T15:10:05.522564Z",
+  "service_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer",
+  "source_feature_count": 3484,
+  "source_layer": 3,
+  "source_unique_event_count": 2994,
   "start_date_local": "2026-07-12"
 }
