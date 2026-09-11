@@ -1,0 +1,31 @@
+name: Temporary Rainwater flood-service probe
+
+on:
+  push:
+    branches:
+      - forensic-july12-recovery-20260911
+    paths:
+      - scripts/forensic_rainwater_probe.py
+      - .github/workflows/forensic-rainwater-probe.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/forensic_rainwater_probe.py
+      - shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add forensics/rainwater_probe.json
+          git commit -m "Record Rainwater flood-service evidence"
+          git push
