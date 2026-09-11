@@ -35,10 +35,26 @@ EXPLICIT = [
     "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Traffic_Inc_21_UPASS/FeatureServer",
     "https://eocgis.nola.gov/server/rest/services/All_Flooding_as_20240201/MapServer",
     "https://eocgis.nola.gov/server/rest/services/All_Flooding_as_20240201/FeatureServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/FeatureServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/COP/Underpass_WaterLevel/MapServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/COP/Underpass_WaterLevel/FeatureServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/ContrailOutput/MapServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/ContrailOutput/FeatureServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/FWS_WaterLevel/MapServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/FWS_WaterLevel/FeatureServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/HYFI/MapServer",
+    "https://eocgis.nola.gov:6443/arcgis/rest/services/HYFI/FeatureServer",
     "https://gis.nola.gov/arcgis/rest/services/apps/Open311Cases/MapServer",
     "https://gis.nola.gov/arcgis/rest/services/apps/Open311Cases/FeatureServer",
     "https://gis.nola.gov/arcgis/rest/services/Infrastructure/Open311Cases/MapServer",
     "https://gis.nola.gov/arcgis/rest/services/Infrastructure/Open311Cases/FeatureServer",
+    "https://gis.nola.gov/arcgis/rest/services/PublicSafety/PondingAreas/MapServer",
+    "https://gis.nola.gov/arcgis/rest/services/PublicSafety/PondingAreas/FeatureServer",
+    "https://maps.nola.gov/server/rest/services/OpenGov/OpenGov_Requests/MapServer",
+    "https://maps.nola.gov/server/rest/services/OpenGov/OpenGov_Requests/FeatureServer",
+    "https://maps.nola.gov/server/rest/services/OpenGov/OpenGov_Tasks_Public/MapServer",
+    "https://maps.nola.gov/server/rest/services/OpenGov/OpenGov_Tasks_Public/FeatureServer",
     "https://utility.arcgis.com/usrsvcs/servers/74697a2718c34ed999afe232d4e85fb1/rest/services/COP/ActiveCAD/MapServer",
     "https://utility.arcgis.com/usrsvcs/servers/74697a2718c34ed999afe232d4e85fb1/rest/services/COP/ActiveCAD/FeatureServer",
 ]
@@ -52,7 +68,7 @@ ITEMS = [
     "509b677d7e294993858b9495d200fc0b",  # drainage application
     "8822671dc20d4e169a9e76e83ad3b842",  # Open311 item
 ]
-KEYWORDS = re.compile(r"streetwise|flood|high.?water|21f|311|cad|incident|drain|closure|public.?safety|emergency", re.I)
+KEYWORDS = re.compile(r"streetwise|flood|pond|rainwater|water.?level|underpass|high.?water|21f|311|cad|incident|drain|closure|request|public.?safety|emergency", re.I)
 
 
 def get(url: str, params: dict | None = None, timeout: int = 18) -> dict:
