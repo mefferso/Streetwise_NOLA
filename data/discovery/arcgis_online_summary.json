@@ -1,0 +1,2501 @@
+{
+  "all_endpoints": [
+    "http://blog.nola.com/times-picayune/2007/08/corps_analysis_shows_17th_st_c.html",
+    "http://cop.nola.gov:6080/arcgis/rest/services/Districts_Zones/MapServer",
+    "http://datasmart.ash.harvard.edu/news/article/about-the-civic-analytics-network-826",
+    "http://earthobservatory.nasa.gov/?eocn=topnav&amp;eoci=logo",
+    "http://edumaps.esricanada.com/ArcGIS/rest/services/Demographics/Population_Density/MapServer",
+    "http://edumaps.esricanada.com/ArcGIS/rest/services/MapServices/CanadaClimate/MapServer",
+    "http://farm9.static.flickr.com/8887/18462878545_91fa1a1c48_b.jpg",
+    "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer",
+    "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer/0",
+    "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer/1",
+    "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_PointsLinesOutlines/MapServer/3",
+    "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/TransitAndEngineering/MapServer/7",
+    "http://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/Summarize%20USA%20Hazardous%20Waste%20Sites-Hazardous%20Waste%20Sites%20within%20New%20Orleans%20Flood%20Areas/FeatureServer/0",
+    "http://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/NaturalEvents_TEST/FeatureServer/0",
+    "http://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/NaturalEvents_TEST/FeatureServer/1",
+    "http://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/NaturalEvents_TEST/FeatureServer/2",
+    "http://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/NaturalEvents_TEST/FeatureServer/3",
+    "http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Levee_Failures_Updated/FeatureServer/0",
+    "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer",
+    "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer",
+    "http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer",
+    "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+    "http://services3.arcgis.com/j2a3SeWN04oskFYa/arcgis/rest/services/NOLA_Open_For_Business/FeatureServer/0",
+    "http://storms.ngs.noaa.gov/katrina/",
+    "http://tiles.arcgis.com/tiles/DO4gTjwJVIJ7O9Ca/arcgis/rest/services/NOLA_Levees/MapServer",
+    "http://tiles.arcgis.com/tiles/nGt4QxSblgDfeJn9/arcgis/rest/services/Social_Vulnerability_2010/MapServer",
+    "http://training.fema.gov/EMIWeb/edu/docs/hrm/Session%206%20-%20Handbook%20GIS-Based%20Hazards%20Assessment.pdf",
+    "http://www.air-worldwide.com/uploadedImages/Publications_Pages/AIR_Currents/2010/images/1_LossCost.png",
+    "http://www.ce.berkeley.edu/projects/neworleans/report/CH_4.pdf",
+    "http://www.datacenterresearch.org/data-resources/katrina/facts-for-impact/",
+    "http://www.datacenterresearch.org/data-resources/neighborhood-data/",
+    "http://www.datacenterresearch.org/reports_analysis/neighborhood-recovery-rates-growth-continues-through-2015-in-new-orleans-neighborhoods/",
+    "http://www.mvn.usace.army.mil/Portals/56/docs/PAO/FactSheets/IHNC-LakeBorgneSurgeBarrier613.pdf",
+    "http://www.nhc.noaa.gov/",
+    "http://www.noaa.gov/",
+    "http://www.righteousfur.com/wp-content/uploads/2011/07/nutria.critter.jpg",
+    "http://www.smithsonianmag.com/history/these-maps-show-severe-impact-hurricane-katrina-new-orleans-180956364/",
+    "http://www.sovius.org",
+    "https://assets.firststreet.org/uploads/2020/06/FSF_Flood_Model_Technical_Documentation.pdf",
+    "https://assets.floodfactor.com/uploads/2020/03/FF-logo.svg",
+    "https://cimsgeo3.coastal.louisiana.gov/arcgis/rest/services/LIMS/LeveeGates/MapServer",
+    "https://cimsgeo3.coastal.louisiana.gov/arcgis/rest/services/LIMS/LeveeGates/MapServer/0",
+    "https://cimsgeo3.coastal.louisiana.gov/arcgis/rest/services/LIMS/LeveeGates/MapServer/0/images/6ee9709229799bc509bce0788a1fb5e9",
+    "https://data.nola.gov/Geographic-Base-Layers/NOLA-Neighborhood-Statistical-Areas/ukvx-5dku",
+    "https://earthobs1.arcgis.com/arcgis/rest/services/Live_Stream_Gauges/MapServer",
+    "https://en.wikipedia.org/wiki/Hurricane_Katrina",
+    "https://en.wikipedia.org/wiki/Jefferson_Parish,_Louisiana",
+    "https://firststreet.org/",
+    "https://firststreet.org/data-access/",
+    "https://firststreet.org/data-access/property-data/",
+    "https://floodfactor.com/",
+    "https://gis.nola.gov/arcgis/rest/services/Admininstrative/NOPD_Police_Districts/MapServer",
+    "https://gis.nola.gov/arcgis/rest/services/Basemaps/OrleansParish/MapServer/1",
+    "https://gis.nola.gov/arcgis/rest/services/Basemaps/OrleansParish/MapServer/2",
+    "https://gis.nola.gov/arcgis/rest/services/Facilities/Hospitals/MapServer",
+    "https://gis.nola.gov/arcgis/rest/services/Facilities/PublicHealthClinics/MapServer",
+    "https://gis.nola.gov/arcgis/rest/services/Facilities/Schools/MapServer",
+    "https://gis.nola.gov/arcgis/rest/services/Locators/AddressPointLocator/GeocodeServer",
+    "https://gis.nola.gov/arcgis/rest/services/Locators/RoadCenterlineLocator/GeocodeServer",
+    "https://gis.nola.gov/arcgis/rest/services/PublicSafety/PondingAreas/MapServer",
+    "https://gis.nola.gov/arcgis/rest/services/Recreation/ParksPoly/MapServer",
+    "https://gis.nola.gov/arcgis/rest/services/StormModeling/StormModeling10yrNOLA/MapServer",
+    "https://grist.org/climate-energy/was-there-a-link-between-climate-change-and-hurricane-katrina/",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/0",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/1",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/10",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/11",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/12",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/13",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/14",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/15",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/16",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/17",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/18",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/19",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/2",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/20",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/22",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/23",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/24",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/25",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/26",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/27",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/28",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/29",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/3",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/30",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/31",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/32",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/4",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/5",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/6",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/7",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/8",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/9",
+    "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHLWMS/MapServer",
+    "https://help.floodfactor.com/hc/en-us/articles/360047585694-About-Flood-Factor-scores",
+    "https://hub.arcgis.com/datasets/NOLAGIS::-of-residential-parcels-without-a-structure-vacant-lots-2018/explore?location=30.022100%2C-89.882600%2C11.84",
+    "https://hub.arcgis.com/datasets/NOLAGIS::code-enforcement-judgement/explore?location=29.959500%2C-90.079500%2C12.86",
+    "https://hub.arcgis.com/datasets/NOLAGIS::rta-routes/explore?location=29.989052%2C-90.090350%2C12.61",
+    "https://hudgis-hud.opendata.arcgis.com/datasets/ef143299845841f8abb95969c01f88b5_0/explore?location=15.184973%2C0.314282%2C2.68",
+    "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+    "https://lh3.googleusercontent.com/-V31a8fKTB6A/VdNZnWdlw3I/AAAAAAAAAKs/h_NQZzznchI/s1600/Industrial%252520Canal.jpg",
+    "https://lh3.googleusercontent.com/-vOXG3mav0d4/Vcorv5d0CMI/AAAAAAAAAAk/A0h7kcDb-ZI/s1600/Flood%252520Legend.png",
+    "https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=datashare@firststreet.org",
+    "https://miro.medium.com/max/1518/1*-QPQzo36XAieYVOB_MTacQ.jpeg",
+    "https://msc.fema.gov/portal/home",
+    "https://nu.maps.arcgis.com/home/item.html?id=4e28a8fa23dc4e6d836e43ecf29b253d",
+    "https://nu.maps.arcgis.com/home/item.html?id=a0bd33b1147a4eb286cbba3736986234",
+    "https://opdgig.dos.ny.gov/datasets/1d682b9b946042b9a5dbc389266a66b8/explore",
+    "https://portal-nolagis.opendata.arcgis.com/datasets/3273a5f8334d40838681ff0337eddb8c_0/explore?location=29.982050%2C-90.026500%2C12.63",
+    "https://portal-nolagis.opendata.arcgis.com/datasets/4b4c97cd9bad4d01a452388845488bd3/explore?layer=0&amp;location=30.028700%2C-89.939400%2C12.17",
+    "https://portal-nolagis.opendata.arcgis.com/datasets/e7daa4c977d14e1b9e2fa4d7aff81e59_0/explore?location=30.002763%2C-90.029769%2C11.82",
+    "https://portal-nolagis.opendata.arcgis.com/datasets/hospitals/explore?location=29.986600%2C-89.987050%2C12.69",
+    "https://portal-nolagis.opendata.arcgis.com/datasets/schools/explore?location=29.982150%2C-90.029750%2C12.85",
+    "https://pubs.usgs.gov/ds/470/ds470.pdf",
+    "https://ready.nola.gov/home/",
+    "https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0",
+    "https://services.arcgis.com/5EDF10mO7HYsaRdm/arcgis/rest/services/NOLA_Storm_Drain_v2024_Public_Base_Layers/FeatureServer",
+    "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Median_Income_by_Race_and_Age_Selp_Emp_Boundaries/FeatureServer/0",
+    "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Median_Income_by_Race_and_Age_Selp_Emp_Boundaries/FeatureServer/1",
+    "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Median_Income_by_Race_and_Age_Selp_Emp_Boundaries/FeatureServer/2",
+    "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Counties_Generalized/FeatureServer/0",
+    "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_States_Generalized/FeatureServer/0",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/CityLandBaseFloodElev/FeatureServer",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/Drainage_Infrastucture/FeatureServer/0",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/Drainage_Infrastucture/FeatureServer/1",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/Drainage_Infrastucture/FeatureServer/2",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/Levees/FeatureServer/0",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/1",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/2",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/3",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/4",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/5",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/6",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/7",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/VoluntaryEvacuationArea/FeatureServer",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/service_79756ef7a2d34748978e072ca57d95b1/FeatureServer",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/service_a5b06ea0c1924cdb94e3f808a1a8e7d0/FeatureServer",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/service_a5b06ea0c1924cdb94e3f808a1a8e7d0_form/FeatureServer",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/survey123_08748d78427c429cba91d20551ff481c_stakeholder/FeatureServer",
+    "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/survey123_4839584ac79046aba42d338099c465ab_results/FeatureServer",
+    "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Katrina/FeatureServer/0",
+    "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Katrina/FeatureServer/1",
+    "https://services.arcgis.com/uKN48PkxmWiqJM9q/arcgis/rest/services/DSNY_Zones_OFFICIAL/FeatureServer/0",
+    "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer",
+    "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer",
+    "https://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Social_Vulnerability_Index/MapServer",
+    "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
+    "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+    "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+    "https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer",
+    "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/NYC_MedianIncome/FeatureServer/0",
+    "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/New_Orleans_Levee_and_Flood_Hazard_Zones_Map_WFL1/FeatureServer",
+    "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/New_Orleans_Levee_and_Flood_Hazard_Zones_Map_WFL1/FeatureServer/0",
+    "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/New_Orleans_Levee_and_Flood_Hazard_Zones_Map_WFL1/FeatureServer/17",
+    "https://services1.arcgis.com/2iUE8l8JKrP2tygQ/arcgis/rest/services/USA_States_Tropical_Cyclone_Costs/FeatureServer/0",
+    "https://services1.arcgis.com/84qHOn0KfgcVU3ZD/arcgis/rest/services/Hospitals_HealthCenters/FeatureServer/0",
+    "https://services1.arcgis.com/B4MnusZHL3vmqU3t/arcgis/rest/services/FEMA_Flood_Zones_NOLA/FeatureServer",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Blighted_Properties_East/FeatureServer/1",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Flood_Hazard_Areas/FeatureServer",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Flood_Hazard_Areas/FeatureServer/0",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/0",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/1",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/2",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/4",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/5",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/7",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/8",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/PCT_Vacant_Lots/FeatureServer/1",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Power_Infrastructure/FeatureServer/0",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Project_Sites/FeatureServer/0",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Sewer_Pump_Station_East/FeatureServer/0",
+    "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Workforce_Training_Sites/FeatureServer/0",
+    "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/RR_071218/FeatureServer/0",
+    "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/RR_071218/FeatureServer/3",
+    "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/RR_071218/FeatureServer/4",
+    "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/1",
+    "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/2",
+    "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/3",
+    "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/4",
+    "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/5",
+    "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/6",
+    "https://services1.arcgis.com/oASeSX1dVztKCgUc/arcgis/rest/services/subway_routes_stations/FeatureServer/2",
+    "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/NewOrleans_Katrina_flood/FeatureServer",
+    "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/FEMA_Levees/FeatureServer/0",
+    "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Flooding_WFL1/FeatureServer",
+    "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Flooding_WFL1/FeatureServer/0",
+    "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Flooding_WFL1/FeatureServer/1",
+    "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Subsidence_WFL1/FeatureServer",
+    "https://services2.arcgis.com/IsDCghZ73NgoYoz5/arcgis/rest/services/NYC_Neighborhood/FeatureServer/0",
+    "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/FEMA_Flooding_Events_2020_WFL1/FeatureServer",
+    "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/LA_Elevation___Flood_WFL1/FeatureServer",
+    "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/New_Orleans_COVID_19_Free_Testing_Centers_Service_Area_WFL1/FeatureServer/4",
+    "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/City%20of%20New%20Orleans/FeatureServer/0",
+    "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/NOLA_Block_Groups_Flooded_by_Hurricane_Katrina_Dissolved_Outline/FeatureServer",
+    "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/NOLA_Block_Groups_With_Tag_for_Flooded_or_Not_Flooded_By_Hurricane_Katrina/FeatureServer",
+    "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/NOLA_Block_groups_with_flood_tag/FeatureServer",
+    "https://services3.arcgis.com/2mASLsnOB7w414Il/arcgis/rest/services/New_Orleans_Demographics_(LA)/FeatureServer/0",
+    "https://services3.arcgis.com/hMpg7vsYb74pEKjX/arcgis/rest/services/NoLandValueMultiUnitHousing_Aug2021/FeatureServer",
+    "https://services3.arcgis.com/j2a3SeWN04oskFYa/arcgis/rest/services/NOLA_Open_For_Business/FeatureServer",
+    "https://services3.arcgis.com/vQ3OYhyPnynK3Zqb/arcgis/rest/services/Hot%20Spots%20PercentPeopleOver65/FeatureServer/0",
+    "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Forth",
+    "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Sixth",
+    "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0",
+    "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/dom",
+    "https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/nola",
+    "https://services7.arcgis.com/MqGL5kCOeT5KUiNz/arcgis/rest/services/New_York_COVID_19/FeatureServer/3",
+    "https://services7.arcgis.com/MqGL5kCOeT5KUiNz/arcgis/rest/services/New_York_COVID_19/FeatureServer/6",
+    "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Available_Real_Estate/FeatureServer",
+    "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Facilities/FeatureServer/0",
+    "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Floodgates_Impacting_Port_NOLA_stakeholders/FeatureServer",
+    "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Floodgates_Impacting_Port_NOLA_stakeholders/FeatureServer/0",
+    "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/New_Orleans_Public_Belt_Railroad_Lines_PIER_Plan/FeatureServer/5",
+    "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Housing_Rent_and_Income_15__WFL1/FeatureServer",
+    "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Housing_Rent_and_Income_25_to_29__WFL1/FeatureServer",
+    "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Housing_Rent_and_Income_WFL1/FeatureServer",
+    "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Rating_and_Rent_Units_WFL1/FeatureServer",
+    "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/FloodFactor_stats_v1_3_FloodFactorScores/FeatureServer/0",
+    "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/FloodFactor_stats_v1_3_FloodFactorScores/FeatureServer/1",
+    "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/FloodFactor_stats_v1_3_FloodFactorScores/FeatureServer/2",
+    "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/FloodFactor_stats_v1_3_FloodFactorScores/FeatureServer/3",
+    "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/Normalized_Flood_Risk_-_Census_Tracts_/FeatureServer/0",
+    "https://services9.arcgis.com/LcLOGTtPOHyTSbT6/arcgis/rest/services/Louisiana_SLR_Final_WFL1/FeatureServer",
+    "https://services9.arcgis.com/mOPnNh6CYCcVRvgf/arcgis/rest/services/Flood_risk_NOLA_WFL1/FeatureServer",
+    "https://services9.arcgis.com/mOPnNh6CYCcVRvgf/arcgis/rest/services/Flood_risk_NOLA_WFL1/FeatureServer/0",
+    "https://storymaps.arcgis.com/en/",
+    "https://storymaps.arcgis.com/en/app-list/map-series/",
+    "https://storymaps.arcgis.com/stories/2f1245a84bd245c89446073113b4e46f",
+    "https://storymaps.arcgis.com/stories/562f18f38dfd4d3b97aed3ab6a311cb4",
+    "https://storymaps.arcgis.com/stories/5831119f14b04981be0c84184818071c",
+    "https://streetwise.nola.gov/",
+    "https://tiles.arcgis.com/tiles/DO4gTjwJVIJ7O9Ca/arcgis/rest/services/NOLA_Levees/MapServer",
+    "https://tiles.arcgis.com/tiles/V388bo78v0PokOBx/arcgis/rest/services/NOLA_AfterKatrina/MapServer",
+    "https://tiles.arcgis.com/tiles/Zf2JJHQ1XMdrRdbY/arcgis/rest/services/NLCD_Fractional_Impervious_Surface_v2/MapServer",
+    "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Hurricane_Katrine_Flooding_Map/MapServer",
+    "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Katrina_Satellite_Image/MapServer",
+    "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Louisiana_Lidar_5m_DEM_Color_Tiles/MapServer",
+    "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/NOLA_1_day_after_Katrina_Map/MapServer",
+    "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/NOLA_Flooding/MapServer",
+    "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/New_Orleans_after_Hurricane_Katrina/MapServer",
+    "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Web_GIS_7_Nola/MapServer",
+    "https://tiles.arcgis.com/tiles/okXm0pb6aWH6XOGI/arcgis/rest/services/LakeOntarioRiskAreas_November2020/MapServer",
+    "https://www.britannica.com/event/Hurricane-Katrina",
+    "https://www.census.gov/hhes/migration/data/acs/state-to-state.html",
+    "https://www.fema.gov/national-flood-hazard-layer-nfhl",
+    "https://www.livescience.com/planet-earth/climate-change/32-us-cities-including-new-york-and-san-francisco-are-sinking-into-the-ocean-and-face-major-flood-risks-by-2050-new-study-reveals#:~:text=32%20U.S.%20cities%2C%20including%20New,by%202050%2C%20new%20",
+    "https://www.nationalgeographic.com/environment/article/hurricane-katrina",
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4752119/",
+    "https://www.nps.gov/crgis/HPRM-KatrinaPRINT.pdf",
+    "https://www.nytimes.com/interactive/2018/02/24/us/new-orleans-flood-walls-hurricanes.html",
+    "https://www.weather.gov/",
+    "https://www.weather.gov/media/lch/events/lahurricanehistory.pdf"
+  ],
+  "item_count": 181,
+  "items": [
+    {
+      "access": "public",
+      "endpoints": [
+        "https://streetwise.nola.gov/"
+      ],
+      "id": "4c54b790fe444cc9bc16aec9ce30abc4",
+      "modified": 1778983647000,
+      "owner": "cbdemay",
+      "title": "Streetwise - New Orleans Street Closure Listing",
+      "type": "Web Mapping Application",
+      "url": "https://streetwise.nola.gov/"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "4d8de7382f7446dc882bb1a44876d06f",
+      "modified": 1788456553000,
+      "owner": "cymedina@stanford.edu_Stanford",
+      "title": "Recommendations for Accessible Risk Communication",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/4d8de7382f7446dc882bb1a44876d06f"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer"
+      ],
+      "id": "a67cf79c2de04a33bf8888152c3ff7e7",
+      "modified": 1788412282000,
+      "owner": "PortalPublisher",
+      "title": "Sewer and Water Board Asset Layers",
+      "type": "Feature Service",
+      "url": "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://cimsgeo3.coastal.louisiana.gov/arcgis/rest/services/LIMS/LeveeGates/MapServer/0",
+        "https://cimsgeo3.coastal.louisiana.gov/arcgis/rest/services/LIMS/LeveeGates/MapServer/0/images/6ee9709229799bc509bce0788a1fb5e9",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/1",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/2",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/3",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/4",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/5",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/6",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/SWB_Assets/FeatureServer/7"
+      ],
+      "id": "76a479271c694a62aa27a82a243e1c0d",
+      "modified": 1788412051000,
+      "owner": "cbdemay",
+      "title": "Figure 10: Topography of New Orleans Showing SWBNO Drainage Basins and Drainage Pump Stations",
+      "type": "Web Map",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://storymaps.arcgis.com/stories/2f1245a84bd245c89446073113b4e46f"
+      ],
+      "id": "2f1245a84bd245c89446073113b4e46f",
+      "modified": 1786515554000,
+      "owner": "lambde@oregonstate.edu_OSUGISci",
+      "title": "Climate Injustice in New Orleans' Lower Ninth Ward",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/2f1245a84bd245c89446073113b4e46f"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "7afb9e31837c48468618fbdaa1cb101f",
+      "modified": 1781197963000,
+      "owner": "K_Dover",
+      "title": "Flood Risk & Community Vulnerability in Orleans Parish, LA",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/7afb9e31837c48468618fbdaa1cb101f"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/Zf2JJHQ1XMdrRdbY/arcgis/rest/services/NLCD_Fractional_Impervious_Surface_v2/MapServer"
+      ],
+      "id": "0254294e8728488fa51e7e873d5a1c7e",
+      "modified": 1778983700000,
+      "owner": "eGIS_ADMIN",
+      "title": "NLCD Fractional Impervious Surface",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/Zf2JJHQ1XMdrRdbY/arcgis/rest/services/NLCD_Fractional_Impervious_Surface_v2/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "1c221cfabe83420cbaaecbad112a9129",
+      "modified": 1778983645000,
+      "owner": "cbdemay",
+      "title": "Figure 11: Flood Insurance Rate Map",
+      "type": "Web Mapping Application",
+      "url": "https://nolagis.maps.arcgis.com/apps/instant/minimalist/index.html?appid=1c221cfabe83420cbaaecbad112a9129"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/28",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHLWMS/MapServer",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/Drainage_Infrastucture/FeatureServer/0",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/Drainage_Infrastucture/FeatureServer/1",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/Drainage_Infrastucture/FeatureServer/2",
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/Levees/FeatureServer/0"
+      ],
+      "id": "e6dfbe01f5e847dbba50755578c75e25",
+      "modified": 1778983645000,
+      "owner": "cbdemay",
+      "title": "Figure 11: Flood Insurance Rate Map",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "fa54dea5ad224dbfb6f243818f2f326d",
+      "modified": 1778983645000,
+      "owner": "cbdemay",
+      "title": "Figure 31: Projected Land Loss and Land Gain in Year 10, Future Without Action",
+      "type": "Web Mapping Application",
+      "url": "https://nolagis.maps.arcgis.com/apps/instant/minimalist/index.html?appid=fa54dea5ad224dbfb6f243818f2f326d"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "b5b9e088de4d4fd3b67106db2f9edcba",
+      "modified": 1778983645000,
+      "owner": "cbdemay",
+      "title": "Figure 32: Projected Land Loss and Land Gain in Year 50, Future Without Action",
+      "type": "Web Mapping Application",
+      "url": "https://nolagis.maps.arcgis.com/apps/instant/minimalist/index.html?appid=b5b9e088de4d4fd3b67106db2f9edcba"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://gis.nola.gov/arcgis/rest/services/PublicSafety/PondingAreas/MapServer"
+      ],
+      "id": "5c9e569de3ca42868abc47a7fe1bf729",
+      "modified": 1778983638000,
+      "owner": "cmard",
+      "title": "Ponding Areas",
+      "type": "Map Service",
+      "url": "https://gis.nola.gov/arcgis/rest/services/PublicSafety/PondingAreas/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://gis.nola.gov/arcgis/rest/services/StormModeling/StormModeling10yrNOLA/MapServer"
+      ],
+      "id": "bbeb9eb65ccb4f428d23253aeb5e206b",
+      "modified": 1778983621000,
+      "owner": "eGIS_ADMIN",
+      "title": "SWMM Model for the City of New Orleans - 10 Year",
+      "type": "Map Service",
+      "url": "https://gis.nola.gov/arcgis/rest/services/StormModeling/StormModeling10yrNOLA/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "056d6c8df0454371acac55331e9632af",
+      "modified": 1778727347000,
+      "owner": "kmgarberson_geochicoonline",
+      "title": "Hurricane Katrina, 2005 ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/056d6c8df0454371acac55331e9632af"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "14a63e4aebb14713b4be05d09337589a",
+      "modified": 1778599320000,
+      "owner": "Maeen_ucdavis",
+      "title": "Flood Monitoring in  New Orleans, Louisiana",
+      "type": "Dashboard",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "dc4cfd26358d49098af986c124748930",
+      "modified": 1777927521000,
+      "owner": "scolbert9_gtmaps",
+      "title": "New Orleans Climate Risk Map",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/dc4cfd26358d49098af986c124748930"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "196536b4ec8b45e39b1dd1eb38b20b97",
+      "modified": 1777391492000,
+      "owner": "IDM802442015_ohiostate",
+      "title": "Hurricane Katrina: Housing and Infrastructure",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/196536b4ec8b45e39b1dd1eb38b20b97"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "fc167aac45be4436bd0c8c8119f9561e",
+      "modified": 1776431863000,
+      "owner": "nmtaylor_luno14",
+      "title": "Rain Garden Site Optimization in New Orleans ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/fc167aac45be4436bd0c8c8119f9561e"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "5fd5c84b2ca7481f91af61c8f5add067",
+      "modified": 1773982521000,
+      "owner": "EsriarcOSU",
+      "title": "Flooding and Sea Level Rise in Coastal Communities",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/5fd5c84b2ca7481f91af61c8f5add067"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "05116d24f8dd4017af571580517e4c8b",
+      "modified": 1773349200000,
+      "owner": "TTimb1",
+      "title": "Flooding in levee-protected areas in Hurricane Katrina ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/05116d24f8dd4017af571580517e4c8b"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "fc94acbe6a6648bca30e84d2a00fd746",
+      "modified": 1771716898000,
+      "owner": "cndoyle_ucirvine",
+      "title": "The Gentrification of New Orleans, Louisiana",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/fc94acbe6a6648bca30e84d2a00fd746"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "e3bb5786c679438fb49334d58c6ef9cb",
+      "modified": 1771451473000,
+      "owner": "muied_ucirvine",
+      "title": "The Disaster and Gentrification of New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/e3bb5786c679438fb49334d58c6ef9cb"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/Zf2JJHQ1XMdrRdbY/arcgis/rest/services/NLCD_Fractional_Impervious_Surface_v2/MapServer"
+      ],
+      "id": "6cd9e8babd4240a7b67d4c556a36b796",
+      "modified": 1769616833000,
+      "owner": "atag_h2o",
+      "title": "NLCD Fractional Impervious Surface",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/Zf2JJHQ1XMdrRdbY/arcgis/rest/services/NLCD_Fractional_Impervious_Surface_v2/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "ad81f4aca4a54fe9af2278cbe0d532a6",
+      "modified": 1765594595000,
+      "owner": "cberry6_emory",
+      "title": "Commercial Real Estate Access and Black Business Corridors",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/ad81f4aca4a54fe9af2278cbe0d532a6"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "6b32bb82a2cb4e488513067ae9cd6b5e",
+      "modified": 1765423812000,
+      "owner": "riley.browning_ufl",
+      "title": "LIT3400: Hurricane Katrina and Hip-Hop",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/6b32bb82a2cb4e488513067ae9cd6b5e"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "5a77f1292a464c4f81193dcd7a68a8f4",
+      "modified": 1765416786000,
+      "owner": "tiottenrashad",
+      "title": "Flood Prevention in New Orleans ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/5a77f1292a464c4f81193dcd7a68a8f4"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://storymaps.arcgis.com/stories/5831119f14b04981be0c84184818071c"
+      ],
+      "id": "5831119f14b04981be0c84184818071c",
+      "modified": 1765391734000,
+      "owner": "b.aslie",
+      "title": "Post Katrina Renewal ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/5831119f14b04981be0c84184818071c"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "0e50e52369d841a79d49d8318ef6bdbd",
+      "modified": 1764787788000,
+      "owner": "rockettg@oregonstate.edu_OSUGISci",
+      "title": "New Orleans Floods",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/0e50e52369d841a79d49d8318ef6bdbd"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "3739ea8226144c85a22d70fb3199e075",
+      "modified": 1764696529000,
+      "owner": "dylanlampert",
+      "title": "Hurricane Katrina ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/3739ea8226144c85a22d70fb3199e075"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "c67375020e024693af021bb1768c4da6",
+      "modified": 1764343239000,
+      "owner": "teabagthe3rd",
+      "title": "Hurricane Katrina",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/c67375020e024693af021bb1768c4da6"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://opdgig.dos.ny.gov/datasets/1d682b9b946042b9a5dbc389266a66b8/explore",
+        "https://tiles.arcgis.com/tiles/okXm0pb6aWH6XOGI/arcgis/rest/services/LakeOntarioRiskAreas_November2020/MapServer"
+      ],
+      "id": "1d682b9b946042b9a5dbc389266a66b8",
+      "modified": 1760732238000,
+      "owner": "NYSDOS_GIS",
+      "title": "Lake Ontario Coastal Risk Areas",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/okXm0pb6aWH6XOGI/arcgis/rest/services/LakeOntarioRiskAreas_November2020/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/5EDF10mO7HYsaRdm/arcgis/rest/services/NOLA_Storm_Drain_v2024_Public_Base_Layers/FeatureServer"
+      ],
+      "id": "7171f53293db4e00a8663a8cebcb8ec8",
+      "modified": 1755831183000,
+      "owner": "rcefalu",
+      "title": "NOLA_Storm_Drain_v2024_Public_Base_Layers",
+      "type": "Feature Service",
+      "url": "https://services.arcgis.com/5EDF10mO7HYsaRdm/arcgis/rest/services/NOLA_Storm_Drain_v2024_Public_Base_Layers/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "9dbdd83096cd489cb04099cf11d68c89",
+      "modified": 1754588402000,
+      "owner": "Student_DSEA_2025_21",
+      "title": "Disparities in Hurricane Risk and Recovery in New Orleans\u2019",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/9dbdd83096cd489cb04099cf11d68c89"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "22ca207487bf48d9b9278cadb7249595",
+      "modified": 1751645081000,
+      "owner": "houstoncommunity",
+      "title": "Understanding Hurricane Katrina",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/22ca207487bf48d9b9278cadb7249595"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "0b8269ab7fac4f64a7cd22172eb98818",
+      "modified": 1748663919000,
+      "owner": "sgeneral_USC",
+      "title": "A Taste of New Orleans ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/0b8269ab7fac4f64a7cd22172eb98818"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "fb24566333ce4a518f941ca328d25c93",
+      "modified": 1746639686000,
+      "owner": "kv283_CUGIS",
+      "title": "Drowning in Inequality",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/fb24566333ce4a518f941ca328d25c93"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "0bdde1938466453abe2916c9bcec8294",
+      "modified": 1746566059000,
+      "owner": "dzainal@andrew.cmu.edu_CarnegieMellon",
+      "title": "Sea Level Rise in New Orleans, LA",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/0bdde1938466453abe2916c9bcec8294"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "13326defd86a40d8a1b42c4d25516c85",
+      "modified": 1745889945000,
+      "owner": "vjymyrs",
+      "title": "Sustainability in New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/13326defd86a40d8a1b42c4d25516c85"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "5318062bb611400ebce097736b03e3b1",
+      "modified": 1745868870000,
+      "owner": "bbaxte18_ksugis",
+      "title": "Disaster Report 2:",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/5318062bb611400ebce097736b03e3b1"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "e369e4b7db734b9f910b8b81bce47514",
+      "modified": 1744834373000,
+      "owner": "re58615_nova_cc",
+      "title": "Hurricane Katrina Impact New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/e369e4b7db734b9f910b8b81bce47514"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "fb63b72802d74328a282dde89e2c2d16",
+      "modified": 1744779041000,
+      "owner": "hkim5207_USCSSI",
+      "title": "Hazard & Disaster Log: 2024-2025",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/fb63b72802d74328a282dde89e2c2d16"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "89adb614688c42af8d511a50358a07b0",
+      "modified": 1742326283000,
+      "owner": "azmene",
+      "title": "Climate Change and Rising Sea Levels",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/89adb614688c42af8d511a50358a07b0"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0",
+        "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Katrina/FeatureServer/0",
+        "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Katrina/FeatureServer/1",
+        "https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer",
+        "https://services1.arcgis.com/2iUE8l8JKrP2tygQ/arcgis/rest/services/USA_States_Tropical_Cyclone_Costs/FeatureServer/0",
+        "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/New_Orleans_COVID_19_Free_Testing_Centers_Service_Area_WFL1/FeatureServer/4",
+        "https://services3.arcgis.com/2mASLsnOB7w414Il/arcgis/rest/services/New_Orleans_Demographics_(LA)/FeatureServer/0"
+      ],
+      "id": "a4980673b8b04bbf859675cb4abd2157",
+      "modified": 1740098181000,
+      "owner": "mla391@sfu.ca_simonfraseru",
+      "title": "water surges _3_2",
+      "type": "Web Map",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0",
+        "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Katrina/FeatureServer/0",
+        "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Katrina/FeatureServer/1",
+        "https://services1.arcgis.com/2iUE8l8JKrP2tygQ/arcgis/rest/services/USA_States_Tropical_Cyclone_Costs/FeatureServer/0",
+        "https://services3.arcgis.com/2mASLsnOB7w414Il/arcgis/rest/services/New_Orleans_Demographics_(LA)/FeatureServer/0"
+      ],
+      "id": "5ea4e5f6d21e46c19a941565b8130368",
+      "modified": 1740030598000,
+      "owner": "mla391@sfu.ca_simonfraseru",
+      "title": "Individual Map #3: Social-Economic Costs of Devastating Cyclone In USA _3",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/harveyDamagePhotos/FeatureServer/0",
+        "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Katrina/FeatureServer/0",
+        "https://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Katrina/FeatureServer/1",
+        "https://services1.arcgis.com/2iUE8l8JKrP2tygQ/arcgis/rest/services/USA_States_Tropical_Cyclone_Costs/FeatureServer/0",
+        "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/New_Orleans_COVID_19_Free_Testing_Centers_Service_Area_WFL1/FeatureServer/4",
+        "https://services3.arcgis.com/2mASLsnOB7w414Il/arcgis/rest/services/New_Orleans_Demographics_(LA)/FeatureServer/0"
+      ],
+      "id": "4e29eadfcc954892a55250f591034521",
+      "modified": 1740001903000,
+      "owner": "mla391@sfu.ca_simonfraseru",
+      "title": "water surges ",
+      "type": "Web Map",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "334761c9b0004a3ba3f863b4f247f39b",
+      "modified": 1734400569000,
+      "owner": "jfg5892_pennstate",
+      "title": "Drowning Cities: The Race Against Rising Seas ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/templates/334761c9b0004a3ba3f863b4f247f39b"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "da169f70f2014a918ef0a90f7a68c9fc",
+      "modified": 1733511615000,
+      "owner": "smithl83_McMaster",
+      "title": "Storm Surge Survival",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/da169f70f2014a918ef0a90f7a68c9fc"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "e4ee882b0a9e489793b422b94226434e",
+      "modified": 1733042766000,
+      "owner": "zweng40_gtmaps",
+      "title": "New Orleans and Natural Hazards",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/e4ee882b0a9e489793b422b94226434e"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "6a75599e98d043ceb8374987e685ec49",
+      "modified": 1729791046000,
+      "owner": "qw93358_USG",
+      "title": "Effects of Hurricane Katrina",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/6a75599e98d043ceb8374987e685ec49"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://www.nytimes.com/interactive/2018/02/24/us/new-orleans-flood-walls-hurricanes.html",
+        "https://www.weather.gov/media/lch/events/lahurricanehistory.pdf"
+      ],
+      "id": "c069b7cc3a5c4711869e0a21ab942479",
+      "modified": 1723148381000,
+      "owner": "saralhof_umich",
+      "title": "Rebuilt System & The Future of Flood Protection ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/c069b7cc3a5c4711869e0a21ab942479"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://en.wikipedia.org/wiki/Hurricane_Katrina",
+        "https://grist.org/climate-energy/was-there-a-link-between-climate-change-and-hurricane-katrina/",
+        "https://www.britannica.com/event/Hurricane-Katrina"
+      ],
+      "id": "cebbaf21332a4d25ab550f8a0639ed1b",
+      "modified": 1719246793000,
+      "owner": "Sethrt",
+      "title": "HURRICANE KATRINA",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/cebbaf21332a4d25ab550f8a0639ed1b"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "6d2bd866379b4efca7b80fa15c44095f",
+      "modified": 1718185869000,
+      "owner": "jlidownie1",
+      "title": "Coastal Flooding",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/6d2bd866379b4efca7b80fa15c44095f"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "198893d4989e4cad89570e151059b7e9",
+      "modified": 1717807393000,
+      "owner": "leshere@oregonstate.edu_OSUGISci",
+      "title": "What is in the Future for New Orleans?",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/198893d4989e4cad89570e151059b7e9"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "af476964e2524204b4cdb06fd6382bc2",
+      "modified": 1717743738000,
+      "owner": "vjbrown@umail.ucsb.edu_ucsb",
+      "title": "Coastal Inundation in Louisiana ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/af476964e2524204b4cdb06fd6382bc2"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "f0beb955894a4e25a922f6fb15b97959",
+      "modified": 1717537437000,
+      "owner": "leshere@oregonstate.edu_OSUGISci",
+      "title": "Climate Impacts on New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/f0beb955894a4e25a922f6fb15b97959"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "91052a9343fb4f418bb34dd56fb67edb",
+      "modified": 1717391096000,
+      "owner": "leshere@oregonstate.edu_OSUGISci",
+      "title": "Climate Vulnerability of New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/91052a9343fb4f418bb34dd56fb67edb"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "03483e2c3fad4d0b94a1eba11899246d",
+      "modified": 1715061817000,
+      "owner": "CreightonGISArchive",
+      "title": "Rising Tides, Hidden Vulnerabilities",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/03483e2c3fad4d0b94a1eba11899246d"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://www.livescience.com/planet-earth/climate-change/32-us-cities-including-new-york-and-san-francisco-are-sinking-into-the-ocean-and-face-major-flood-risks-by-2050-new-study-reveals#:~:text=32%20U.S.%20cities%2C%20including%20New,by%202050%2C%20new%20"
+      ],
+      "id": "f880ac4ea17e4f3abd4189bbee0f411d",
+      "modified": 1712250770000,
+      "owner": "will0140_hzvlissingen",
+      "title": "New Orleans at Risk",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/f880ac4ea17e4f3abd4189bbee0f411d"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "e5277d57a1be4ad4b92da443867dcea6",
+      "modified": 1711390308000,
+      "owner": "andru104_UMN",
+      "title": "New Orleans Changes Post Hurricane Katrina",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/e5277d57a1be4ad4b92da443867dcea6"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "700b62e8f6044566bf95a5aad00bcc13",
+      "modified": 1702591888000,
+      "owner": "albrodow_mtu",
+      "title": "Mapping Social Vulnerability and Flood Risk in New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/700b62e8f6044566bf95a5aad00bcc13"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "1aea9532e227440f95db00632c1728b8",
+      "modified": 1700875079000,
+      "owner": "twright2_UO_online",
+      "title": "Hurricane Katrina's Impact on New Orleans ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/1aea9532e227440f95db00632c1728b8"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "d74797eabba248a6b1588e9d030cb4c9",
+      "modified": 1700433538000,
+      "owner": "s1079238_ZGIS",
+      "title": "Hurricane Katrina Flooding in New Orleans: 2005 (A2)",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/d74797eabba248a6b1588e9d030cb4c9"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "f05fa539a86749d8b15b9a562310f07d",
+      "modified": 1693897073000,
+      "owner": "TaiReneeK",
+      "title": "Environmental Justice in the Form of Disaster Relief",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/f05fa539a86749d8b15b9a562310f07d"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "0f6dbb7e365c4525b66a26ccdfd6caf8",
+      "modified": 1686173595000,
+      "owner": "heflinl@oregonstate.edu_OSUGISci",
+      "title": "Coastal flooding from extreme weather events",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/0f6dbb7e365c4525b66a26ccdfd6caf8"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "6c76cb456a0f4263a0602b8396f82221",
+      "modified": 1682096826000,
+      "owner": "minhak_USCSSI",
+      "title": "Hazard and Disaster Logs",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/6c76cb456a0f4263a0602b8396f82221"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "818886df9380439e8208f77d8f0ed158",
+      "modified": 1670537593000,
+      "owner": "tab6341_pennstate",
+      "title": "Low Risk Coastal Property",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/818886df9380439e8208f77d8f0ed158"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "eb7a8e126b844722afdaaa6d68d2cdf5",
+      "modified": 1669770569000,
+      "owner": "sjs9@clemson.edu_Clemson",
+      "title": "The Sea is Rising in New Orleans...",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/eb7a8e126b844722afdaaa6d68d2cdf5"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "ac26b0809d5a4679a9e376d7d4ba3953",
+      "modified": 1666905022000,
+      "owner": "robert.ricks_noaa",
+      "title": "A Weather Decade in Review",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/ac26b0809d5a4679a9e376d7d4ba3953"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "b9af90ca88404402a357e9e5f2dda4aa",
+      "modified": 1652129267000,
+      "owner": "bpellrine98",
+      "title": "Hurricane Katrina",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/b9af90ca88404402a357e9e5f2dda4aa"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "66c503db37f541e28911c5fc1149c1bd",
+      "modified": 1651086578000,
+      "owner": "sgilles_mtu",
+      "title": "New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/66c503db37f541e28911c5fc1149c1bd"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "c42864da866d4de9825a6acc23273136",
+      "modified": 1650241139000,
+      "owner": "krissy145",
+      "title": "FLOOD RISK AND SUSCEPTIBILITY MODELLING IN NEW ORLEANS EAST.",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/c42864da866d4de9825a6acc23273136"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://www.nationalgeographic.com/environment/article/hurricane-katrina",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4752119/"
+      ],
+      "id": "7c1e235404bf42d08cfb25496a79eaca",
+      "modified": 1638325212000,
+      "owner": "oliviadraper",
+      "title": "Hurricane Katrina: The Aftermath",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/7c1e235404bf42d08cfb25496a79eaca"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "eb6d7548fcc643e0b6f45b5bae8cc899",
+      "modified": 1622743139000,
+      "owner": "afif_lgesrimy",
+      "title": "City of New Orleans - Flood Event Parking Information",
+      "type": "Web Mapping Application",
+      "url": "https://nolagis.maps.arcgis.com/apps/webappviewer/index.html?id=a1f5788394d64f37920865fb74f77bb6"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Katrina_Satellite_Image/MapServer"
+      ],
+      "id": "74b841082c8f4b4eabdd7972d6b85a6f",
+      "modified": 1616216873000,
+      "owner": "kmckni5_lsu_its",
+      "title": "Katrina Satellite Image",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Katrina_Satellite_Image/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "e84f05977e4b432ebc09b25bda046a9f",
+      "modified": 1587432754000,
+      "owner": "mkim456@gatech.edu",
+      "title": "Vehicle access rate of St. Roch of New Orleans",
+      "type": "Map Package",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+      ],
+      "id": "c15d5e1dd3d644d49cde0165441a9c07",
+      "modified": 1565632019000,
+      "owner": "robert.ricks_noaa",
+      "title": "Hurricane Camille: 50 Years Later",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://datasmart.ash.harvard.edu/news/article/about-the-civic-analytics-network-826",
+        "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer",
+        "http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer",
+        "http://tiles.arcgis.com/tiles/nGt4QxSblgDfeJn9/arcgis/rest/services/Social_Vulnerability_2010/MapServer",
+        "http://training.fema.gov/EMIWeb/edu/docs/hrm/Session%206%20-%20Handbook%20GIS-Based%20Hazards%20Assessment.pdf",
+        "http://www.sovius.org"
+      ],
+      "id": "ad944786abf64efa9caae35f0e67627e",
+      "modified": 1477526581000,
+      "owner": "bszukalski_can",
+      "title": "New Orleans - Social Vulnerability",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/service_a5b06ea0c1924cdb94e3f808a1a8e7d0_form/FeatureServer"
+      ],
+      "id": "f4cf2326440b4a528eabd989918110ff",
+      "modified": 1778983693000,
+      "owner": "gdreece",
+      "title": "New Orleans IA Damage Assessment_form",
+      "type": "Feature Service",
+      "url": "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/service_a5b06ea0c1924cdb94e3f808a1a8e7d0_form/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/survey123_4839584ac79046aba42d338099c465ab_results/FeatureServer"
+      ],
+      "id": "4fc0d9dc4b7047c7924b32eae2aafb48",
+      "modified": 1778983693000,
+      "owner": "gdreece",
+      "title": "New Orleans IA Damage Assessment_results",
+      "type": "Feature Service",
+      "url": "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/survey123_4839584ac79046aba42d338099c465ab_results/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/service_a5b06ea0c1924cdb94e3f808a1a8e7d0/FeatureServer"
+      ],
+      "id": "1ab72f5847204e198b86a5f6a8da52c2",
+      "modified": 1778983693000,
+      "owner": "gdreece",
+      "title": "New Orleans IA Damage Assessment",
+      "type": "Feature Service",
+      "url": "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/service_a5b06ea0c1924cdb94e3f808a1a8e7d0/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/CityLandBaseFloodElev/FeatureServer"
+      ],
+      "id": "54c7a7c1de0949d3ad030dd083b5a48f",
+      "modified": 1778983653000,
+      "owner": "cmard",
+      "title": "CityLandBaseFloodElev",
+      "type": "Feature Service",
+      "url": "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/CityLandBaseFloodElev/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/New_Orleans_after_Hurricane_Katrina/MapServer"
+      ],
+      "id": "308433fb8ad247ebbfb7b59612e515e7",
+      "modified": 1774388571000,
+      "owner": "lward31@lsu.edu_lsu_its",
+      "title": "New Orleans after Hurricane Katrina",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/New_Orleans_after_Hurricane_Katrina/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "e396f0409ed7460abde4f3dceab49f55",
+      "modified": 1762204569000,
+      "owner": "noahmerenbloom",
+      "title": "New Orleans, LA",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/e396f0409ed7460abde4f3dceab49f55"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "c18b91d032e94f30901ef2821118ef3f",
+      "modified": 1725289097000,
+      "owner": "smb332_spatialsk",
+      "title": "B_GEOG 420 Lab 2: Geocoding and Buffering Addresses (Fall 23)",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/c18b91d032e94f30901ef2821118ef3f"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "f6bc0975c0164a92968a62e348e3c8b8",
+      "modified": 1720037717000,
+      "owner": "fuad15",
+      "title": "CEDS SUMMER INTERNSHIP 2024",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/f6bc0975c0164a92968a62e348e3c8b8"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "bb645e8b271a49dd8be63a94fe4c6c4a",
+      "modified": 1717537466000,
+      "owner": "leshere@oregonstate.edu_OSUGISci",
+      "title": "Features of New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/bb645e8b271a49dd8be63a94fe4c6c4a"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "2c0b572a3d2241d4b1fd8417e5e2cfda",
+      "modified": 1702049377000,
+      "owner": "cap044_Bucknell",
+      "title": "New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/2c0b572a3d2241d4b1fd8417e5e2cfda"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "252b53ca58dd413eb74d691cb8c94b9e",
+      "modified": 1685862931000,
+      "owner": "bvinc001@odu.edu_ODU_GIS",
+      "title": "Hurricane Katrina",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/252b53ca58dd413eb74d691cb8c94b9e"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "ea735bcdc4cd49dbb2d41250f42bdf99",
+      "modified": 1681753410000,
+      "owner": "AndreBarren",
+      "title": "The Lower 9th Ward ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/ea735bcdc4cd49dbb2d41250f42bdf99"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "37130b66a7f9499d84f6600a776b0f29",
+      "modified": 1667042913000,
+      "owner": "Samrazdicey",
+      "title": "Architectural Adaptations to the Environment.",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/37130b66a7f9499d84f6600a776b0f29"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://assets.firststreet.org/uploads/2020/06/FSF_Flood_Model_Technical_Documentation.pdf",
+        "https://firststreet.org/",
+        "https://firststreet.org/data-access/",
+        "https://firststreet.org/data-access/property-data/",
+        "https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=datashare@firststreet.org",
+        "https://miro.medium.com/max/1518/1*-QPQzo36XAieYVOB_MTacQ.jpeg",
+        "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Median_Income_by_Race_and_Age_Selp_Emp_Boundaries/FeatureServer/0",
+        "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Median_Income_by_Race_and_Age_Selp_Emp_Boundaries/FeatureServer/1",
+        "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Median_Income_by_Race_and_Age_Selp_Emp_Boundaries/FeatureServer/2",
+        "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Counties_Generalized/FeatureServer/0",
+        "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_States_Generalized/FeatureServer/0",
+        "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/Normalized_Flood_Risk_-_Census_Tracts_/FeatureServer/0"
+      ],
+      "id": "47a18c113b1b4d5bae7c0a2189898253",
+      "modified": 1658225400000,
+      "owner": "jhessle1_GISandData",
+      "title": "Median Household income New Orleans",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://assets.firststreet.org/uploads/2020/06/FSF_Flood_Model_Technical_Documentation.pdf",
+        "https://firststreet.org/",
+        "https://firststreet.org/data-access/",
+        "https://firststreet.org/data-access/property-data/",
+        "https://mail.google.com/mail/u/0/?fs=1&amp;tf=cm&amp;source=mailto&amp;to=datashare@firststreet.org",
+        "https://miro.medium.com/max/1518/1*-QPQzo36XAieYVOB_MTacQ.jpeg",
+        "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Counties_Generalized/FeatureServer/0",
+        "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_States_Generalized/FeatureServer/0",
+        "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/Normalized_Flood_Risk_-_Census_Tracts_/FeatureServer/0"
+      ],
+      "id": "e635d80449de4cb39a3916fed81c6b30",
+      "modified": 1658225264000,
+      "owner": "jhessle1_GISandData",
+      "title": "Normalized Flood Risk New Orleans",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "d5533502cebc4468bb78ddad2d2e98c2",
+      "modified": 1657758617000,
+      "owner": "stefany.carty",
+      "title": "New Orleans: An Introductory View ",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/d5533502cebc4468bb78ddad2d2e98c2"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "34db363f9dc1495ca286e56c4c6d5842",
+      "modified": 1651880117000,
+      "owner": "cmaalouf",
+      "title": "Hurricane Kitrina",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/34db363f9dc1495ca286e56c4c6d5842"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Hurricane_Katrine_Flooding_Map/MapServer"
+      ],
+      "id": "baa806e7a51d4f75b0a0a321499c28ab",
+      "modified": 1648456712000,
+      "owner": "khelm2_lsu_its",
+      "title": "Hurricane Katrine Flooding",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Hurricane_Katrine_Flooding_Map/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "ea71141350e34493b7420305cfa05a24",
+      "modified": 1639010206000,
+      "owner": "EF927586@wcupa.edu_WCUPAGIS",
+      "title": "Planning for Flood Disasters in Louisiana Gulf Coast",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/ea71141350e34493b7420305cfa05a24"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/NewOrleans_Katrina_flood/FeatureServer"
+      ],
+      "id": "b0fb29b51090469d8a492387b157e7c9",
+      "modified": 1632338384000,
+      "owner": "oveselk@clemson.edu_Clemson",
+      "title": "NewOrleans_Katrina_flood",
+      "type": "Feature Service",
+      "url": "https://services1.arcgis.com/x5wCko8UnSi4h0CB/arcgis/rest/services/NewOrleans_Katrina_flood/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://assets.floodfactor.com/uploads/2020/03/FF-logo.svg",
+        "https://floodfactor.com/",
+        "https://help.floodfactor.com/hc/en-us/articles/360047585694-About-Flood-Factor-scores",
+        "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/FloodFactor_stats_v1_3_FloodFactorScores/FeatureServer/0",
+        "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/FloodFactor_stats_v1_3_FloodFactorScores/FeatureServer/1",
+        "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/FloodFactor_stats_v1_3_FloodFactorScores/FeatureServer/2",
+        "https://services8.arcgis.com/inESxA5zA19vsM5x/arcgis/rest/services/FloodFactor_stats_v1_3_FloodFactorScores/FeatureServer/3"
+      ],
+      "id": "12da94495c2346e1be99c589db24c328",
+      "modified": 1626815784000,
+      "owner": "dianaclavery_uo",
+      "title": "Predominant Flood Factor risk score",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "6842e9ac790d4d29916e41ab01db1cdb",
+      "modified": 1626805975000,
+      "owner": "c3davis@odu.edu_ODU_GIS",
+      "title": "Basin Street (Water) Blues",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/6842e9ac790d4d29916e41ab01db1cdb"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "48ef3e76ffb947c6a41ed874a8d0d6a8",
+      "modified": 1588287597000,
+      "owner": "katielundb",
+      "title": "POL 352: GPE_Final Project",
+      "type": "Web Mapping Application",
+      "url": "https://www.arcgis.com/apps/View/index.html?appid=48ef3e76ffb947c6a41ed874a8d0d6a8"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/uKN48PkxmWiqJM9q/arcgis/rest/services/DSNY_Zones_OFFICIAL/FeatureServer/0",
+        "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/NYC_MedianIncome/FeatureServer/0",
+        "https://services1.arcgis.com/84qHOn0KfgcVU3ZD/arcgis/rest/services/Hospitals_HealthCenters/FeatureServer/0",
+        "https://services1.arcgis.com/oASeSX1dVztKCgUc/arcgis/rest/services/subway_routes_stations/FeatureServer/2",
+        "https://services2.arcgis.com/IsDCghZ73NgoYoz5/arcgis/rest/services/NYC_Neighborhood/FeatureServer/0",
+        "https://services7.arcgis.com/MqGL5kCOeT5KUiNz/arcgis/rest/services/New_York_COVID_19/FeatureServer/3",
+        "https://services7.arcgis.com/MqGL5kCOeT5KUiNz/arcgis/rest/services/New_York_COVID_19/FeatureServer/6"
+      ],
+      "id": "785776e1279a4f2299c51dae6f2dfb5d",
+      "modified": 1588286624000,
+      "owner": "katielundb",
+      "title": "POL 352: GPE Final Project",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Floodgates_Impacting_Port_NOLA_stakeholders/FeatureServer"
+      ],
+      "id": "60054efdf0984de68881de77967daeb0",
+      "modified": 1786111643000,
+      "owner": "EngEnv_PortNOLA",
+      "title": "Floodgates Impacting Port NOLA (stakeholders)",
+      "type": "Feature Service",
+      "url": "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Floodgates_Impacting_Port_NOLA_stakeholders/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services3.arcgis.com/hMpg7vsYb74pEKjX/arcgis/rest/services/NoLandValueMultiUnitHousing_Aug2021/FeatureServer"
+      ],
+      "id": "967bd0b8bc6347a58f7b0241f41bbc3c",
+      "modified": 1784667327000,
+      "owner": "anares@santabarbaraca.gov_santabarbara",
+      "title": "NoLandValueMultiUnitHousing_Aug2021",
+      "type": "Feature Service",
+      "url": "https://services3.arcgis.com/hMpg7vsYb74pEKjX/arcgis/rest/services/NoLandValueMultiUnitHousing_Aug2021/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "1da0c21ffab34c74865e3078e7f2caae",
+      "modified": 1781153676000,
+      "owner": "sleon85@stanford.edu_Stanford",
+      "title": "NOLAMaps(4)",
+      "type": "Project Package",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0"
+      ],
+      "id": "02ff194cac4d4473a9f336386f994f81",
+      "modified": 1779603226000,
+      "owner": "kmyron_UO_online",
+      "title": "NOLA Fourteenth Ward Vegetation, Heat Index, and Flood Hazard Mal",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0",
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Louisiana_Lidar_5m_DEM_Color_Tiles/MapServer"
+      ],
+      "id": "21f654d8d230472d9c2d0f1c16d75588",
+      "modified": 1779601766000,
+      "owner": "kmyron_UO_online",
+      "title": "NOLA Flood Hazard Map 14th ward",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Sixth",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0"
+      ],
+      "id": "9220081fcb7f4e0383930279bdc90f66",
+      "modified": 1779485655000,
+      "owner": "camu_UO_online",
+      "title": "NOLA Vegetation, Heat Index, and Flood Hazard Map_Reclassified",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Sixth",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0",
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Louisiana_Lidar_5m_DEM_Color_Tiles/MapServer"
+      ],
+      "id": "c72275b6587f44c68e224791fe62d55b",
+      "modified": 1779484877000,
+      "owner": "camu_UO_online",
+      "title": "NOLA Flood Hazard Map",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/survey123_08748d78427c429cba91d20551ff481c_stakeholder/FeatureServer"
+      ],
+      "id": "df2fc623b4d140daa0e67ad178d54efe",
+      "modified": 1778983648000,
+      "owner": "gdreece",
+      "title": "NOLA - NOFD Windshield_results",
+      "type": "Feature Service",
+      "url": "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/survey123_08748d78427c429cba91d20551ff481c_stakeholder/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/service_79756ef7a2d34748978e072ca57d95b1/FeatureServer"
+      ],
+      "id": "339066b2589e48469d98057bd575ebeb",
+      "modified": 1778983648000,
+      "owner": "gdreece",
+      "title": "NOLA - NOFD Windshield",
+      "type": "Feature Service",
+      "url": "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/service_79756ef7a2d34748978e072ca57d95b1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/0",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/1",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/10",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/11",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/12",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/13",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/14",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/15",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/16",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/17",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/18",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/19",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/2",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/20",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/22",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/23",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/24",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/25",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/26",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/27",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/28",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/29",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/3",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/30",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/31",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/32",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/4",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/5",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/6",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/7",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/8",
+        "https://hazards.fema.gov/gis/nfhl/rest/services/public/NFHL/MapServer/9",
+        "https://ready.nola.gov/home/",
+        "https://www.fema.gov/national-flood-hazard-layer-nfhl"
+      ],
+      "id": "a1f5788394d64f37920865fb74f77bb6",
+      "modified": 1778983633000,
+      "owner": "eGIS_ADMIN",
+      "title": "Flood Event Parking Information Viewer",
+      "type": "Web Mapping Application",
+      "url": "https://nolagis.maps.arcgis.com/apps/webappviewer/index.html?id=a1f5788394d64f37920865fb74f77bb6"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/VoluntaryEvacuationArea/FeatureServer"
+      ],
+      "id": "699fba8c30674dc7a78892f0d4e4d419",
+      "modified": 1778983633000,
+      "owner": "cbdemay",
+      "title": "Voluntary Evacuation Area",
+      "type": "Feature Service",
+      "url": "https://services.arcgis.com/VhMjCzR3cIjEkh7L/arcgis/rest/services/VoluntaryEvacuationArea/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://gis.nola.gov/arcgis/rest/services/Locators/AddressPointLocator/GeocodeServer",
+        "https://gis.nola.gov/arcgis/rest/services/Locators/RoadCenterlineLocator/GeocodeServer",
+        "https://ready.nola.gov/home/"
+      ],
+      "id": "7b83294198c047e9872157c7a1e5110d",
+      "modified": 1778983633000,
+      "owner": "cmard",
+      "title": "Don't Park Here - High risk of flood potential",
+      "type": "Web Mapping Application",
+      "url": "https://nolagis.maps.arcgis.com/apps/InformationLookup/index.html?appid=7b83294198c047e9872157c7a1e5110d"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Forth",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0"
+      ],
+      "id": "20140122da0f4317a969ceacbb3021f7",
+      "modified": 1778614446000,
+      "owner": "lnel_uo_online",
+      "title": "NOLA Vegetation, Heat Index, and Flood Hazard Map_Reclassified - Ward Four",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Forth",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0",
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Louisiana_Lidar_5m_DEM_Color_Tiles/MapServer"
+      ],
+      "id": "2793afdc30944031a1bb812b72f2e3fc",
+      "modified": 1778614091000,
+      "owner": "lnel_uo_online",
+      "title": "NOLA Flood Hazard Map - Ward Four",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer"
+      ],
+      "id": "b68906cd9e0a472ebcfe43797ceb3ffe",
+      "modified": 1777312821000,
+      "owner": "ipeccia@tulane.edu_tulane",
+      "title": "NOLA_Flood_Risk",
+      "type": "Web Map",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://storymaps.arcgis.com/stories/562f18f38dfd4d3b97aed3ab6a311cb4"
+      ],
+      "id": "562f18f38dfd4d3b97aed3ab6a311cb4",
+      "modified": 1776870386000,
+      "owner": "S584609_NWMSUGIS",
+      "title": "Water Management in NOLA",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/562f18f38dfd4d3b97aed3ab6a311cb4"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/NOLA_Flooding/MapServer"
+      ],
+      "id": "d93a9cf88ac94fea9397ee905a4e198c",
+      "modified": 1774992880000,
+      "owner": "bwinke1@lsu.edu_lsu_its",
+      "title": "NOLA Flooding",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/NOLA_Flooding/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/dom",
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Louisiana_Lidar_5m_DEM_Color_Tiles/MapServer"
+      ],
+      "id": "9fd7529cc2454024baa8cacd7a7da39a",
+      "modified": 1772061339000,
+      "owner": "dvelluto_uo_online",
+      "title": "NOLA Flood 9",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0"
+      ],
+      "id": "ad8a61a12f9f497085aedaacc0229cb2",
+      "modified": 1771995026000,
+      "owner": "gshaffer_UO_online",
+      "title": "7th ward NOLA Vegetation, Heat Index, and Flood Hazard Map_Reclassified",
+      "type": "Web Map",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+        "https://services5.arcgis.com/W1uyphp8h2tna3qJ/arcgis/rest/services/Wards_20260212/FeatureServer/0",
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Louisiana_Lidar_5m_DEM_Color_Tiles/MapServer"
+      ],
+      "id": "bf1f4829e43c4015afedc303d92e6328",
+      "modified": 1771994894000,
+      "owner": "gshaffer_UO_online",
+      "title": "NOLA Flood Hazard Map 7th ward",
+      "type": "Web Map",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "ff6828972d984bb19b189d14ab9e4239",
+      "modified": 1770503595000,
+      "owner": "schweriner38",
+      "title": "Monitoring Potential Flooding, NOLA",
+      "type": "Dashboard",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services9.arcgis.com/mOPnNh6CYCcVRvgf/arcgis/rest/services/Flood_risk_NOLA_WFL1/FeatureServer/0"
+      ],
+      "id": "74b89b11b5ee46a192ad9a37a466a509",
+      "modified": 1765491529000,
+      "owner": "ss933725@ohio.edu_Arts_Sciences",
+      "title": "Flood_risk_NOLA",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services9.arcgis.com/mOPnNh6CYCcVRvgf/arcgis/rest/services/Flood_risk_NOLA_WFL1/FeatureServer"
+      ],
+      "id": "8ebf2823d15545cfa5c9ae657e44af79",
+      "modified": 1765491519000,
+      "owner": "ss933725@ohio.edu_Arts_Sciences",
+      "title": "Flood_risk_NOLA_WFL1",
+      "type": "Feature Service",
+      "url": "https://services9.arcgis.com/mOPnNh6CYCcVRvgf/arcgis/rest/services/Flood_risk_NOLA_WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/nola"
+      ],
+      "id": "6e3b38575dbe4f3eb75d284a9ec3b79b",
+      "modified": 1763879149000,
+      "owner": "shivaniwats@ucla.edu_gisucla",
+      "title": "nola stuff",
+      "type": "Feature Service",
+      "url": "https://services7.arcgis.com/2hYXmwteFLemN5bW/arcgis/rest/services/nola stuff/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services9.arcgis.com/LcLOGTtPOHyTSbT6/arcgis/rest/services/Louisiana_SLR_Final_WFL1/FeatureServer"
+      ],
+      "id": "207a4e48a95644a1a75044567710efca",
+      "modified": 1757017557000,
+      "owner": "ascudero_certificate_25s",
+      "title": "Louisiana SLR Final_WFL1",
+      "type": "Feature Service",
+      "url": "https://services9.arcgis.com/LcLOGTtPOHyTSbT6/arcgis/rest/services/Louisiana_SLR_Final_WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Housing_Rent_and_Income_25_to_29__WFL1/FeatureServer"
+      ],
+      "id": "ec67edb5dd5a45a7818928d43df14e9f",
+      "modified": 1746765533000,
+      "owner": "ajp1170_myunh",
+      "title": "NOLA Hurricane Risk Housing Rent and Income 25 to 29__WFL1",
+      "type": "Feature Service",
+      "url": "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Housing_Rent_and_Income_25_to_29__WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Housing_Rent_and_Income_15__WFL1/FeatureServer"
+      ],
+      "id": "2fffba6c06294c509f5ff72db38a30c0",
+      "modified": 1746765326000,
+      "owner": "ajp1170_myunh",
+      "title": "NOLA Hurricane Risk Housing Rent and Income 15__WFL1",
+      "type": "Feature Service",
+      "url": "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Housing_Rent_and_Income_15__WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Housing_Rent_and_Income_WFL1/FeatureServer"
+      ],
+      "id": "ce86197e88e24b7c96b524cee3517a35",
+      "modified": 1746765008000,
+      "owner": "ajp1170_myunh",
+      "title": "NOLA Hurricane Risk Housing Rent and Income_WFL1",
+      "type": "Feature Service",
+      "url": "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Housing_Rent_and_Income_WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Rating_and_Rent_Units_WFL1/FeatureServer"
+      ],
+      "id": "32c0cc26d1904437adb8f0cae46b4378",
+      "modified": 1746764249000,
+      "owner": "ajp1170_myunh",
+      "title": "NOLA Hurricane Risk Rating and Rent Units_WFL1",
+      "type": "Feature Service",
+      "url": "https://services8.arcgis.com/4eSmkZn4Z1xN6dXf/arcgis/rest/services/NOLA_Hurricane_Risk_Rating_and_Rent_Units_WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "e66a197a7aef46749f874b6fff7abd9d",
+      "modified": 1745761355000,
+      "owner": "lmandel@uvm.edu_UVM",
+      "title": "Disaster Capitalism & Gentrification:",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/e66a197a7aef46749f874b6fff7abd9d"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "b0b61738a73e4bf8ae2f127de7807c13",
+      "modified": 1745378105000,
+      "owner": "haukspir_msugis",
+      "title": "Understanding Tree Equity",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/b0b61738a73e4bf8ae2f127de7807c13"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services1.arcgis.com/B4MnusZHL3vmqU3t/arcgis/rest/services/FEMA_Flood_Zones_NOLA/FeatureServer"
+      ],
+      "id": "1c5f1583dec140409e0e6147b84ea41b",
+      "modified": 1744840400000,
+      "owner": "ngu2_UMiami",
+      "title": "FEMA Flood Zones NOLA",
+      "type": "Feature Service",
+      "url": "https://services1.arcgis.com/B4MnusZHL3vmqU3t/arcgis/rest/services/FEMA_Flood_Zones_NOLA/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "d23a2982f0f144bf8de841f3659182b1",
+      "modified": 1741241288000,
+      "owner": "Murray_Drynan_SRRC",
+      "title": "Flood Management Information Mapping NOLAG WORKING 2",
+      "type": "Web Experience",
+      "url": "https://experience.arcgis.com/experience/d23a2982f0f144bf8de841f3659182b1"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Subsidence_WFL1/FeatureServer"
+      ],
+      "id": "42fc8e4f0f4e4c66b7e98780756a2fc6",
+      "modified": 1733012438000,
+      "owner": "zweng40_gtmaps",
+      "title": "6514 NOLA Subsidence_WFL1",
+      "type": "Feature Service",
+      "url": "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Subsidence_WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://gis.nola.gov/arcgis/rest/services/Basemaps/OrleansParish/MapServer/1",
+        "https://gis.nola.gov/arcgis/rest/services/Basemaps/OrleansParish/MapServer/2",
+        "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Flooding_WFL1/FeatureServer/0",
+        "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Flooding_WFL1/FeatureServer/1"
+      ],
+      "id": "0297103c808f4364873e1002f02710cb",
+      "modified": 1733012301000,
+      "owner": "zweng40_gtmaps",
+      "title": "6514 NOLA Flooding",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Flooding_WFL1/FeatureServer"
+      ],
+      "id": "007cc5e49ee048f4ad8a77784221daa0",
+      "modified": 1733012291000,
+      "owner": "zweng40_gtmaps",
+      "title": "6514 NOLA Flooding_WFL1",
+      "type": "Feature Service",
+      "url": "https://services2.arcgis.com/I9cUOJUZvdGAJncI/arcgis/rest/services/6514_NOLA_Flooding_WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "fb0f0c5de6ab4419b5f92ed47fb75588",
+      "modified": 1719614152000,
+      "owner": "MAGEE_DESSMON_DARV01_gis",
+      "title": "nola flood 6",
+      "type": "Web Scene",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "862dc9c2a6f042cfbf80e10893f0cbb3",
+      "modified": 1719613544000,
+      "owner": "MAGEE_DESSMON_DARV01_gis",
+      "title": "nola flood 2",
+      "type": "Web Scene",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Available_Real_Estate/FeatureServer"
+      ],
+      "id": "a0b7b5da633d413c832e787dfb64b700",
+      "modified": 1715347998000,
+      "owner": "EngEnv_PortNOLA",
+      "title": "Available Industrial Real Estate",
+      "type": "Feature Service",
+      "url": "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Available_Real_Estate/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "08e22d998c3241668a21a0043dcdd193",
+      "modified": 1715347956000,
+      "owner": "EngEnv_PortNOLA",
+      "title": "Floodgates Impacting Port NOLA",
+      "type": "Code Attachment",
+      "url": "//pono.maps.arcgis.com/sharing/rest/content/items/8fe7de2a8f744c93b066b6933bc5d3b3/package"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "15287f061a7448afbfc9769d43d1c0b6",
+      "modified": 1715347886000,
+      "owner": "EngEnv_PortNOLA",
+      "title": "Floodgates Impacting Port NOLA (Public)",
+      "type": "Web Mapping Application",
+      "url": "https://pono.maps.arcgis.com/apps/webappviewer/index.html?id=15287f061a7448afbfc9769d43d1c0b6"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "394d60274f504cc2b40a08b92b4a4648",
+      "modified": 1715347856000,
+      "owner": "EngEnv_PortNOLA",
+      "title": "Floodgates Impacting Port NOLA (Public)",
+      "type": "Code Attachment",
+      "url": "//pono.maps.arcgis.com/sharing/rest/content/items/15287f061a7448afbfc9769d43d1c0b6/package"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://earthobs1.arcgis.com/arcgis/rest/services/Live_Stream_Gauges/MapServer"
+      ],
+      "id": "8fe7de2a8f744c93b066b6933bc5d3b3",
+      "modified": 1715347843000,
+      "owner": "EngEnv_PortNOLA",
+      "title": "Floodgates Impacting Port NOLA",
+      "type": "Web Mapping Application",
+      "url": "https://pono.maps.arcgis.com/apps/webappviewer/index.html?id=8fe7de2a8f744c93b066b6933bc5d3b3"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "710b0b532dd44f1a95c3aff1ea3dc19f",
+      "modified": 1714433383000,
+      "owner": "taltman@fandm.edu_fandm",
+      "title": "The Sinking of New Orleans",
+      "type": "StoryMap",
+      "url": "https://storymaps.arcgis.com/stories/710b0b532dd44f1a95c3aff1ea3dc19f"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/New_Orleans_Levee_and_Flood_Hazard_Zones_Map_WFL1/FeatureServer/0",
+        "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/New_Orleans_Levee_and_Flood_Hazard_Zones_Map_WFL1/FeatureServer/17",
+        "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/City%20of%20New%20Orleans/FeatureServer/0"
+      ],
+      "id": "6e19177ff743439ca226b57701e02d2c",
+      "modified": 1709671621000,
+      "owner": "abilsky1_GISandData",
+      "title": "New Orleans Levee and Flood Hazard Zones Map",
+      "type": "Web Map",
+      "url": ""
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://landscape11.arcgis.com/arcgis/rest/services/USA_Flood_Hazard_Areas/ImageServer"
+      ],
+      "id": "187f847cd80944a896188105d2ec5cfa",
+      "modified": 1701228418000,
+      "owner": "maubrey@tulane.edu_tulane",
+      "title": "FloodRisk_NOLA",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/New_Orleans_Levee_and_Flood_Hazard_Zones_Map_WFL1/FeatureServer"
+      ],
+      "id": "d0fcac6bb4894c9aab86e9430045efae",
+      "modified": 1670425677000,
+      "owner": "abilsky1_GISandData",
+      "title": "New Orleans Levee and Flood Hazard Zones Map_WFL1",
+      "type": "Feature Service",
+      "url": "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/New_Orleans_Levee_and_Flood_Hazard_Zones_Map_WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/NOLA_Block_Groups_Flooded_by_Hurricane_Katrina_Dissolved_Outline/FeatureServer"
+      ],
+      "id": "2f7a4d25601e405f95d8bab65b3916b9",
+      "modified": 1667826473000,
+      "owner": "BucknellGIS",
+      "title": "NOLA Block Groups Flooded by Hurricane Katrina Dissolved Outline",
+      "type": "Feature Service",
+      "url": "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/NOLA_Block_Groups_Flooded_by_Hurricane_Katrina_Dissolved_Outline/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/NOLA_Block_Groups_With_Tag_for_Flooded_or_Not_Flooded_By_Hurricane_Katrina/FeatureServer"
+      ],
+      "id": "ced1cc1b3fe24b5db6b496930499882d",
+      "modified": 1667826281000,
+      "owner": "BucknellGIS",
+      "title": "NOLA Block Groups With Tag for Flooded or Not Flooded By Hurricane Katrina",
+      "type": "Feature Service",
+      "url": "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/NOLA_Block_Groups_With_Tag_for_Flooded_or_Not_Flooded_By_Hurricane_Katrina/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/NOLA_Block_groups_with_flood_tag/FeatureServer"
+      ],
+      "id": "4991b63ed00d4b9889aa2ea49320a279",
+      "modified": 1667586152000,
+      "owner": "cap044_Bucknell",
+      "title": "NOLA_Block_groups_with_flood_tag",
+      "type": "Feature Service",
+      "url": "https://services2.arcgis.com/xsh7pVZv42relbEf/arcgis/rest/services/NOLA_Block_groups_with_flood_tag/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/NOLA_1_day_after_Katrina_Map/MapServer"
+      ],
+      "id": "83c6671d71f84d85ba03364730791e59",
+      "modified": 1648261884000,
+      "owner": "dbaron6_lsu_its",
+      "title": "NOLA 1 day after Katrina Map",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/NOLA_1_day_after_Katrina_Map/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/FEMA_Flooding_Events_2020_WFL1/FeatureServer"
+      ],
+      "id": "bedba0249b5840598eda21cbf5cf0f2a",
+      "modified": 1639693154000,
+      "owner": "stefany.carty",
+      "title": "FEMA_Flooding_Events_2020_WFL1",
+      "type": "Feature Service",
+      "url": "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/FEMA_Flooding_Events_2020_WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/LA_Elevation___Flood_WFL1/FeatureServer"
+      ],
+      "id": "118266dca1c144a28b600de04c94f63d",
+      "modified": 1639691705000,
+      "owner": "stefany.carty",
+      "title": "LA Elevation _ Flood_WFL1",
+      "type": "Feature Service",
+      "url": "https://services2.arcgis.com/bB9Y1bGKerz1PTl5/arcgis/rest/services/LA_Elevation___Flood_WFL1/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://gis.nola.gov/arcgis/rest/services/Recreation/ParksPoly/MapServer",
+        "https://hub.arcgis.com/datasets/NOLAGIS::-of-residential-parcels-without-a-structure-vacant-lots-2018/explore?location=30.022100%2C-89.882600%2C11.84",
+        "https://hub.arcgis.com/datasets/NOLAGIS::code-enforcement-judgement/explore?location=29.959500%2C-90.079500%2C12.86",
+        "https://hub.arcgis.com/datasets/NOLAGIS::rta-routes/explore?location=29.989052%2C-90.090350%2C12.61",
+        "https://hudgis-hud.opendata.arcgis.com/datasets/ef143299845841f8abb95969c01f88b5_0/explore?location=15.184973%2C0.314282%2C2.68",
+        "https://msc.fema.gov/portal/home",
+        "https://nu.maps.arcgis.com/home/item.html?id=4e28a8fa23dc4e6d836e43ecf29b253d",
+        "https://nu.maps.arcgis.com/home/item.html?id=a0bd33b1147a4eb286cbba3736986234",
+        "https://portal-nolagis.opendata.arcgis.com/datasets/3273a5f8334d40838681ff0337eddb8c_0/explore?location=29.982050%2C-90.026500%2C12.63",
+        "https://portal-nolagis.opendata.arcgis.com/datasets/4b4c97cd9bad4d01a452388845488bd3/explore?layer=0&amp;location=30.028700%2C-89.939400%2C12.17",
+        "https://portal-nolagis.opendata.arcgis.com/datasets/e7daa4c977d14e1b9e2fa4d7aff81e59_0/explore?location=30.002763%2C-90.029769%2C11.82",
+        "https://portal-nolagis.opendata.arcgis.com/datasets/hospitals/explore?location=29.986600%2C-89.987050%2C12.69",
+        "https://portal-nolagis.opendata.arcgis.com/datasets/schools/explore?location=29.982150%2C-90.029750%2C12.85",
+        "https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Blighted_Properties_East/FeatureServer/1",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Flood_Hazard_Areas/FeatureServer/0",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/0",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/1",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/2",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/4",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/5",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/7",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/New_Orleans_East_Community_Asset_Map_WFL1/FeatureServer/8",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/PCT_Vacant_Lots/FeatureServer/1",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Power_Infrastructure/FeatureServer/0",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Project_Sites/FeatureServer/0",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Sewer_Pump_Station_East/FeatureServer/0",
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Workforce_Training_Sites/FeatureServer/0",
+        "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/RR_071218/FeatureServer/0",
+        "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/RR_071218/FeatureServer/3",
+        "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/RR_071218/FeatureServer/4",
+        "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/1",
+        "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/2",
+        "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/3",
+        "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/4",
+        "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/5",
+        "https://services1.arcgis.com/cYAR0YQ3Tr6M4FbT/arcgis/rest/services/Water_Pressurized_Main_ClassifiedBy_InstallDate/FeatureServer/6"
+      ],
+      "id": "6eeffd5aebbe4a85a6635aa18924922a",
+      "modified": 1623865281000,
+      "owner": "RDS_NU",
+      "title": "New Orleans East Community Asset Map",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Flood_Hazard_Areas/FeatureServer"
+      ],
+      "id": "47620327941f43228d186f2f218a69a7",
+      "modified": 1623680710000,
+      "owner": "RDS_NU",
+      "title": "Flood_Hazard_Areas",
+      "type": "Feature Service",
+      "url": "https://services1.arcgis.com/KUeKSLlMUcWvuPRM/arcgis/rest/services/Flood_Hazard_Areas/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Web_GIS_7_Nola/MapServer"
+      ],
+      "id": "678416966f3943dd8a2622e94940b631",
+      "modified": 1616814121000,
+      "owner": "cround2_lsu_its",
+      "title": "Web GIS 7 Nola",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/njxlOVQKvDzk10uN/arcgis/rest/services/Web_GIS_7_Nola/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://cimsgeo3.coastal.louisiana.gov/arcgis/rest/services/LIMS/LeveeGates/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Facilities/FeatureServer/0",
+        "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/Floodgates_Impacting_Port_NOLA_stakeholders/FeatureServer/0",
+        "https://services7.arcgis.com/gUiCLK83ql3nCusz/arcgis/rest/services/New_Orleans_Public_Belt_Railroad_Lines_PIER_Plan/FeatureServer/5"
+      ],
+      "id": "fe0cb8dd043d4de58471e6fa08f70139",
+      "modified": 1603724725000,
+      "owner": "EngEnv_PortNOLA",
+      "title": "Floodgates Impacting Port NOLA_Public Version",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "https://tiles.arcgis.com/tiles/V388bo78v0PokOBx/arcgis/rest/services/NOLA_AfterKatrina/MapServer"
+      ],
+      "id": "4e0b9a6ec9e84da8b6b728e9b72a7774",
+      "modified": 1598497650000,
+      "owner": "sp2020_cp_pob227",
+      "title": "nola flooding",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "70bb1e81e57e439381a3e5562d8b38eb",
+      "modified": 1598121286000,
+      "owner": "EngEnv_PortNOLA",
+      "title": "Port NOLA Floodgate Status Dashboard (Public)",
+      "type": "Dashboard",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/FEMA_Levees/FeatureServer/0"
+      ],
+      "id": "7ffe7655c19a4145b9cfdc1dd02246ad",
+      "modified": 1588868821000,
+      "owner": "jbeatt5",
+      "title": "NOLA Pumps",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "48bd185cfcda43f4bcf390abf53d14cd",
+      "modified": 1588868386000,
+      "owner": "jbeatt5",
+      "title": "NOLA Storm Water Management Systems",
+      "type": "Web Mapping Application",
+      "url": "https://www.arcgis.com/apps/StoryMapBasic/index.html?appid=48bd185cfcda43f4bcf390abf53d14cd"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "7f30fe3251b44bda99b1c5bcb1b40d2c",
+      "modified": 1588529589000,
+      "owner": "jbeatt5",
+      "title": "NOLA StormWater Management Systems",
+      "type": "Web Mapping Application",
+      "url": "https://www.arcgis.com/apps/StoryMapBasic/index.html?appid=7f30fe3251b44bda99b1c5bcb1b40d2c"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/V388bo78v0PokOBx/arcgis/rest/services/NOLA_AfterKatrina/MapServer"
+      ],
+      "id": "10d74026d5e3497d995a8e5dea901cc9",
+      "modified": 1561827831000,
+      "owner": "MDgeoED",
+      "title": "NOLA_AfterKatrina",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/V388bo78v0PokOBx/arcgis/rest/services/NOLA_AfterKatrina/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://earthobservatory.nasa.gov/?eocn=topnav&amp;eoci=logo",
+        "http://storms.ngs.noaa.gov/katrina/",
+        "http://www.datacenterresearch.org/data-resources/katrina/facts-for-impact/",
+        "http://www.datacenterresearch.org/data-resources/neighborhood-data/",
+        "http://www.datacenterresearch.org/reports_analysis/neighborhood-recovery-rates-growth-continues-through-2015-in-new-orleans-neighborhoods/",
+        "http://www.nhc.noaa.gov/",
+        "http://www.noaa.gov/",
+        "http://www.smithsonianmag.com/history/these-maps-show-severe-impact-hurricane-katrina-new-orleans-180956364/",
+        "https://data.nola.gov/Geographic-Base-Layers/NOLA-Neighborhood-Statistical-Areas/ukvx-5dku",
+        "https://lh3.googleusercontent.com/-V31a8fKTB6A/VdNZnWdlw3I/AAAAAAAAAKs/h_NQZzznchI/s1600/Industrial%252520Canal.jpg",
+        "https://lh3.googleusercontent.com/-vOXG3mav0d4/Vcorv5d0CMI/AAAAAAAAAAk/A0h7kcDb-ZI/s1600/Flood%252520Legend.png",
+        "https://pubs.usgs.gov/ds/470/ds470.pdf",
+        "https://storymaps.arcgis.com/en/",
+        "https://storymaps.arcgis.com/en/app-list/map-series/",
+        "https://www.census.gov/hhes/migration/data/acs/state-to-state.html",
+        "https://www.nps.gov/crgis/HPRM-KatrinaPRINT.pdf",
+        "https://www.weather.gov/"
+      ],
+      "id": "597d573e58514bdbbeb53ba2179d2359",
+      "modified": 1540307737000,
+      "owner": "StoryMaps",
+      "title": "Katrina +10: A Decade of Change in New Orleans ",
+      "type": "Web Mapping Application",
+      "url": "https://story.maps.arcgis.com/apps/MapSeries/index.html?appid=597d573e58514bdbbeb53ba2179d2359"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://cop.nola.gov:6080/arcgis/rest/services/Districts_Zones/MapServer",
+        "http://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/Summarize%20USA%20Hazardous%20Waste%20Sites-Hazardous%20Waste%20Sites%20within%20New%20Orleans%20Flood%20Areas/FeatureServer/0",
+        "https://gis.nola.gov/arcgis/rest/services/Admininstrative/NOPD_Police_Districts/MapServer",
+        "https://gis.nola.gov/arcgis/rest/services/Facilities/Hospitals/MapServer",
+        "https://gis.nola.gov/arcgis/rest/services/Facilities/PublicHealthClinics/MapServer",
+        "https://gis.nola.gov/arcgis/rest/services/Facilities/Schools/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Social_Vulnerability_Index/MapServer",
+        "https://services3.arcgis.com/vQ3OYhyPnynK3Zqb/arcgis/rest/services/Hot%20Spots%20PercentPeopleOver65/FeatureServer/0"
+      ],
+      "id": "9a0259a38bf64a72a27619c7a5c55cd3",
+      "modified": 1528998274000,
+      "owner": "exw6_georgetownuniv",
+      "title": "NOLA EM Evacuation \"Katrina Event Tabletop\"",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer/1",
+        "http://services.arcgis.com/nzS0F0zdNLvs7nc8/arcgis/rest/services/Levee_Failures_Updated/FeatureServer/0",
+        "http://tiles.arcgis.com/tiles/DO4gTjwJVIJ7O9Ca/arcgis/rest/services/NOLA_Levees/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+      ],
+      "id": "c76780b946704c58a32a72ad6b7f2694",
+      "modified": 1508814094000,
+      "owner": "eolivier",
+      "title": "New Orleans Environmental Inequality - Flooding & Poverty",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+      ],
+      "id": "760c8ffd5ba5426d9bacd7281c417273",
+      "modified": 1502147861000,
+      "owner": "emweeklyrpt",
+      "title": "Tornado and Flooding Situation Report- Tulsa",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer",
+        "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+      ],
+      "id": "f0122e87d0524a14b9638ae0d0143e18",
+      "modified": 1502147786000,
+      "owner": "emweeklyrpt",
+      "title": "Tornado and Flooding Situation Report #1 (August 7)",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://blog.nola.com/times-picayune/2007/08/corps_analysis_shows_17th_st_c.html",
+        "http://www.ce.berkeley.edu/projects/neworleans/report/CH_4.pdf",
+        "http://www.mvn.usace.army.mil/Portals/56/docs/PAO/FactSheets/IHNC-LakeBorgneSurgeBarrier613.pdf",
+        "https://en.wikipedia.org/wiki/Jefferson_Parish,_Louisiana"
+      ],
+      "id": "16c6d6fdc2a44f02926af8143744115a",
+      "modified": 1497021457000,
+      "owner": "aig004_Bucknell",
+      "title": "NOLA CANALS - Summer 2017 - Assumpta",
+      "type": "Web Mapping Application",
+      "url": "https://bucknell.maps.arcgis.com/apps/MapJournal/index.html?appid=16c6d6fdc2a44f02926af8143744115a"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://tiles.arcgis.com/tiles/DO4gTjwJVIJ7O9Ca/arcgis/rest/services/NOLA_Levees/MapServer"
+      ],
+      "id": "fde94d89e8b54ac6ba06d305bce09fcf",
+      "modified": 1490963132000,
+      "owner": "archiveDRP",
+      "title": "NOLA_Levees",
+      "type": "Map Service",
+      "url": "https://tiles.arcgis.com/tiles/DO4gTjwJVIJ7O9Ca/arcgis/rest/services/NOLA_Levees/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer",
+        "http://services3.arcgis.com/j2a3SeWN04oskFYa/arcgis/rest/services/NOLA_Open_For_Business/FeatureServer/0"
+      ],
+      "id": "88428143655a44d8af0a18fd334f4f97",
+      "modified": 1485200756000,
+      "owner": "GH-SolutionAccount",
+      "title": "NOLA Open for Business",
+      "type": "Web Map",
+      "url": null
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "https://services3.arcgis.com/j2a3SeWN04oskFYa/arcgis/rest/services/NOLA_Open_For_Business/FeatureServer"
+      ],
+      "id": "9dc8598acdc6409a96597b9fc2c948f8",
+      "modified": 1484753958000,
+      "owner": "GH-SolutionAccount",
+      "title": "NOLA Open For Business (Authoritative)",
+      "type": "Feature Service",
+      "url": "https://services3.arcgis.com/j2a3SeWN04oskFYa/arcgis/rest/services/NOLA_Open_For_Business/FeatureServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer"
+      ],
+      "id": "2e3f2183a21f46ea9cd6e727eb703fb9",
+      "modified": 1436191956000,
+      "owner": "StoryMaps",
+      "title": "Katrina Flooding Inundation Extent (Comprehensive), 01 Sept 2005 - Copy",
+      "type": "Feature Service",
+      "url": "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://farm9.static.flickr.com/8887/18462878545_91fa1a1c48_b.jpg",
+        "http://www.air-worldwide.com/uploadedImages/Publications_Pages/AIR_Currents/2010/images/1_LossCost.png",
+        "http://www.righteousfur.com/wp-content/uploads/2011/07/nutria.critter.jpg"
+      ],
+      "id": "f8bfcc9f34a2407b8d5b65f31e957cad",
+      "modified": 1433530673000,
+      "owner": "glrm001_Bucknell",
+      "title": "Wetlands Project Map",
+      "type": "Web Mapping Application",
+      "url": "https://bucknell.maps.arcgis.com/apps/MapJournal/index.html?appid=f8bfcc9f34a2407b8d5b65f31e957cad"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/TransitAndEngineering/MapServer/7"
+      ],
+      "id": "bc67c938b0be4d2c9f1994440e9a2503",
+      "modified": 1431966153000,
+      "owner": "BucknellGIS",
+      "title": "Transit & Engineering - Levee Floodwalls",
+      "type": "Feature Service",
+      "url": "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/TransitAndEngineering/MapServer/7"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer/1"
+      ],
+      "id": "f7ab95270f514979822bec9f801c7ea0",
+      "modified": 1431965710000,
+      "owner": "BucknellGIS",
+      "title": "Storms (Areas) - Katrina Flooding Inundation Extent (Comprehensive), 01 Sept 2005",
+      "type": "Feature Service",
+      "url": "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer/1"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer/0"
+      ],
+      "id": "69726559111b4727be7e41efb0147d77",
+      "modified": 1431965676000,
+      "owner": "BucknellGIS",
+      "title": "Storms (Areas) - Katrina Flooding Inundation Extent *Excluding* Levee Protected Areas (Orleans, St. Charles and St. Tammany Parish)",
+      "type": "Feature Service",
+      "url": "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_Areas/MapServer/0"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_PointsLinesOutlines/MapServer/3"
+      ],
+      "id": "5bcf07b64ba049a48d68454300292973",
+      "modified": 1431965246000,
+      "owner": "BucknellGIS",
+      "title": "Storms (Points, Lines, Outlines) - Advisory Base Flood Elevation",
+      "type": "Feature Service",
+      "url": "http://gis-web.bucknell.edu/arcgis/rest/services/Course_UNIV200_NewOrleans/Storms_PointsLinesOutlines/MapServer/3"
+    },
+    {
+      "access": "public",
+      "endpoints": [],
+      "id": "e727bf782c2b47499d5599ba0f4fb5fb",
+      "modified": 1410814352000,
+      "owner": "Nlee99",
+      "title": "Spring Floods That Occurred from 2006-2011 in Canada, Nolan Lee",
+      "type": "Web Mapping Application",
+      "url": "https://www.arcgis.com/apps/Viewer/index.html?appid=e727bf782c2b47499d5599ba0f4fb5fb"
+    },
+    {
+      "access": "public",
+      "endpoints": [
+        "http://edumaps.esricanada.com/ArcGIS/rest/services/Demographics/Population_Density/MapServer",
+        "http://edumaps.esricanada.com/ArcGIS/rest/services/MapServices/CanadaClimate/MapServer",
+        "http://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/NaturalEvents_TEST/FeatureServer/0",
+        "http://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/NaturalEvents_TEST/FeatureServer/1",
+        "http://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/NaturalEvents_TEST/FeatureServer/2",
+        "http://services.arcgis.com/As5CFN3ThbQpy8Ph/arcgis/rest/services/NaturalEvents_TEST/FeatureServer/3",
+        "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"
+      ],
+      "id": "085ce83321124d78b7cf39ce11e16bd0",
+      "modified": 1410814039000,
+      "owner": "Nlee99",
+      "title": "Spring Floods That Occurred from 2006-2011 in Canada, Nolan Lee",
+      "type": "Web Map",
+      "url": null
+    }
+  ],
+  "source_count": 181
+}
