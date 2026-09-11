@@ -30,7 +30,14 @@ jobs:
           python-version: '3.11'
 
       - name: Backfill historic flood incidents
-        run: python scripts/backfill_history.py
+        shell: bash
+        run: |
+          python - <<'PY'
+          import runpy
+          import ssl
+          ssl._create_default_https_context = ssl._create_unverified_context
+          runpy.run_path('scripts/backfill_history.py', run_name='__main__')
+          PY
 
       - name: Commit recovered archive data
         shell: bash
