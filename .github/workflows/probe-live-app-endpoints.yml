@@ -1,0 +1,36 @@
+name: Probe live Streetwise endpoints
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/probe_live_app_endpoints.py'
+      - '.github/workflows/probe-live-app-endpoints.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Probe live app endpoints
+        run: python scripts/probe_live_app_endpoints.py
+      - name: Commit probe result
+        shell: bash
+        run: |
+          if [[ -n "$(git status --porcelain data/discovery/live_app_endpoint_probe.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/discovery/live_app_endpoint_probe.json
+            git commit -m "Record alternate live flood endpoint probe"
+            git pull --rebase
+            git push
+          fi
