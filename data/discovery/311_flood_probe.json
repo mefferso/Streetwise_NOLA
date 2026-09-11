@@ -1,0 +1,64 @@
+{
+  "dataset": "311 OPCD Calls (2012-Present)",
+  "dataset_id": "2jgv-pqrq",
+  "drainage_group_count": 7,
+  "drainage_groups": [
+    {
+      "first": "2026-07-12T07:33:26.000",
+      "last": "2026-09-10T16:00:12.000",
+      "n": "313",
+      "request_reason": "Catch Basin Not Draining",
+      "request_type": "Drainage"
+    },
+    {
+      "first": "2026-07-13T15:59:57.000",
+      "last": "2026-09-09T15:19:11.000",
+      "n": "54",
+      "request_reason": "Catch Basin Frame and Cover Missing or Damaged",
+      "request_type": "Drainage"
+    },
+    {
+      "first": "2026-07-14T07:01:55.000",
+      "last": "2026-09-10T18:14:19.000",
+      "n": "43",
+      "request_reason": "Ditch and Culvert Maintenance",
+      "request_type": "Drainage"
+    },
+    {
+      "first": "2026-07-13T17:49:47.000",
+      "last": "2026-09-10T13:10:20.000",
+      "n": "40",
+      "request_reason": "Drainage Manhole Cover Missing or Damaged",
+      "request_type": "Drainage"
+    },
+    {
+      "first": "2026-07-13T11:35:03.000",
+      "last": "2026-09-10T06:28:40.000",
+      "n": "18",
+      "request_reason": "Illegal Dumping (Sewer Odor)",
+      "request_type": "Drainage"
+    },
+    {
+      "first": "2026-07-13T08:48:03.000",
+      "last": "2026-09-02T13:17:37.000",
+      "n": "4",
+      "request_reason": "Illegal Dumping (Catch Basin)",
+      "request_type": "Drainage"
+    },
+    {
+      "first": "2026-07-20T11:16:30.000",
+      "last": "2026-07-20T11:16:30.000",
+      "n": "1",
+      "request_reason": "Catch Basin Not Draining",
+      "request_type": "Roads and Streets"
+    }
+  ],
+  "flood_group_count": 0,
+  "flood_groups": [],
+  "flood_row_count": 0,
+  "flood_rows": [],
+  "period": {
+    "end": "2026-09-11T23:59:59.999",
+    "start": "2026-07-12T00:00:00.000"
+  }
+}
