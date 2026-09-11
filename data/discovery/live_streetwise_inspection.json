@@ -1,0 +1,29 @@
+{
+  "base": "https://streetwise.nola.gov/",
+  "errors": [
+    "page: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+  ],
+  "html_endpoints": [],
+  "scripts": [
+    {
+      "endpoints": [],
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+      "url": "https://streetwise.nola.gov/app.js"
+    },
+    {
+      "endpoints": [],
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+      "url": "https://streetwise.nola.gov/main.js"
+    },
+    {
+      "endpoints": [],
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+      "url": "https://streetwise.nola.gov/js/app.js"
+    },
+    {
+      "endpoints": [],
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>",
+      "url": "https://streetwise.nola.gov/scripts/app.js"
+    }
+  ]
+}
