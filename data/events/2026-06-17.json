@@ -1,0 +1,42 @@
+{
+  "active_count": 0,
+  "date": "2026-06-17",
+  "event_count": 1,
+  "events": [
+    {
+      "active": false,
+      "address": "118 CITY PARK AV",
+      "attributes": {
+        "Address": "118 CITY PARK AV",
+        "Agency": "POLICE",
+        "Beat": "3D02",
+        "CommonName": "911 CENTER",
+        "ESRI_OID": 1757,
+        "Incident": "016871",
+        "MapX": -90.11225639,
+        "MapY": 29.98053699,
+        "Priority": "1C",
+        "SelfInitiated": "N",
+        "TimeCreate": 1781688253000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70119"
+      },
+      "event_id": "incident-20260617-016871",
+      "event_time_local": "2026-06-17T09:24:13-05:00",
+      "first_seen_utc": "2026-06-17T09:24:13-05:00",
+      "incident": "016871",
+      "last_seen_utc": "2026-06-17T09:24:13-05:00",
+      "lat": 29.980536990000076,
+      "lon": -90.11225638999997,
+      "object_id": 1757,
+      "observations": 1,
+      "source_layer": 3,
+      "time_create": 1781688253000,
+      "time_create_utc": 1781706253000,
+      "title": "911 CENTER"
+    }
+  ],
+  "last_archive_run_utc": "2026-09-11T18:26:57.567117Z",
+  "timezone": "America/Chicago"
+}

@@ -1,0 +1,42 @@
+{
+  "active_count": 0,
+  "date": "2026-05-25",
+  "event_count": 1,
+  "events": [
+    {
+      "active": false,
+      "address": "CURRAN BLVD / BENSON ST",
+      "attributes": {
+        "Address": "CURRAN BLVD / BENSON ST",
+        "Agency": "POLICE",
+        "Beat": "7P01",
+        "CommonName": null,
+        "ESRI_OID": 2145,
+        "Incident": "025324",
+        "MapX": -89.99475197,
+        "MapY": 30.04044013,
+        "Priority": "1C",
+        "SelfInitiated": "N",
+        "TimeCreate": 1779703588000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70127"
+      },
+      "event_id": "incident-20260525-025324",
+      "event_time_local": "2026-05-25T10:06:28-05:00",
+      "first_seen_utc": "2026-05-25T10:06:28-05:00",
+      "incident": "025324",
+      "last_seen_utc": "2026-05-25T10:06:28-05:00",
+      "lat": 30.040440130000036,
+      "lon": -89.99475196999998,
+      "object_id": 2145,
+      "observations": 1,
+      "source_layer": 3,
+      "time_create": 1779703588000,
+      "time_create_utc": 1779721588000,
+      "title": "FLOOD EVENT"
+    }
+  ],
+  "last_archive_run_utc": "2026-09-11T18:26:57.567117Z",
+  "timezone": "America/Chicago"
+}

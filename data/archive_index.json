@@ -2,8 +2,43 @@
   "dates": [
     {
       "active_count": 0,
+      "date": "2026-03-16",
+      "event_count": 2
+    },
+    {
+      "active_count": 0,
+      "date": "2026-05-08",
+      "event_count": 1
+    },
+    {
+      "active_count": 0,
+      "date": "2026-05-25",
+      "event_count": 1
+    },
+    {
+      "active_count": 0,
+      "date": "2026-06-17",
+      "event_count": 1
+    },
+    {
+      "active_count": 0,
+      "date": "2026-06-18",
+      "event_count": 2
+    },
+    {
+      "active_count": 0,
+      "date": "2026-07-05",
+      "event_count": 2
+    },
+    {
+      "active_count": 0,
+      "date": "2026-07-07",
+      "event_count": 1
+    },
+    {
+      "active_count": 0,
       "date": "2026-07-11",
-      "event_count": 50
+      "event_count": 51
     },
     {
       "active_count": 0,
@@ -11,6 +46,6 @@
       "event_count": 1
     }
   ],
-  "generated_utc": "2026-09-11T15:10:08.505383Z",
+  "generated_utc": "2026-09-11T18:27:00.041989Z",
   "timezone": "America/Chicago"
 }

@@ -1,0 +1,42 @@
+{
+  "active_count": 0,
+  "date": "2026-07-07",
+  "event_count": 1,
+  "events": [
+    {
+      "active": false,
+      "address": "KABEL DR (4D01) / MACARTHUR BLVD",
+      "attributes": {
+        "Address": "KABEL DR (4D01) / MACARTHUR BLVD",
+        "Agency": "POLICE",
+        "Beat": "4D01",
+        "CommonName": "TO GENERAL DE GAULLE",
+        "ESRI_OID": 1477,
+        "Incident": "007120",
+        "MapX": -90.00808592,
+        "MapY": 29.92375846,
+        "Priority": "1C",
+        "SelfInitiated": "N",
+        "TimeCreate": 1783444279000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70131"
+      },
+      "event_id": "incident-20260707-007120",
+      "event_time_local": "2026-07-07T17:11:19-05:00",
+      "first_seen_utc": "2026-07-07T17:11:19-05:00",
+      "incident": "007120",
+      "last_seen_utc": "2026-07-07T17:11:19-05:00",
+      "lat": 29.923758460000045,
+      "lon": -90.00808591999998,
+      "object_id": 1477,
+      "observations": 1,
+      "source_layer": 3,
+      "time_create": 1783444279000,
+      "time_create_utc": 1783462279000,
+      "title": "TO GENERAL DE GAULLE"
+    }
+  ],
+  "last_archive_run_utc": "2026-09-11T18:26:57.567117Z",
+  "timezone": "America/Chicago"
+}

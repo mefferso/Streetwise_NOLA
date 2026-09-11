@@ -1,7 +1,7 @@
 {
-  "last_success_utc": "2026-09-11T13:30:19.206081Z",
-  "layer_id": 4,
+  "last_success_utc": "2026-09-11T18:26:57.567117Z",
+  "layer_id": 3,
   "lookback_days": 180,
-  "records_considered": 0,
-  "service_url": "https://gis.nola.gov/arcgis/rest/services/Staging/Flood_Events/MapServer"
+  "records_considered": 50,
+  "service_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer"
 }
