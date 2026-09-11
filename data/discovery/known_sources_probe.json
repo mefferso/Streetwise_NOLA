@@ -1,0 +1,2084 @@
+{
+  "cutoff": "2026-07-12 00:00:00",
+  "services": [
+    {
+      "errors": [],
+      "layers": [
+        {
+          "date_fields": [],
+          "errors": [
+            "count: {\"code\": 400, \"message\": \"Invalid or missing input parameters.\", \"details\": []}"
+          ],
+          "fields": [],
+          "id": 0,
+          "name": "21F"
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeClosed",
+              "post_cutoff_error": "{\"code\": -2147220985, \"message\": \"Failed to execute query.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID"
+            },
+            {
+              "name": "Shape",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeClosed",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Comments",
+              "type": "esriFieldTypeString"
+            }
+          ],
+          "id": 1,
+          "name": "21 F - Last 4 hours",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeClosed",
+              "post_cutoff_error": "{\"code\": -2147220985, \"message\": \"Failed to execute query.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID"
+            },
+            {
+              "name": "Shape",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeClosed",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Comments",
+              "type": "esriFieldTypeString"
+            }
+          ],
+          "id": 2,
+          "name": "21 F - Last 24 hours",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeClosed",
+              "post_cutoff_error": "{\"code\": -2147220985, \"message\": \"Failed to execute query.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID"
+            },
+            {
+              "name": "Shape",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeClosed",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Comments",
+              "type": "esriFieldTypeString"
+            }
+          ],
+          "id": 3,
+          "name": "21 F - Last 48 hours",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeClosed",
+              "max": "2016-01-07 13:53:59",
+              "min": "2013-09-19 00:36:13",
+              "post_cutoff_error": "{\"code\": -2147220985, \"message\": \"Failed to execute query.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID"
+            },
+            {
+              "name": "Shape",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeClosed",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Comments",
+              "type": "esriFieldTypeString"
+            }
+          ],
+          "id": 4,
+          "name": "21 F - Historic Flood Incidents ",
+          "total_count": 128
+        },
+        {
+          "date_fields": [],
+          "errors": [
+            "count: {\"code\": 400, \"message\": \"Invalid or missing input parameters.\", \"details\": []}"
+          ],
+          "fields": [],
+          "id": 5,
+          "name": "311 Related Street Flooding "
+        },
+        {
+          "date_fields": [
+            {
+              "field": "OpenedDateTime",
+              "post_cutoff_count": 0
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID"
+            },
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "CaseRef",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TypeName",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Title",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "otherDescription",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "OpenedDateTime",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "CaseStatus",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            {
+              "name": "ObjectDesc",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "ChartID",
+              "type": "esriFieldTypeInteger"
+            }
+          ],
+          "id": 6,
+          "name": "Open 311 Cases",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "OpenedDateTime",
+              "post_cutoff_count": 0
+            },
+            {
+              "field": "closedDateTime",
+              "post_cutoff_error": "The read operation timed out",
+              "stats_error": "The read operation timed out"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID"
+            },
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "CaseRef",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TypeName",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Title",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "otherDescription",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "OpenedDateTime",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "CaseStatus",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            {
+              "name": "ObjectDesc",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "closedDateTime",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "ChartID",
+              "type": "esriFieldTypeInteger"
+            }
+          ],
+          "id": 7,
+          "name": "Closed 311 Cases",
+          "total_count": 0
+        }
+      ],
+      "mapName": "Layers",
+      "serviceDescription": "",
+      "url": "https://gis.nola.gov/arcgis/rest/services/Staging/Flood_Events/MapServer"
+    },
+    {
+      "errors": [
+        "The read operation timed out"
+      ],
+      "layers": [],
+      "url": "https://gis.nola.gov/arcgis/rest/services/Staging/Flood_Events/FeatureServer"
+    },
+    {
+      "errors": [],
+      "layers": [
+        {
+          "date_fields": [],
+          "errors": [
+            "count: The read operation timed out"
+          ],
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID"
+            },
+            {
+              "name": "Shape",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "GEOPIN",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "MinElevation",
+              "type": "esriFieldTypeSingle"
+            },
+            {
+              "name": "MaxElevation",
+              "type": "esriFieldTypeSingle"
+            },
+            {
+              "name": "MeanElevation",
+              "type": "esriFieldTypeSingle"
+            },
+            {
+              "name": "BFE",
+              "type": "esriFieldTypeSingle"
+            },
+            {
+              "name": "FloodZone",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Risk",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Shape_Length",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Shape_Area",
+              "type": "esriFieldTypeDouble"
+            }
+          ],
+          "id": 0,
+          "name": "wyf_parcels"
+        }
+      ],
+      "mapName": "Layers",
+      "serviceDescription": "",
+      "url": "https://gis.nola.gov/arcgis/rest/services/dev/WhereYaFloodin/MapServer"
+    },
+    {
+      "errors": [
+        "The read operation timed out"
+      ],
+      "layers": [],
+      "url": "https://gis.nola.gov/arcgis/rest/services/dev/WhereYaFloodin/FeatureServer"
+    },
+    {
+      "errors": [],
+      "layers": [
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 11,
+              "sample": [
+                {
+                  "attributes": {
+                    "Address": "2100 ST CHARLES AV",
+                    "Agency": "POLICE",
+                    "Beat": "6E01",
+                    "Comments": "2026-09-11 09:38:52.110: PROBLEM- MVA\r\n\r\nDISPATCH LEVEL- 131D01 (TRAFFIC COLLISION (WITH INJURY))    DISPATCH SUFFIX- E (EMS NEEDED)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. SOMEONE IS INJURED, AND MEDICAL IS NEEDED.    5. THE NUMBER OF PEOPLE REPORTEDLY INJURED IS: 2    6. THIS IS A LOW MECHANISM COLLISION.    7. NO KNOWN HAZARDS REPORTED AT THE SCENE.    8. TWO VEHICLES ARE INVOLVED.    9. ALL DRIVERS ARE STILL ON SCENE.; 2026-09-11 09:39:09.693: VEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: BLU\r\n-- YEAR: 2012\r\n-- MAKE: NISS\r\n-- MODEL: ALT; 2026-09-11 09:39:25.097: VEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- MAKE: CHEVY\r\n-- MODEL: TRAILBLAZER; 2026-09-11 09:39:55.513: 10. THE VEHICLE DESCRIPTION IS:    11. THE EXACT LOCATION OF THE VEHICLE(S) IS: JACKSON/ST CHARLES    12. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    13. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 09:40:05.237: BC; 2026-09-11 09:57:35.323: 3 PT REF, 1 1022",
+                    "CommonName": "POSEIDON",
+                    "Dispatched": "Y",
+                    "ESRI_OID": 23,
+                    "FAlarms": null,
+                    "Incident": "010873",
+                    "MapX": -90.07982024,
+                    "MapY": 29.93420606,
+                    "OnScene": "Y",
+                    "PrimaryUnit": "617A",
+                    "Priority": "2D",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789119532000,
+                    "TimeCreateUTC": 1789137532000,
+                    "Type": "20I",
+                    "TypeText": "AUTO ACCIDENT WITH INJURY",
+                    "Zip": "70130"
+                  },
+                  "geometry": {
+                    "x": -90.07982023999995,
+                    "y": 29.934206060000065
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "JEFFERSON AV (2F02) / ST CHARLES AV",
+                    "Agency": "POLICE",
+                    "Beat": "2F02",
+                    "Comments": "2026-09-11 09:30:26.923: PROBLEM- COMPL STS 18 WHEELER TRUCK HIT LIGHT POLE AND KNOCKED IT DWN\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- ADD INFO: BOX TRUCK\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. ONE VEHICLE IS INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: LOC ABV    11. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 09:30:26.923: Vehl 1|: \r\nAdd Info: box truck; 2026-09-11 09:51:08.830: SEND TO DIST HOLDING 20 MINS; 2026-09-11 10:10:39.730: C/B VIA RYAN CHK STS; 2026-09-11 10:16:49.073: <UNIT: NP/OSS10 SELF-DISPATCHED ONTO INCIDENT>; 2026-09-11 10:17:24.677: <ETA IS 13MIN - OSS10>",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 22,
+                    "FAlarms": null,
+                    "Incident": "010864",
+                    "MapX": -90.11306745,
+                    "MapY": 29.92846781,
+                    "OnScene": "N",
+                    "PrimaryUnit": "OSS10",
+                    "Priority": "1C",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789119026000,
+                    "TimeCreateUTC": 1789137026000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70115"
+                  },
+                  "geometry": {
+                    "x": -90.11306744999996,
+                    "y": 29.92846781000003
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "7722 HENLEY ST",
+                    "Agency": "POLICE",
+                    "Beat": "7D02",
+                    "Comments": "2026-09-11 09:24:49.910: PROBLEM- VEH WAS HIT\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: GRY\r\n-- YEAR: 2017\r\n-- MAKE: HONDA\r\n-- MODEL: ACCORD\r\n-- BODY: 2D\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT HAPPENED IN THE PAST: 45MINS AGO    3. THE OTHER DRIVER/VEHICLE IS IN THE AREA.    4. INVOLVED CALLER ON SCENE.    5. NO INJURIES WERE REPORTED.    6. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    7. NO KNOWN HAZARDS REPORTED AT THE SCENE.    8. TWO VEHICLES ARE INVOLVED.    9. ALL DRIVERS ARE STILL ON SCENE.    10. THE VEHICLE DESCRIPTION IS:    11. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABOV LOC    12. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    13. IT IS NOT KNOWN IF ALCOHOL OR DRUGS ARE INVOLVED.",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 21,
+                    "FAlarms": null,
+                    "Incident": "010858",
+                    "MapX": -90.01919816,
+                    "MapY": 30.03208097,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1C",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789118689000,
+                    "TimeCreateUTC": 1789136689000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70126"
+                  },
+                  "geometry": {
+                    "x": -90.01919815999997,
+                    "y": 30.032080970000038
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "I-10 E AFTER PONTCHARTRAIN ONRAMP",
+                    "Agency": "POLICE",
+                    "Beat": "3A03",
+                    "Comments": "2026-09-11 09:22:45.133: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: SIL\r\n-- MAKE: TOYT\r\n-- MODEL: TACOMA\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- BODY: PROBATION & PAROLE CAR\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABV LOC    11. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 09:23:56.533: B/C; 2026-09-11 09:24:23.433: MAP NTFD; 2026-09-11 09:24:24.050: B/C; 2026-09-11 09:26:18.673: 320A; 2026-09-11 09:27:33.053: 320A NTFD ON COMMENTS; 2026-09-11 09:32:34.437: 320A ADV CODE 1; 2026-09-11 09:43:39.673: < C/B VIA CARLY 504-994-6207 CHECKING THE STATUS OF UNITS, STS SHE IS IN A WHI DODGE CHARGER, STS SHE IS AN PROBATION OFFCIER AND NEED SOMEONE TO COME OUT ASAP >; 2026-09-11 09:51:32.147: SEND TO DIST HOLDING 20MINS; 2026-09-11 09:51:44.520: HOLDING OVER 20MINS***",
+                    "CommonName": "CARROLLTON AVE EXIT",
+                    "Dispatched": "N",
+                    "ESRI_OID": 20,
+                    "FAlarms": null,
+                    "Incident": "010856",
+                    "MapX": -90.11344245,
+                    "MapY": 29.97998749,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789118565000,
+                    "TimeCreateUTC": 1789136565000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70118"
+                  },
+                  "geometry": {
+                    "x": -90.11344244999998,
+                    "y": 29.979987490000042
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "S NORMAN C FRANCIS PKWY / CALLIOPE ST (6N02)",
+                    "Agency": "POLICE",
+                    "Beat": "6N02",
+                    "Comments": "2026-09-11 09:14:09.967: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: SIL\r\n-- YEAR: 16\r\n-- MAKE: TOYOTA\r\n-- MODEL: COROLLA\r\n-- BODY: 4D\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- ADD INFO: TRUCK\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED (MINUTES AGO): 15 MINS AGO    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: LOC ABV    11. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 09:14:09.967: Vehl 2|: \r\nAdd Info: truck; 2026-09-11 09:34:07.110: SEND BCK TO DIST HOLDING 20 MINS",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 19,
+                    "FAlarms": null,
+                    "Incident": "010845",
+                    "MapX": -90.10319549,
+                    "MapY": 29.95886916,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1C",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789118049000,
+                    "TimeCreateUTC": 1789136049000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70125"
+                  },
+                  "geometry": {
+                    "x": -90.10319548999996,
+                    "y": 29.958869160000063
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "MONTEGUT ST / BURGUNDY ST",
+                    "Agency": "POLICE",
+                    "Beat": "5C04",
+                    "Comments": "2026-09-11 09:06:26.800: PROBLEM- COMP STS SHE WAS INVOLVED IN AND ACCIDENT WITH LYFT DRIVER ON YESTERDAY\r\n\r\nDISPATCH LEVEL- 131A01 (PAST TRAFFIC COLLISION)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT HAPPENED IN THE PAST: SEPT 10, 2026    3. THE OTHER DRIVER/VEHICLE IS NOT IN THE AREA.    4. INVOLVED CALLER ON SCENE.    5. SOMEONE WAS INJURED OR SICK, BUT NO MEDICAL IS NEEDED.; 2026-09-11 09:07:53.890: VEHICLE 1 (SUSPECT) INFO\r\n-- COLOR: GRN\r\n-- MAKE: FORD\r\n-- MODEL: EXPLOER; 2026-09-11 09:08:28.557: COMP STS SHE WAS A PASSENGER IN THE VEH THE VEH IS NO LOGER AT THE LOC INCIDENT HAPPENED ON YESTERDAY AND SHE JUST NEED A REPORT; 2026-09-11 09:33:39.363: SEND BCK TO DIST HOLDING OVER 20 MINS",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 18,
+                    "FAlarms": null,
+                    "Incident": "010839",
+                    "MapX": -90.04664694,
+                    "MapY": 29.96582701,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1C",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789117586000,
+                    "TimeCreateUTC": 1789135586000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70117"
+                  },
+                  "geometry": {
+                    "x": -90.04664693999996,
+                    "y": 29.965827010000055
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "I-10 W AFTER ORLEANS ONRAMP",
+                    "Agency": "POLICE",
+                    "Beat": "1H01",
+                    "Comments": "2026-09-11 09:05:30.040: PROBLEM- CALLER IN IMMINENT DANGER\r\n\r\nPROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- MAKE: RAM\r\n-- MODEL: PROMASTER\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: BLK\r\n-- MAKE: JEEP\r\n-- BODY: JEEP\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    DISPATCH SUFFIX- B (BLOCKING OR SLOWING TRAFFIC)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABV LOC RIGHT SIDE MERGING LANE    11. THERE ARE ITEMS BLOCKING OR SLOWING THE FLOW OF TRAFFIC: BOTH CARS KIND OF BLOCKING RIGHT LANE    12. IT IS NOT KNOWN IF ALCOHOL OR DRUGS ARE INVOLVED.; 2026-09-11 09:06:51.423: < MAPS NTFD >; 2026-09-11 09:11:40.120: < C/B VIA MADDISON CHK STS >; 2026-09-11 09:11:59.047: BC NUA",
+                    "CommonName": "EXIT 235B WEST",
+                    "Dispatched": "Y",
+                    "ESRI_OID": 17,
+                    "FAlarms": null,
+                    "Incident": "010837",
+                    "MapX": -90.07842515,
+                    "MapY": 29.95850871,
+                    "OnScene": "Y",
+                    "PrimaryUnit": "141A",
+                    "Priority": "2",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789117530000,
+                    "TimeCreateUTC": 1789135530000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70112"
+                  },
+                  "geometry": {
+                    "x": -90.07842514999999,
+                    "y": 29.958508710000046
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "LEAKE AV / BURDETTE ST",
+                    "Agency": "POLICE",
+                    "Beat": "2D01",
+                    "Comments": "2026-09-11 08:57:08.427: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: BLU\r\n-- MAKE: FORD\r\n-- MODEL: EDGE\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- ADD INFO: SEMI TRUCK\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    DISPATCH SUFFIX- B (BLOCKING OR SLOWING TRAFFIC)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABOVE LOC    11. THERE ARE ITEMS BLOCKING OR SLOWING THE FLOW OF TRAFFIC: BURDETTE AND NEJAMIN    12. N/A \u2013 ALCOHOL/DRUGS KQ NOT APPROPRIATE.; 2026-09-11 08:57:08.427: Vehl 2|: \r\nAdd Info: semi truck; 2026-09-11 08:57:36.557: 18; 2026-09-11 08:57:55.017: Dup: \r\nLocation: BURDETTE ST / LEAKE AV\r\nIncid Type: 20\r\nComments: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- BODY: SEMI TRUCK\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: BLU\r\n-- YEAR: 2012\r\n-- MAKE: FRD\r\n-- MODEL: EDGE\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    DISPATCH SUFFIX- B (BLOCKING OR SLOWING TRAFFIC)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABV LOC    11. THERE ARE ITEMS BLOCKING OR SLOWING THE FLOW OF TRAFFIC: CANNOT TURN ON BENJAMIN ST    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.\r\n",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 16,
+                    "FAlarms": null,
+                    "Incident": "010829",
+                    "MapX": -90.1341792,
+                    "MapY": 29.93887514,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1E",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789117028000,
+                    "TimeCreateUTC": 1789135028000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70118"
+                  },
+                  "geometry": {
+                    "x": -90.13417919999995,
+                    "y": 29.93887514000005
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "CLEVELAND AV / S CLAIBORNE AV (1H01)",
+                    "Agency": "POLICE",
+                    "Beat": "1H01",
+                    "Comments": "2026-09-11 08:53:23.393: VIA 4126 BURG NISSAN ROGUE WHT VAN; 2026-09-11 09:13:49.250: RTCC HAVE FOOTAGE; 2026-09-11 09:13:55.770: 811A NTFYD",
+                    "CommonName": null,
+                    "Dispatched": "Y",
+                    "ESRI_OID": 15,
+                    "FAlarms": null,
+                    "Incident": "010827",
+                    "MapX": -90.07880444,
+                    "MapY": 29.9582673,
+                    "OnScene": "Y",
+                    "PrimaryUnit": "811A",
+                    "Priority": "1E",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789116803000,
+                    "TimeCreateUTC": 1789134803000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70112"
+                  },
+                  "geometry": {
+                    "x": -90.07880443999994,
+                    "y": 29.958267300000045
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "S TONTI ST / GENERAL PERSHING ST",
+                    "Agency": "POLICE",
+                    "Beat": "2R01",
+                    "Comments": "2026-09-11 07:32:00.243: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- YEAR: 2026\r\n-- MAKE: VOLKS\r\n-- MODEL: TAIGON\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: GRY\r\n-- YEAR: 2014\r\n-- MAKE: CHEVY\r\n-- MODEL: TRAVERSE\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    DISPATCH SUFFIX- B (BLOCKING OR SLOWING TRAFFIC)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABV LOC    11. THERE ARE ITEMS BLOCKING OR SLOWING THE FLOW OF TRAFFIC: INTERSECTION    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 08:21:29.420: <UNIT: NP/OSS10 SELF-DISPATCHED ONTO INCIDENT>; 2026-09-11 08:22:04.730: <ETA IS 18MIN -OSS10>; 2026-09-11 08:34:32.033: C/B VIA COESHA 504-509-3859 CHECKING ETA; 2026-09-11 08:51:43.157: <DRIVER OF 2014 CHEV TRAVERSE LA X28 253JAH HAS NO DL ON A PASSPORT / VILMA FUNEZ DOB JULY 4, 2000 / RTS - OSS10>; 2026-09-11 08:56:28.550: RETURN TO DIST DRIVER HAS NO DL ALSO THERE IS ROAD BLOCKAGE CANNOT MOVE VEH OUT OF INTERSECTION; 2026-09-11 10:01:40.260: BT TOWIN \r\n4100 WILSON AVE \r\n504-296-1633\r\nTONY  ETA 45 MINS \r\nWHI VOLKS TAIGON",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 9,
+                    "FAlarms": null,
+                    "Incident": "010766",
+                    "MapX": -90.10284254,
+                    "MapY": 29.94666746,
+                    "OnScene": "Y",
+                    "PrimaryUnit": "235A",
+                    "Priority": "1E",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789111920000,
+                    "TimeCreateUTC": 1789129920000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70125"
+                  },
+                  "geometry": {
+                    "x": -90.10284253999998,
+                    "y": 29.94666746000007
+                  }
+                }
+              ],
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeCreateUTC",
+              "post_cutoff_count": 11,
+              "sample": [
+                {
+                  "attributes": {
+                    "Address": "2100 ST CHARLES AV",
+                    "Agency": "POLICE",
+                    "Beat": "6E01",
+                    "Comments": "2026-09-11 09:38:52.110: PROBLEM- MVA\r\n\r\nDISPATCH LEVEL- 131D01 (TRAFFIC COLLISION (WITH INJURY))    DISPATCH SUFFIX- E (EMS NEEDED)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. SOMEONE IS INJURED, AND MEDICAL IS NEEDED.    5. THE NUMBER OF PEOPLE REPORTEDLY INJURED IS: 2    6. THIS IS A LOW MECHANISM COLLISION.    7. NO KNOWN HAZARDS REPORTED AT THE SCENE.    8. TWO VEHICLES ARE INVOLVED.    9. ALL DRIVERS ARE STILL ON SCENE.; 2026-09-11 09:39:09.693: VEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: BLU\r\n-- YEAR: 2012\r\n-- MAKE: NISS\r\n-- MODEL: ALT; 2026-09-11 09:39:25.097: VEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- MAKE: CHEVY\r\n-- MODEL: TRAILBLAZER; 2026-09-11 09:39:55.513: 10. THE VEHICLE DESCRIPTION IS:    11. THE EXACT LOCATION OF THE VEHICLE(S) IS: JACKSON/ST CHARLES    12. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    13. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 09:40:05.237: BC; 2026-09-11 09:57:35.323: 3 PT REF, 1 1022",
+                    "CommonName": "POSEIDON",
+                    "Dispatched": "Y",
+                    "ESRI_OID": 23,
+                    "FAlarms": null,
+                    "Incident": "010873",
+                    "MapX": -90.07982024,
+                    "MapY": 29.93420606,
+                    "OnScene": "Y",
+                    "PrimaryUnit": "617A",
+                    "Priority": "2D",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789119532000,
+                    "TimeCreateUTC": 1789137532000,
+                    "Type": "20I",
+                    "TypeText": "AUTO ACCIDENT WITH INJURY",
+                    "Zip": "70130"
+                  },
+                  "geometry": {
+                    "x": -90.07982023999995,
+                    "y": 29.934206060000065
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "JEFFERSON AV (2F02) / ST CHARLES AV",
+                    "Agency": "POLICE",
+                    "Beat": "2F02",
+                    "Comments": "2026-09-11 09:30:26.923: PROBLEM- COMPL STS 18 WHEELER TRUCK HIT LIGHT POLE AND KNOCKED IT DWN\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- ADD INFO: BOX TRUCK\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. ONE VEHICLE IS INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: LOC ABV    11. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 09:30:26.923: Vehl 1|: \r\nAdd Info: box truck; 2026-09-11 09:51:08.830: SEND TO DIST HOLDING 20 MINS; 2026-09-11 10:10:39.730: C/B VIA RYAN CHK STS; 2026-09-11 10:16:49.073: <UNIT: NP/OSS10 SELF-DISPATCHED ONTO INCIDENT>; 2026-09-11 10:17:24.677: <ETA IS 13MIN - OSS10>",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 22,
+                    "FAlarms": null,
+                    "Incident": "010864",
+                    "MapX": -90.11306745,
+                    "MapY": 29.92846781,
+                    "OnScene": "N",
+                    "PrimaryUnit": "OSS10",
+                    "Priority": "1C",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789119026000,
+                    "TimeCreateUTC": 1789137026000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70115"
+                  },
+                  "geometry": {
+                    "x": -90.11306744999996,
+                    "y": 29.92846781000003
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "7722 HENLEY ST",
+                    "Agency": "POLICE",
+                    "Beat": "7D02",
+                    "Comments": "2026-09-11 09:24:49.910: PROBLEM- VEH WAS HIT\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: GRY\r\n-- YEAR: 2017\r\n-- MAKE: HONDA\r\n-- MODEL: ACCORD\r\n-- BODY: 2D\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT HAPPENED IN THE PAST: 45MINS AGO    3. THE OTHER DRIVER/VEHICLE IS IN THE AREA.    4. INVOLVED CALLER ON SCENE.    5. NO INJURIES WERE REPORTED.    6. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    7. NO KNOWN HAZARDS REPORTED AT THE SCENE.    8. TWO VEHICLES ARE INVOLVED.    9. ALL DRIVERS ARE STILL ON SCENE.    10. THE VEHICLE DESCRIPTION IS:    11. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABOV LOC    12. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    13. IT IS NOT KNOWN IF ALCOHOL OR DRUGS ARE INVOLVED.",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 21,
+                    "FAlarms": null,
+                    "Incident": "010858",
+                    "MapX": -90.01919816,
+                    "MapY": 30.03208097,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1C",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789118689000,
+                    "TimeCreateUTC": 1789136689000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70126"
+                  },
+                  "geometry": {
+                    "x": -90.01919815999997,
+                    "y": 30.032080970000038
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "I-10 E AFTER PONTCHARTRAIN ONRAMP",
+                    "Agency": "POLICE",
+                    "Beat": "3A03",
+                    "Comments": "2026-09-11 09:22:45.133: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: SIL\r\n-- MAKE: TOYT\r\n-- MODEL: TACOMA\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- BODY: PROBATION & PAROLE CAR\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABV LOC    11. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 09:23:56.533: B/C; 2026-09-11 09:24:23.433: MAP NTFD; 2026-09-11 09:24:24.050: B/C; 2026-09-11 09:26:18.673: 320A; 2026-09-11 09:27:33.053: 320A NTFD ON COMMENTS; 2026-09-11 09:32:34.437: 320A ADV CODE 1; 2026-09-11 09:43:39.673: < C/B VIA CARLY 504-994-6207 CHECKING THE STATUS OF UNITS, STS SHE IS IN A WHI DODGE CHARGER, STS SHE IS AN PROBATION OFFCIER AND NEED SOMEONE TO COME OUT ASAP >; 2026-09-11 09:51:32.147: SEND TO DIST HOLDING 20MINS; 2026-09-11 09:51:44.520: HOLDING OVER 20MINS***",
+                    "CommonName": "CARROLLTON AVE EXIT",
+                    "Dispatched": "N",
+                    "ESRI_OID": 20,
+                    "FAlarms": null,
+                    "Incident": "010856",
+                    "MapX": -90.11344245,
+                    "MapY": 29.97998749,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789118565000,
+                    "TimeCreateUTC": 1789136565000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70118"
+                  },
+                  "geometry": {
+                    "x": -90.11344244999998,
+                    "y": 29.979987490000042
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "S NORMAN C FRANCIS PKWY / CALLIOPE ST (6N02)",
+                    "Agency": "POLICE",
+                    "Beat": "6N02",
+                    "Comments": "2026-09-11 09:14:09.967: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: SIL\r\n-- YEAR: 16\r\n-- MAKE: TOYOTA\r\n-- MODEL: COROLLA\r\n-- BODY: 4D\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- ADD INFO: TRUCK\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED (MINUTES AGO): 15 MINS AGO    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: LOC ABV    11. NOTHING IS BLOCKING OR SLOWING THE FLOW OF TRAFFIC.    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 09:14:09.967: Vehl 2|: \r\nAdd Info: truck; 2026-09-11 09:34:07.110: SEND BCK TO DIST HOLDING 20 MINS",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 19,
+                    "FAlarms": null,
+                    "Incident": "010845",
+                    "MapX": -90.10319549,
+                    "MapY": 29.95886916,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1C",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789118049000,
+                    "TimeCreateUTC": 1789136049000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70125"
+                  },
+                  "geometry": {
+                    "x": -90.10319548999996,
+                    "y": 29.958869160000063
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "MONTEGUT ST / BURGUNDY ST",
+                    "Agency": "POLICE",
+                    "Beat": "5C04",
+                    "Comments": "2026-09-11 09:06:26.800: PROBLEM- COMP STS SHE WAS INVOLVED IN AND ACCIDENT WITH LYFT DRIVER ON YESTERDAY\r\n\r\nDISPATCH LEVEL- 131A01 (PAST TRAFFIC COLLISION)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT HAPPENED IN THE PAST: SEPT 10, 2026    3. THE OTHER DRIVER/VEHICLE IS NOT IN THE AREA.    4. INVOLVED CALLER ON SCENE.    5. SOMEONE WAS INJURED OR SICK, BUT NO MEDICAL IS NEEDED.; 2026-09-11 09:07:53.890: VEHICLE 1 (SUSPECT) INFO\r\n-- COLOR: GRN\r\n-- MAKE: FORD\r\n-- MODEL: EXPLOER; 2026-09-11 09:08:28.557: COMP STS SHE WAS A PASSENGER IN THE VEH THE VEH IS NO LOGER AT THE LOC INCIDENT HAPPENED ON YESTERDAY AND SHE JUST NEED A REPORT; 2026-09-11 09:33:39.363: SEND BCK TO DIST HOLDING OVER 20 MINS",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 18,
+                    "FAlarms": null,
+                    "Incident": "010839",
+                    "MapX": -90.04664694,
+                    "MapY": 29.96582701,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1C",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789117586000,
+                    "TimeCreateUTC": 1789135586000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70117"
+                  },
+                  "geometry": {
+                    "x": -90.04664693999996,
+                    "y": 29.965827010000055
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "I-10 W AFTER ORLEANS ONRAMP",
+                    "Agency": "POLICE",
+                    "Beat": "1H01",
+                    "Comments": "2026-09-11 09:05:30.040: PROBLEM- CALLER IN IMMINENT DANGER\r\n\r\nPROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- MAKE: RAM\r\n-- MODEL: PROMASTER\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: BLK\r\n-- MAKE: JEEP\r\n-- BODY: JEEP\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    DISPATCH SUFFIX- B (BLOCKING OR SLOWING TRAFFIC)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABV LOC RIGHT SIDE MERGING LANE    11. THERE ARE ITEMS BLOCKING OR SLOWING THE FLOW OF TRAFFIC: BOTH CARS KIND OF BLOCKING RIGHT LANE    12. IT IS NOT KNOWN IF ALCOHOL OR DRUGS ARE INVOLVED.; 2026-09-11 09:06:51.423: < MAPS NTFD >; 2026-09-11 09:11:40.120: < C/B VIA MADDISON CHK STS >; 2026-09-11 09:11:59.047: BC NUA",
+                    "CommonName": "EXIT 235B WEST",
+                    "Dispatched": "Y",
+                    "ESRI_OID": 17,
+                    "FAlarms": null,
+                    "Incident": "010837",
+                    "MapX": -90.07842515,
+                    "MapY": 29.95850871,
+                    "OnScene": "Y",
+                    "PrimaryUnit": "141A",
+                    "Priority": "2",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789117530000,
+                    "TimeCreateUTC": 1789135530000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70112"
+                  },
+                  "geometry": {
+                    "x": -90.07842514999999,
+                    "y": 29.958508710000046
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "LEAKE AV / BURDETTE ST",
+                    "Agency": "POLICE",
+                    "Beat": "2D01",
+                    "Comments": "2026-09-11 08:57:08.427: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: BLU\r\n-- MAKE: FORD\r\n-- MODEL: EDGE\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- ADD INFO: SEMI TRUCK\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    DISPATCH SUFFIX- B (BLOCKING OR SLOWING TRAFFIC)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABOVE LOC    11. THERE ARE ITEMS BLOCKING OR SLOWING THE FLOW OF TRAFFIC: BURDETTE AND NEJAMIN    12. N/A \u2013 ALCOHOL/DRUGS KQ NOT APPROPRIATE.; 2026-09-11 08:57:08.427: Vehl 2|: \r\nAdd Info: semi truck; 2026-09-11 08:57:36.557: 18; 2026-09-11 08:57:55.017: Dup: \r\nLocation: BURDETTE ST / LEAKE AV\r\nIncid Type: 20\r\nComments: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- BODY: SEMI TRUCK\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: BLU\r\n-- YEAR: 2012\r\n-- MAKE: FRD\r\n-- MODEL: EDGE\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    DISPATCH SUFFIX- B (BLOCKING OR SLOWING TRAFFIC)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABV LOC    11. THERE ARE ITEMS BLOCKING OR SLOWING THE FLOW OF TRAFFIC: CANNOT TURN ON BENJAMIN ST    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.\r\n",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 16,
+                    "FAlarms": null,
+                    "Incident": "010829",
+                    "MapX": -90.1341792,
+                    "MapY": 29.93887514,
+                    "OnScene": "N",
+                    "PrimaryUnit": null,
+                    "Priority": "1E",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789117028000,
+                    "TimeCreateUTC": 1789135028000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70118"
+                  },
+                  "geometry": {
+                    "x": -90.13417919999995,
+                    "y": 29.93887514000005
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "CLEVELAND AV / S CLAIBORNE AV (1H01)",
+                    "Agency": "POLICE",
+                    "Beat": "1H01",
+                    "Comments": "2026-09-11 08:53:23.393: VIA 4126 BURG NISSAN ROGUE WHT VAN; 2026-09-11 09:13:49.250: RTCC HAVE FOOTAGE; 2026-09-11 09:13:55.770: 811A NTFYD",
+                    "CommonName": null,
+                    "Dispatched": "Y",
+                    "ESRI_OID": 15,
+                    "FAlarms": null,
+                    "Incident": "010827",
+                    "MapX": -90.07880444,
+                    "MapY": 29.9582673,
+                    "OnScene": "Y",
+                    "PrimaryUnit": "811A",
+                    "Priority": "1E",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789116803000,
+                    "TimeCreateUTC": 1789134803000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70112"
+                  },
+                  "geometry": {
+                    "x": -90.07880443999994,
+                    "y": 29.958267300000045
+                  }
+                },
+                {
+                  "attributes": {
+                    "Address": "S TONTI ST / GENERAL PERSHING ST",
+                    "Agency": "POLICE",
+                    "Beat": "2R01",
+                    "Comments": "2026-09-11 07:32:00.243: PROBLEM- MVA\r\n\r\nVEHICLE 1 (INVOLVED) INFO\r\n-- COLOR: WHI\r\n-- YEAR: 2026\r\n-- MAKE: VOLKS\r\n-- MODEL: TAIGON\r\n\r\nVEHICLE 2 (INVOLVED) INFO\r\n-- COLOR: GRY\r\n-- YEAR: 2014\r\n-- MAKE: CHEVY\r\n-- MODEL: TRAVERSE\r\n\r\nDISPATCH LEVEL- 131B01 (TRAFFIC COLLISION (NO INJURY))    DISPATCH SUFFIX- B (BLOCKING OR SLOWING TRAFFIC)    CAD RESPONSE- .\r\n\r\n1. THIS IS A TRAFFIC COLLISION.    2. THIS INCIDENT JUST HAPPENED.    3. INVOLVED CALLER ON SCENE.    4. NO INJURIES WERE REPORTED.    5. NO AIRBAGS WERE DEPLOYED DURING THE COLLISION.    6. NO KNOWN HAZARDS REPORTED AT THE SCENE.    7. TWO VEHICLES ARE INVOLVED.    8. ALL DRIVERS ARE STILL ON SCENE.    9. THE VEHICLE DESCRIPTION IS:    10. THE EXACT LOCATION OF THE VEHICLE(S) IS: ABV LOC    11. THERE ARE ITEMS BLOCKING OR SLOWING THE FLOW OF TRAFFIC: INTERSECTION    12. ALCOHOL OR DRUGS ARE NOT INVOLVED.; 2026-09-11 08:21:29.420: <UNIT: NP/OSS10 SELF-DISPATCHED ONTO INCIDENT>; 2026-09-11 08:22:04.730: <ETA IS 18MIN -OSS10>; 2026-09-11 08:34:32.033: C/B VIA COESHA 504-509-3859 CHECKING ETA; 2026-09-11 08:51:43.157: <DRIVER OF 2014 CHEV TRAVERSE LA X28 253JAH HAS NO DL ON A PASSPORT / VILMA FUNEZ DOB JULY 4, 2000 / RTS - OSS10>; 2026-09-11 08:56:28.550: RETURN TO DIST DRIVER HAS NO DL ALSO THERE IS ROAD BLOCKAGE CANNOT MOVE VEH OUT OF INTERSECTION; 2026-09-11 10:01:40.260: BT TOWIN \r\n4100 WILSON AVE \r\n504-296-1633\r\nTONY  ETA 45 MINS \r\nWHI VOLKS TAIGON",
+                    "CommonName": null,
+                    "Dispatched": "N",
+                    "ESRI_OID": 9,
+                    "FAlarms": null,
+                    "Incident": "010766",
+                    "MapX": -90.10284254,
+                    "MapY": 29.94666746,
+                    "OnScene": "Y",
+                    "PrimaryUnit": "235A",
+                    "Priority": "1E",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1789111920000,
+                    "TimeCreateUTC": 1789129920000,
+                    "Type": "20",
+                    "TypeText": "AUTO ACCIDENT",
+                    "Zip": "70125"
+                  },
+                  "geometry": {
+                    "x": -90.10284253999998,
+                    "y": 29.94666746000007
+                  }
+                }
+              ],
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Agency",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Incident",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Type",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TypeText",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Priority",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Zip",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "CommonName",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "MapX",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "MapY",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Beat",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeCreate",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "TimeCreateUTC",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "Dispatched",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "OnScene",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "SelfInitiated",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Comments",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "FAlarms",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            {
+              "name": "PrimaryUnit",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "ESRI_OID",
+              "type": "esriFieldTypeOID"
+            }
+          ],
+          "id": 0,
+          "name": "Traffic Accident",
+          "total_count": 11
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeCreateUTC",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Agency",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Incident",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Type",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TypeText",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Priority",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Zip",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "CommonName",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "MapX",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "MapY",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Beat",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeCreate",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "TimeCreateUTC",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "Dispatched",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "OnScene",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "SelfInitiated",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Comments",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "FAlarms",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            {
+              "name": "PrimaryUnit",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "ESRI_OID",
+              "type": "esriFieldTypeOID"
+            }
+          ],
+          "id": 1,
+          "name": "Flooded Streets",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeCreateUTC",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Agency",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Incident",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Type",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TypeText",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Priority",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Zip",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "CommonName",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "MapX",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "MapY",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Beat",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeCreate",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "TimeCreateUTC",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "Dispatched",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "OnScene",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "SelfInitiated",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Comments",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "FAlarms",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            {
+              "name": "PrimaryUnit",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "ESRI_OID",
+              "type": "esriFieldTypeOID"
+            }
+          ],
+          "id": 2,
+          "name": "Placeholder Ice",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeDispatch",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeOnScene",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeClosed",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Agency",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Incident",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Type",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TypeText",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Priority",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Zip",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "CommonName",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "MapX",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "MapY",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Beat",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeCreate",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "TimeDispatch",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "TimeOnScene",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "TimeClosed",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "SelfInitiated",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Dispo",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "DispoText",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "ESRI_OID",
+              "type": "esriFieldTypeOID"
+            }
+          ],
+          "id": 3,
+          "name": "Street Closed",
+          "total_count": 0
+        }
+      ],
+      "mapName": "Layers",
+      "serviceDescription": "",
+      "url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/MapServer"
+    },
+    {
+      "errors": [
+        "{\"code\": 500, \"message\": null, \"details\": []}"
+      ],
+      "layers": [],
+      "url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Streetwise/Streetwise_Live/FeatureServer"
+    },
+    {
+      "errors": [],
+      "layers": [
+        {
+          "date_fields": [
+            {
+              "field": "reading_time",
+              "post_cutoff_count": 11,
+              "sample": [
+                {
+                  "attributes": {
+                    "ESRI_OID": 10,
+                    "Latitude": 29.990751,
+                    "Longitude": -90.109715,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "66651334-43ba-4ecd-b4bd-565cdf99253c",
+                    "Site": "Canal Master/Remote",
+                    "data_quality": "A",
+                    "reading_time": 1789121894000,
+                    "receive_time": 1789121894000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.10972062494639,
+                    "y": 29.990756420756156
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 8,
+                    "Latitude": 29.991897,
+                    "Longitude": -90.076666,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "099e7415-a2a7-491c-ad27-98a2fe01e677",
+                    "Site": "Saint Bernard Master",
+                    "data_quality": "A",
+                    "reading_time": 1789120874000,
+                    "receive_time": 1789120874000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.07667161563934,
+                    "y": 29.991902421693933
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 7,
+                    "Latitude": 29.990608,
+                    "Longitude": -90.072837,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "59ad18e4-c17d-4dd6-8418-2adb3ee39e01",
+                    "Site": "Paris Master",
+                    "data_quality": "A",
+                    "reading_time": 1789120650000,
+                    "receive_time": 1789120650000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.07284261469455,
+                    "y": 29.990613421608753
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 6,
+                    "Latitude": 29.967822,
+                    "Longitude": -90.10803,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "f82135b6-4dd4-4ce9-9cf3-f0153b28a1e6",
+                    "Site": "Carrollton Master",
+                    "data_quality": "A",
+                    "reading_time": 1789120322000,
+                    "receive_time": 1789120322000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.10803562262704,
+                    "y": 29.967827416130945
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 11,
+                    "Latitude": 30.02805,
+                    "Longitude": -90.044982,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "e556eb8b-3582-40ea-8d5d-f9753ce61aeb",
+                    "Site": "Press Master",
+                    "data_quality": "A",
+                    "reading_time": 1789118601000,
+                    "receive_time": 1789118601000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.04498760838638,
+                    "y": 30.028055431016163
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 9,
+                    "Latitude": 30.002649,
+                    "Longitude": -90.0457,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "d3fa8f5c-000d-4186-830a-8b10705348c8",
+                    "Site": "Gentilly @ Peoples Master/West Remote",
+                    "data_quality": "A",
+                    "reading_time": 1789117339000,
+                    "receive_time": 1789117339000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.04570560805804,
+                    "y": 30.002654425681218
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 5,
+                    "Latitude": 29.981561,
+                    "Longitude": -90.11367,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "0ace9d6c-9db4-4d7d-8e53-75565867c623",
+                    "Site": "City Park Master",
+                    "data_quality": "A",
+                    "reading_time": 1789114343000,
+                    "receive_time": 1789114343000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.11367562468496,
+                    "y": 29.981566418586493
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 4,
+                    "Latitude": 30.033239,
+                    "Longitude": -90.027037,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "1f74e3ad-fd51-452a-a23d-030a07bb7ffc",
+                    "Site": "Downman Master",
+                    "data_quality": "A",
+                    "reading_time": 1789092673000,
+                    "receive_time": 1789092673000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.02704260403893,
+                    "y": 30.033244432681517
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 3,
+                    "Latitude": 29.993833,
+                    "Longitude": -90.100575,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "5e2a4973-bfaf-4b46-adab-7c9a5b71bdf7",
+                    "Site": "Marconi Master",
+                    "data_quality": "A",
+                    "reading_time": 1789090844000,
+                    "receive_time": 1789090844000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.10058062260494,
+                    "y": 29.993838421407844
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 2,
+                    "Latitude": 29.990929,
+                    "Longitude": -90.049213,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "91a1f91e-0656-4f15-9353-0434a45757f6",
+                    "Site": "Franklin Master",
+                    "data_quality": "A",
+                    "reading_time": 1789088215000,
+                    "receive_time": 1789088215000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.04921860849252,
+                    "y": 29.99093442256129
+                  }
+                }
+              ],
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "receive_time",
+              "post_cutoff_count": 11,
+              "sample": [
+                {
+                  "attributes": {
+                    "ESRI_OID": 10,
+                    "Latitude": 29.990751,
+                    "Longitude": -90.109715,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "66651334-43ba-4ecd-b4bd-565cdf99253c",
+                    "Site": "Canal Master/Remote",
+                    "data_quality": "A",
+                    "reading_time": 1789121894000,
+                    "receive_time": 1789121894000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.10972062494639,
+                    "y": 29.990756420756156
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 8,
+                    "Latitude": 29.991897,
+                    "Longitude": -90.076666,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "099e7415-a2a7-491c-ad27-98a2fe01e677",
+                    "Site": "Saint Bernard Master",
+                    "data_quality": "A",
+                    "reading_time": 1789120874000,
+                    "receive_time": 1789120874000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.07667161563934,
+                    "y": 29.991902421693933
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 7,
+                    "Latitude": 29.990608,
+                    "Longitude": -90.072837,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "59ad18e4-c17d-4dd6-8418-2adb3ee39e01",
+                    "Site": "Paris Master",
+                    "data_quality": "A",
+                    "reading_time": 1789120650000,
+                    "receive_time": 1789120650000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.07284261469455,
+                    "y": 29.990613421608753
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 6,
+                    "Latitude": 29.967822,
+                    "Longitude": -90.10803,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "f82135b6-4dd4-4ce9-9cf3-f0153b28a1e6",
+                    "Site": "Carrollton Master",
+                    "data_quality": "A",
+                    "reading_time": 1789120322000,
+                    "receive_time": 1789120322000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.10803562262704,
+                    "y": 29.967827416130945
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 11,
+                    "Latitude": 30.02805,
+                    "Longitude": -90.044982,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "e556eb8b-3582-40ea-8d5d-f9753ce61aeb",
+                    "Site": "Press Master",
+                    "data_quality": "A",
+                    "reading_time": 1789118601000,
+                    "receive_time": 1789118601000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.04498760838638,
+                    "y": 30.028055431016163
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 9,
+                    "Latitude": 30.002649,
+                    "Longitude": -90.0457,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "d3fa8f5c-000d-4186-830a-8b10705348c8",
+                    "Site": "Gentilly @ Peoples Master/West Remote",
+                    "data_quality": "A",
+                    "reading_time": 1789117339000,
+                    "receive_time": 1789117339000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.04570560805804,
+                    "y": 30.002654425681218
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 5,
+                    "Latitude": 29.981561,
+                    "Longitude": -90.11367,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "0ace9d6c-9db4-4d7d-8e53-75565867c623",
+                    "Site": "City Park Master",
+                    "data_quality": "A",
+                    "reading_time": 1789114343000,
+                    "receive_time": 1789114343000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.11367562468496,
+                    "y": 29.981566418586493
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 4,
+                    "Latitude": 30.033239,
+                    "Longitude": -90.027037,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "1f74e3ad-fd51-452a-a23d-030a07bb7ffc",
+                    "Site": "Downman Master",
+                    "data_quality": "A",
+                    "reading_time": 1789092673000,
+                    "receive_time": 1789092673000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.02704260403893,
+                    "y": 30.033244432681517
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 3,
+                    "Latitude": 29.993833,
+                    "Longitude": -90.100575,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "5e2a4973-bfaf-4b46-adab-7c9a5b71bdf7",
+                    "Site": "Marconi Master",
+                    "data_quality": "A",
+                    "reading_time": 1789090844000,
+                    "receive_time": 1789090844000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.10058062260494,
+                    "y": 29.993838421407844
+                  }
+                },
+                {
+                  "attributes": {
+                    "ESRI_OID": 2,
+                    "Latitude": 29.990929,
+                    "Longitude": -90.049213,
+                    "Sensor": "Water Level",
+                    "Sensor_Key": "91a1f91e-0656-4f15-9353-0434a45757f6",
+                    "Site": "Franklin Master",
+                    "data_quality": "A",
+                    "reading_time": 1789088215000,
+                    "receive_time": 1789088215000,
+                    "rounded_float_value": 0.0
+                  },
+                  "geometry": {
+                    "x": -90.04921860849252,
+                    "y": 29.99093442256129
+                  }
+                }
+              ],
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "Site",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Sensor_Key",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Shape",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "rounded_float_value",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "data_quality",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "reading_time",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "receive_time",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "Latitude",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Longitude",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Sensor",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "ESRI_OID",
+              "type": "esriFieldTypeOID"
+            }
+          ],
+          "id": 0,
+          "name": "Underpass Water Heights",
+          "total_count": 11
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            },
+            {
+              "field": "TimeCreateUTC",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Agency",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Incident",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Type",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TypeText",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Priority",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Zip",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "CommonName",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "MapX",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "MapY",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Beat",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeCreate",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "TimeCreateUTC",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "Dispatched",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "OnScene",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "SelfInitiated",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Comments",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "FAlarms",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            {
+              "name": "PrimaryUnit",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "ESRI_OID",
+              "type": "esriFieldTypeOID"
+            }
+          ],
+          "id": 1,
+          "name": "Flooded Streets (Live 21F)",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 0,
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Agency",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Incident",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Type",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TypeText",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Priority",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Zip",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "CommonName",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "MapX",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "MapY",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Beat",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeCreate",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "SelfInitiated",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "ESRI_OID",
+              "type": "esriFieldTypeOID"
+            }
+          ],
+          "id": 2,
+          "name": "21F Last 24 Hours",
+          "total_count": 0
+        },
+        {
+          "date_fields": [
+            {
+              "field": "TimeCreate",
+              "post_cutoff_count": 1,
+              "sample": [
+                {
+                  "attributes": {
+                    "Address": "2800 ESPLANADE AV",
+                    "Agency": "POLICE",
+                    "Beat": "1N02",
+                    "CommonName": "CC'S COFFEE",
+                    "ESRI_OID": 1639,
+                    "Incident": "003630",
+                    "MapX": -90.08095517,
+                    "MapY": 29.97768273,
+                    "Priority": "1C",
+                    "SelfInitiated": "N",
+                    "TimeCreate": 1788514503000,
+                    "Type": "21F",
+                    "TypeText": "FLOOD EVENT",
+                    "Zip": "70119"
+                  },
+                  "geometry": {
+                    "x": -90.08095516999998,
+                    "y": 29.977682730000026
+                  }
+                }
+              ],
+              "stats_error": "{\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": []}"
+            }
+          ],
+          "errors": [],
+          "fields": [
+            {
+              "name": "SHAPE",
+              "type": "esriFieldTypeGeometry"
+            },
+            {
+              "name": "Agency",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Incident",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Type",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TypeText",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Priority",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Address",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "Zip",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "CommonName",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "MapX",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "MapY",
+              "type": "esriFieldTypeDouble"
+            },
+            {
+              "name": "Beat",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "TimeCreate",
+              "type": "esriFieldTypeDate"
+            },
+            {
+              "name": "SelfInitiated",
+              "type": "esriFieldTypeString"
+            },
+            {
+              "name": "ESRI_OID",
+              "type": "esriFieldTypeOID"
+            }
+          ],
+          "id": 3,
+          "name": "21F Historical All Time",
+          "total_count": 3484
+        }
+      ],
+      "mapName": "Layers",
+      "serviceDescription": "",
+      "url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer"
+    },
+    {
+      "errors": [
+        "{\"code\": 500, \"message\": null, \"details\": []}"
+      ],
+      "layers": [],
+      "url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/FeatureServer"
+    }
+  ]
+}
