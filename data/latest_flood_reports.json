@@ -1,9 +1,9 @@
 {
   "feature_count": 0,
   "layer_id": 2,
-  "local_date": "2026-09-11",
+  "local_date": "2026-09-12",
   "reports": [],
-  "run_time_utc": "2026-09-11T21:10:57.729854Z",
+  "run_time_utc": "2026-09-12T06:13:43.188771Z",
   "service_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer",
   "source_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer/2/query?f=json&where=1%3D1&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&resultOffset=0&resultRecordCount=1000&orderByFields=TimeCreate+ASC%2CESRI_OID+ASC"
 }
