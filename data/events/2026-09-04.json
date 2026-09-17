@@ -30,13 +30,13 @@
       "lat": 29.977682730000026,
       "lon": -90.08095516999998,
       "object_id": 2908,
-      "observations": 6,
+      "observations": 7,
       "source_layer": 3,
       "time_create": 1788514503000,
       "time_create_utc": 1788532503000,
       "title": "CC'S COFFEE"
     }
   ],
-  "last_archive_run_utc": "2026-09-16T01:13:25.032740Z",
+  "last_archive_run_utc": "2026-09-17T05:13:27.477188Z",
   "timezone": "America/Chicago"
 }
