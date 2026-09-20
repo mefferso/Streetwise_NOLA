@@ -1,0 +1,42 @@
+{
+  "active_count": 0,
+  "date": "2026-09-19",
+  "event_count": 1,
+  "events": [
+    {
+      "active": false,
+      "address": "3200 VESPASIAN BLVD",
+      "attributes": {
+        "Address": "3200 VESPASIAN BLVD",
+        "Agency": "POLICE",
+        "Beat": "4I02",
+        "CommonName": "BLK OF",
+        "ESRI_OID": 2195,
+        "Incident": "019709",
+        "MapX": -90.02465653,
+        "MapY": 29.93080712,
+        "Priority": "1A",
+        "SelfInitiated": "N",
+        "TimeCreate": 1789849682000,
+        "Type": "21F",
+        "TypeText": "FLOOD EVENT",
+        "Zip": "70114"
+      },
+      "event_id": "incident-20260919-019709",
+      "event_time_local": "2026-09-19T20:28:02-05:00",
+      "first_seen_utc": "2026-09-19T20:28:02-05:00",
+      "incident": "019709",
+      "last_seen_utc": "2026-09-19T20:28:02-05:00",
+      "lat": 29.930807120000054,
+      "lon": -90.02465652999996,
+      "object_id": 2195,
+      "observations": 1,
+      "source_layer": 3,
+      "time_create": 1789849682000,
+      "time_create_utc": 1789867682000,
+      "title": "BLK OF"
+    }
+  ],
+  "last_archive_run_utc": "2026-09-20T14:43:25.206236Z",
+  "timezone": "America/Chicago"
+}
