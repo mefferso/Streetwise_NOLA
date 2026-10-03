@@ -49,8 +49,13 @@
       "active_count": 0,
       "date": "2026-09-19",
       "event_count": 1
+    },
+    {
+      "active_count": 0,
+      "date": "2026-10-02",
+      "event_count": 2
     }
   ],
-  "generated_utc": "2026-10-03T14:56:55.978317Z",
+  "generated_utc": "2026-10-03T18:36:45.999827Z",
   "timezone": "America/Chicago"
 }

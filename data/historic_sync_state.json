@@ -1,7 +1,7 @@
 {
-  "last_success_utc": "2026-10-02T17:50:06.043922Z",
+  "last_success_utc": "2026-10-03T18:36:43.047787Z",
   "layer_id": 3,
   "lookback_days": 180,
-  "records_considered": 49,
+  "records_considered": 51,
   "service_url": "https://eocgis.nola.gov:6443/arcgis/rest/services/Rainwater/Flooding/MapServer"
 }
