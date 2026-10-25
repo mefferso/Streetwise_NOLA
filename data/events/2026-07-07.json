@@ -30,13 +30,13 @@
       "lat": 29.923758460000045,
       "lon": -90.00808591999998,
       "object_id": 2870,
-      "observations": 40,
+      "observations": 41,
       "source_layer": 3,
       "time_create": 1783444279000,
       "time_create_utc": 1783462279000,
       "title": "TO GENERAL DE GAULLE"
     }
   ],
-  "last_archive_run_utc": "2026-10-24T21:58:15.865044Z",
+  "last_archive_run_utc": "2026-10-25T22:20:51.635884Z",
   "timezone": "America/Chicago"
 }
