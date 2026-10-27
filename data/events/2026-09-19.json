@@ -11,7 +11,7 @@
         "Agency": "POLICE",
         "Beat": "4I02",
         "CommonName": "BLK OF",
-        "ESRI_OID": 2236,
+        "ESRI_OID": 2195,
         "Incident": "019709",
         "MapX": -90.02465653,
         "MapY": 29.93080712,
@@ -29,14 +29,14 @@
       "last_seen_utc": "2026-09-19T20:28:02-05:00",
       "lat": 29.930807120000054,
       "lon": -90.02465652999996,
-      "object_id": 2236,
-      "observations": 33,
+      "object_id": 2195,
+      "observations": 34,
       "source_layer": 3,
       "time_create": 1789849682000,
       "time_create_utc": 1789867682000,
       "title": "BLK OF"
     }
   ],
-  "last_archive_run_utc": "2026-10-25T22:20:51.635884Z",
+  "last_archive_run_utc": "2026-10-27T00:54:18.059797Z",
   "timezone": "America/Chicago"
 }
