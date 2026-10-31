@@ -46,10 +46,15 @@
       </section>
 
       <section class="panel" id="supplementalPanel">
-        <h2>Supplemental flood awareness</h2>
-        <p class="muted">Separate from 911/CAD 21F incident reports. Sensor observations are not confirmed street closures.</p>
-        <div id="supplementalStatus" class="updated-line" aria-live="polite">Checking independent sources…</div>
-        <div id="supplementalList" class="report-list"></div>
+        <div class="section-row"><h2>Water-level gauges</h2><span id="gaugeCount" class="count-pill">—</span></div>
+        <div id="gaugeSummary" class="gauge-summary">Loading monitoring data…</div>
+        <div id="supplementalStatus" class="updated-line" aria-live="polite">Checking City sources…</div>
+        <div class="gauge-toolbar">
+          <label class="gauge-toggle"><input type="checkbox" id="showGaugeMarkers" checked /> Map gauges</label>
+          <label class="gauge-toggle"><input type="checkbox" id="showOnlyCurrent" /> Current only</label>
+        </div>
+        <div id="supplementalList" class="gauge-list"></div>
+        <p class="gauge-disclaimer">Monitoring values are not road-closure determinations. Units and flood thresholds are not verified.</p>
       </section>
 
       <section class="panel archive-panel">
