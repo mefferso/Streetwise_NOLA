@@ -133,7 +133,7 @@ async function loadArchive(date, { fitBounds = false } = {}) {
 
   try {
     const response = await fetch(`data/events/${date}.json?ts=${Date.now()}`, { cache: 'no-store' });
-    if (response.status === 404) throw new Error('No archived reports were captured for this date.');
+    if (response.status === 404) throw new Error('No 21F incident catalog for this date. Other archived reports may still appear below and on the map.');
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
     const catalog = await response.json();
     const reports = (catalog.events || []).map(normalizeArchivedEvent).filter(Boolean);
@@ -542,6 +542,10 @@ function addExtraArchiveMarker(coordinates, title, description) {
   });
   marker.bindPopup('<strong>' + escapeHtml(title) + '</strong><div>' + escapeHtml(description) + '</div>');
   marker.addTo(extraArchiveMarkers);
+  if (state.mode === 'archive') {
+    const bounds = extraArchiveMarkers.getBounds();
+    if (bounds.isValid()) map.fitBounds(bounds, {padding:[50,50], maxZoom:14});
+  }
   return marker;
 }
 function archiveFeaturePoint(feature) {
