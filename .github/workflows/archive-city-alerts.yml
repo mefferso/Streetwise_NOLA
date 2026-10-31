@@ -1,0 +1,42 @@
+name: Archive City flood alerts
+
+on:
+  schedule:
+    - cron: '3,13,23,33,43,53 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/archive_city_alerts.py'
+      - '.github/workflows/archive-city-alerts.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: streetwise-city-alert-archive
+  cancel-in-progress: false
+
+jobs:
+  archive-alerts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test City alert archiver
+        run: python -m unittest discover -s tests -p 'test_archive_city_alerts.py'
+      - name: Capture public City alerts
+        run: python scripts/archive_city_alerts.py
+      - name: Save alert archive
+        shell: bash
+        run: |
+          if [[ -n "$(git status --porcelain data/city_alerts)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/city_alerts
+            git commit -m "Archive City flood alerts"
+            git pull --rebase
+            git push
+          fi
