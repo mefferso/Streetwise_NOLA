@@ -122,6 +122,7 @@ function setViewMode(mode) {
 
 async function loadArchive(date, { fitBounds = false } = {}) {
   if (!date) return;
+  loadCityAlertArchive(date);
   state.archiveDate = date;
   setStatus(`Loading archive for ${date}…`);
   clearMap();
@@ -452,4 +453,39 @@ function escapeHtml(value) {
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
+}
+
+/* City flood alerts are archived and presented separately from CAD 21F events.
+ * Their first-seen time is the capture time, not the alert's issuance time.
+ */
+async function loadCityAlertArchive(date) {
+  const target = document.getElementById('alertArchive');
+  if (!target) return;
+  target.textContent = 'Checking City alert archive…';
+  try {
+    const response = await fetch('data/city_alerts/' + encodeURIComponent(date) + '.json?ts=' + Date.now(), {cache:'no-store'});
+    if (response.status === 404) {
+      target.textContent = 'No City-alert archive file for this date (capture may not have started yet).';
+      return;
+    }
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    const payload = await response.json();
+    const alerts = payload.alerts || [];
+    const escape = (value) => escapeHtml(String(value ?? ''));
+    const body = alerts.map(a => {
+      const attrs = a.feature?.attributes || a.feature?.properties || a.feature || {};
+      const location = ['CommonName','Name','name','Location','location','Address','address','Site','site_name']
+        .map(key => attrs[key]).find(value => value != null && value !== '') || 'Location not provided';
+      const description = ['Status','status','Message','message','Description','description','Alert','alert']
+        .map(key => attrs[key]).find(value => value != null && value !== '') || 'No description provided';
+      return '<article class="city-alert-entry"><strong>' + escape(location) + '</strong><div>' +
+        escape(description) + '</div><small>First captured: ' + escape(formatActualTime(a.first_seen_utc)) +
+        ' · ' + (a.active_at_last_poll ? 'Active at last poll' : 'No longer in current response') + '</small></article>';
+    }).join('');
+    target.innerHTML = '<h3>City flood alerts (' + alerts.length + ')</h3>' +
+      (body || '<p class="muted">No City flood alerts captured for this date.</p>') +
+      '<p class="muted">Separate from 21F incidents; capture began after the original October 31 investigation. Times are capture times.</p>';
+  } catch (error) {
+    target.textContent = 'City alert archive unavailable: ' + error.message;
+  }
 }
