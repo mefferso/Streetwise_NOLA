@@ -123,6 +123,7 @@ function setViewMode(mode) {
 async function loadArchive(date, { fitBounds = false } = {}) {
   if (!date) return;
   loadCityAlertArchive(date);
+  loadVerifiedStreetwiseArchive(date);
   state.archiveDate = date;
   setStatus(`Loading archive for ${date}…`);
   clearMap();
@@ -487,5 +488,26 @@ async function loadCityAlertArchive(date) {
       '<p class="muted">Separate from 21F incidents; capture began after the original October 31 investigation. Times are capture times.</p>';
   } catch (error) {
     target.textContent = 'City alert archive unavailable: ' + error.message;
+  }
+}
+
+/* Screenshot-supported observations are explicitly labeled; never claimed to
+ * be 21F CAD events or automatically captured City API records. */
+async function loadVerifiedStreetwiseArchive(date) {
+  const target = document.getElementById('verifiedStreetwiseArchive');
+  if (!target) return;
+  target.textContent = '';
+  try {
+    const response = await fetch('data/verified_streetwise/' + encodeURIComponent(date) + '.json?ts=' + Date.now(), {cache:'no-store'});
+    if (!response.ok) return;
+    const payload = await response.json();
+    const rows = Array.isArray(payload.records) ? payload.records : [];
+    if (!rows.length) return;
+    target.innerHTML = '<h3>Screenshot-verified Streetwise listings (' + rows.length + ')</h3>' +
+      rows.map(item => '<article class="city-alert-entry"><strong>' + escapeHtml(item.location) + '</strong><div>' +
+        escapeHtml(item.status) + ' · ' + escapeHtml(formatActualTime(item.reported_time_local)) +
+        '</div><small>Source: user-provided Streetwise screenshot. Not an automatically captured 21F/CAD record.</small></article>').join('');
+  } catch (error) {
+    target.textContent = 'Screenshot-supported records unavailable.';
   }
 }
