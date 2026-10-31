@@ -123,7 +123,7 @@
       const id = keyFor(item, latest.indexOf(item));
       const isGauge = item.type === 'sensor';
       const staleReading = isGauge && observationState(item) !== 'current';
-      const value = numeric(item) ? item.measurement.toFixed(2) : '—';
+      const value = numeric(item) ? item.measurement.toFixed(2) + ' ft' : '—';
       const main = isGauge ? '<span class="gauge-reading">' + safe(value) + '</span>' : '<span class="gauge-reading">Alert</span>';
       const age = isGauge ? (staleReading ? 'Stale / unknown' : 'Current') : 'City alert';
       return '<button type="button" class="gauge-item' + (selectedId === id ? ' selected' : '') +
@@ -133,7 +133,7 @@
         (staleReading ? 'stale' : isGauge ? 'current' : 'alert') + '">' + safe(age) +
         '</span><span>' + safe(formatSensorTime(item.recorded)) +
         '</span></span><span class="gauge-subline">' +
-        safe(isGauge ? ((item.sensor || 'Water level') + ' · units unverified' + (item.quality ? ' · quality ' + item.quality : '')) : (item.description || 'Alert details unavailable')) +
+        safe(isGauge ? ((item.sensor || 'Water level') + ' · ft' + (item.quality ? ' · quality ' + item.quality : '')) : (item.description || 'Alert details unavailable')) +
         '</span></button>';
     }).join('') : '<p class="muted">No matching observations.</p>';
     supplementalMarkers.clearLayers();
