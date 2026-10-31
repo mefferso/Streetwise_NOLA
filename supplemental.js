@@ -72,6 +72,7 @@
   }
 
   const supplementalMarkers = L.layerGroup().addTo(map);
+  let historicalMode = false;
   const gaugeCount = document.getElementById('gaugeCount');
   const gaugeSummary = document.getElementById('gaugeSummary');
   const showMarkers = document.getElementById('showGaugeMarkers');
@@ -103,6 +104,7 @@
     });
     const marker = markersById.get(id);
     if (marker) {
+      if (historicalMode) return;
       if (!map.hasLayer(supplementalMarkers)) supplementalMarkers.addTo(map);
       showMarkers.checked = true;
       const coordinates = marker.getLatLng();
@@ -154,15 +156,22 @@
       marker.on('click', () => { selectGauge(id); Array.from(list.querySelectorAll('[data-gauge-id]')).find(el => el.dataset.gaugeId === id)?.scrollIntoView({block:'nearest'}); });
       markersById.set(id,marker);
     });
-    if (showMarkers.checked) supplementalMarkers.addTo(map);
+    if (showMarkers.checked && !historicalMode) supplementalMarkers.addTo(map);
     else map.removeLayer(supplementalMarkers);
     list.querySelectorAll('[data-gauge-id]').forEach(el => el.addEventListener('click', () => selectGauge(el.dataset.gaugeId)));
   }
   showMarkers.addEventListener('change', () => {
-    if (showMarkers.checked) supplementalMarkers.addTo(map);
+    if (showMarkers.checked && !historicalMode) supplementalMarkers.addTo(map);
     else map.removeLayer(supplementalMarkers);
   });
   currentOnly.addEventListener('change', render);
+  window.addEventListener('deja-view-mode', event => {
+    historicalMode = event.detail?.mode === 'archive';
+    if (historicalMode) map.removeLayer(supplementalMarkers);
+    else if (showMarkers.checked) supplementalMarkers.addTo(map);
+    const panel = document.getElementById('supplementalPanel');
+    if (panel) panel.hidden = historicalMode;
+  });
   async function refresh() {
     if (busy) return;
     busy = true;
