@@ -45,6 +45,13 @@
         <div id="layerControls" class="layer-controls"></div>
       </section>
 
+      <section class="panel" id="supplementalPanel">
+        <h2>Supplemental flood awareness</h2>
+        <p class="muted">Separate from 911/CAD 21F incident reports. Sensor observations are not confirmed street closures.</p>
+        <div id="supplementalStatus" class="updated-line" aria-live="polite">Checking independent sources…</div>
+        <div id="supplementalList" class="report-list"></div>
+      </section>
+
       <section class="panel archive-panel">
         <h2>View</h2>
         <div class="view-tabs">
@@ -103,5 +110,6 @@
   </script>
   <script src="streetwise-source-shim.js"></script>
   <script src="app.js"></script>
+  <script src="supplemental.js"></script>
 </body>
 </html>
