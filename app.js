@@ -74,6 +74,7 @@ async function refreshAll({ fitBounds = false } = {}) {
     return;
   }
   setStatus('Loading City 21F flood layer…');
+  clearExtraArchiveMarkers();
   clearMap();
 
   try {
@@ -111,6 +112,7 @@ async function refreshAll({ fitBounds = false } = {}) {
 
 function setViewMode(mode) {
   state.mode = mode;
+  window.dispatchEvent(new CustomEvent('deja-view-mode', {detail:{mode}}));
   els.liveViewBtn.classList.toggle('active', mode === 'live');
   els.archiveViewBtn.classList.toggle('active', mode === 'archive');
   els.archiveControls.hidden = mode !== 'archive';
@@ -122,6 +124,7 @@ function setViewMode(mode) {
 
 async function loadArchive(date, { fitBounds = false } = {}) {
   if (!date) return;
+  clearExtraArchiveMarkers();
   loadCityAlertArchive(date);
   loadVerifiedStreetwiseArchive(date);
   state.archiveDate = date;
@@ -130,7 +133,7 @@ async function loadArchive(date, { fitBounds = false } = {}) {
 
   try {
     const response = await fetch(`data/events/${date}.json?ts=${Date.now()}`, { cache: 'no-store' });
-    if (response.status === 404) throw new Error('No archived reports were captured for this date.');
+    if (response.status === 404) throw new Error('No 21F incident catalog for this date. Other archived reports may still appear below and on the map.');
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
     const catalog = await response.json();
     const reports = (catalog.events || []).map(normalizeArchivedEvent).filter(Boolean);
@@ -472,6 +475,12 @@ async function loadCityAlertArchive(date) {
     if (!response.ok) throw new Error('HTTP ' + response.status);
     const payload = await response.json();
     const alerts = payload.alerts || [];
+    if (state.mode === 'archive' && els.archiveDate.value === date) {
+      alerts.forEach(alert => {
+        const coordinates = archiveFeaturePoint(alert.feature);
+        if (coordinates) addExtraArchiveMarker(coordinates, 'City flood alert', 'First captured: ' + formatActualTime(alert.first_seen_utc));
+      });
+    }
     const escape = (value) => escapeHtml(String(value ?? ''));
     const body = alerts.map(a => {
       const attrs = a.feature?.attributes || a.feature?.properties || a.feature || {};
@@ -503,6 +512,15 @@ async function loadVerifiedStreetwiseArchive(date) {
     const payload = await response.json();
     const rows = Array.isArray(payload.records) ? payload.records : [];
     if (!rows.length) return;
+    if (state.mode === 'archive' && els.archiveDate.value === date) {
+      rows.forEach(item => {
+        const p = item.coordinates;
+        if (p && Number.isFinite(p.lat) && Number.isFinite(p.lon)) {
+          addExtraArchiveMarker([p.lat,p.lon], item.location, item.status + ' · ' +
+            formatActualTime(item.reported_time_local) + ' · Approximate landmark position (screenshot evidence)');
+        }
+      });
+    }
     target.innerHTML = '<h3>Screenshot-verified Streetwise listings (' + rows.length + ')</h3>' +
       rows.map(item => '<article class="city-alert-entry"><strong>' + escapeHtml(item.location) + '</strong><div>' +
         escapeHtml(item.status) + ' · ' + escapeHtml(formatActualTime(item.reported_time_local)) +
@@ -510,4 +528,35 @@ async function loadVerifiedStreetwiseArchive(date) {
   } catch (error) {
     target.textContent = 'Screenshot-supported records unavailable.';
   }
+}
+
+/* Historical markers are independent of both today's gauges and the 21F layer.
+ * Never represent approximate landmark positions as precise dispatch geometry. */
+const extraArchiveMarkers = L.layerGroup().addTo(map);
+function clearExtraArchiveMarkers() {
+  extraArchiveMarkers.clearLayers();
+}
+function addExtraArchiveMarker(coordinates, title, description) {
+  const marker = L.circleMarker(coordinates, {
+    radius: 9, color: '#fff', weight: 1.7, fillColor: '#42a5ff', fillOpacity: 0.95
+  });
+  marker.bindPopup('<strong>' + escapeHtml(title) + '</strong><div>' + escapeHtml(description) + '</div>');
+  marker.addTo(extraArchiveMarkers);
+  if (state.mode === 'archive') {
+    const bounds = extraArchiveMarkers.getBounds();
+    if (bounds.isValid()) map.fitBounds(bounds, {padding:[50,50], maxZoom:14});
+  }
+  return marker;
+}
+function archiveFeaturePoint(feature) {
+  const geometry = feature?.geometry || {};
+  if (Number.isFinite(geometry.x) && Number.isFinite(geometry.y)) {
+    const p = getLatLng(geometry);
+    return p ? [p.lat,p.lng] : null;
+  }
+  if (geometry.type === 'Point' && Array.isArray(geometry.coordinates)) {
+    const [lon,lat] = geometry.coordinates;
+    if (Number.isFinite(lon) && Number.isFinite(lat)) return [lat,lon];
+  }
+  return null;
 }

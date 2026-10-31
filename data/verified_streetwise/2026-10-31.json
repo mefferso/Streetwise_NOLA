@@ -7,7 +7,12 @@
       "status": "UNDERPASS CLOSED",
       "source": "User-supplied screenshot of streetwise.nola.gov",
       "verification": "Screenshot-visible listing; not independently recovered from City API",
-      "coordinates": null
+      "coordinates": {
+        "lat": 29.991173,
+        "lon": -90.109711,
+        "precision": "approximate landmark position, not source incident geometry",
+        "reference": "https://commons.wikimedia.org/wiki/File:Northbound_Crescent_on_the_Canal_Boulevard_overpass_(3),_March_2019.jpg"
+      }
     }
   ]
 }
