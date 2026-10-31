@@ -70,39 +70,99 @@
     const quality = source.type === 'sensor' ? first(a, ['data_quality','site_status']) : null;
     return {source:source.name,type:source.type,location,description,recorded,measurement,sensor,quality,loc};
   }
+
   const supplementalMarkers = L.layerGroup().addTo(map);
+  const gaugeCount = document.getElementById('gaugeCount');
+  const gaugeSummary = document.getElementById('gaugeSummary');
+  const showMarkers = document.getElementById('showGaugeMarkers');
+  const currentOnly = document.getElementById('showOnlyCurrent');
+  const markersById = new Map();
+  let selectedId = null;
+  const observationState = item => {
+    const time = sensorTime(item.recorded);
+    if (!time || time.getTime() > Date.now() + 5 * 60_000 || Date.now() - time.getTime() > 30 * 60_000) return 'stale';
+    return 'current';
+  };
+  const keyFor = (item, index) => item.type + '-' + index;
+  const numeric = item => typeof item.measurement === 'number' && Number.isFinite(item.measurement);
   function details(item) {
-    if (item.type === 'sensor') {
-      const reading = typeof item.measurement === 'number' && Number.isFinite(item.measurement)
-        ? item.measurement.toFixed(2) + ' (source units unverified)'
-        : 'Not available';
-      const age = sensorTime(item.recorded);
-      const stale = !age || (Date.now() - age.getTime() > 30 * 60 * 1000) || (age.getTime() > Date.now() + 5 * 60 * 1000);
-      return [
-        item.sensor ? 'Sensor: ' + item.sensor : 'Water-level monitoring',
-        'Reading: ' + reading,
-        'Observed: ' + formatSensorTime(item.recorded) + (stale ? ' · STALE/UNKNOWN' : ''),
-        'Quality: ' + (item.quality ?? 'Not provided'),
-        'Monitoring only — NOT a confirmed flood or road closure',
-      ];
+    if (item.type === 'sensor') return [
+      (item.sensor || 'Water-level observation') + ': ' + (numeric(item) ? item.measurement.toFixed(2) : 'N/A') + ' (units unverified)',
+      'Observed ' + formatSensorTime(item.recorded),
+      'City quality: ' + (item.quality ?? 'Not provided'),
+      'Monitoring only — closure not confirmed',
+    ];
+    return [item.description ?? 'City alert — details unavailable', 'Reported ' + formatSensorTime(item.recorded)];
+  }
+  function selectGauge(id) {
+    selectedId = id;
+    document.querySelectorAll('[data-gauge-id]').forEach(el => {
+      const active = el.dataset.gaugeId === id;
+      el.classList.toggle('selected', active);
+      el.setAttribute('aria-pressed', String(active));
+    });
+    const marker = markersById.get(id);
+    if (marker) {
+      if (!map.hasLayer(supplementalMarkers)) supplementalMarkers.addTo(map);
+      showMarkers.checked = true;
+      const coordinates = marker.getLatLng();
+      map.setView(coordinates, Math.max(map.getZoom(), 14));
+      marker.openPopup();
     }
-    return [item.description ?? 'City alert — details not supplied', 'Reported: ' + formatSensorTime(item.recorded)];
   }
   function render() {
-    list.innerHTML = latest.length ? latest.map(item => {
-      return '<article class="report-card"><div class="report-title">' + safe(item.location) + '</div>' +
-        '<div class="report-time">' + safe(item.source) + '</div>' +
-        details(item).map(line => '<div class="report-time">' + safe(line) + '</div>').join('') + '</article>';
-    }).join('') : '<p class="muted">No supplemental records returned by available sources.</p>';
+    const gauges = latest.filter(item => item.type === 'sensor');
+    const alerts = latest.filter(item => item.type === 'alert');
+    const current = gauges.filter(item => observationState(item) === 'current').length;
+    const stale = gauges.length - current;
+    gaugeCount.textContent = String(gauges.length);
+    gaugeSummary.innerHTML = '<span><strong>' + current + '</strong> current</span><span><strong>' + stale +
+      '</strong> stale/unknown</span><span><strong>' + alerts.length + '</strong> City alerts</span>';
+    const visible = latest.filter(item => !currentOnly.checked || item.type !== 'sensor' || observationState(item) === 'current');
+    list.innerHTML = visible.length ? visible.map(item => {
+      const id = keyFor(item, latest.indexOf(item));
+      const isGauge = item.type === 'sensor';
+      const staleReading = isGauge && observationState(item) !== 'current';
+      const value = numeric(item) ? item.measurement.toFixed(2) : '—';
+      const main = isGauge ? '<span class="gauge-reading">' + safe(value) + '</span>' : '<span class="gauge-reading">Alert</span>';
+      const age = isGauge ? (staleReading ? 'Stale / unknown' : 'Current') : 'City alert';
+      return '<button type="button" class="gauge-item' + (selectedId === id ? ' selected' : '') +
+        '" data-gauge-id="' + safe(id) + '" aria-pressed="' + (selectedId === id) + '">' +
+        '<span class="gauge-item-top"><span class="gauge-name">' + safe(item.location) +
+        '</span>' + main + '</span><span class="gauge-item-bottom"><span class="gauge-indicator ' +
+        (staleReading ? 'stale' : isGauge ? 'current' : 'alert') + '">' + safe(age) +
+        '</span><span>' + safe(formatSensorTime(item.recorded)) +
+        '</span></span><span class="gauge-subline">' +
+        safe(isGauge ? ((item.sensor || 'Water level') + ' · units unverified' + (item.quality ? ' · quality ' + item.quality : '')) : (item.description || 'Alert details unavailable')) +
+        '</span></button>';
+    }).join('') : '<p class="muted">No matching observations.</p>';
     supplementalMarkers.clearLayers();
-    latest.forEach(item => {
+    markersById.clear();
+    latest.forEach((item,index) => {
       if (!item.loc || !item.loc.every(Number.isFinite)) return;
-      const marker = L.circleMarker(item.loc, {radius:6,color:'#fff',weight:1,fillColor:item.type === 'sensor' ? '#ffd600' : '#ff8a50',fillOpacity:0.9});
+      const id = keyFor(item,index);
+      const state = item.type === 'alert' ? 'alert' : observationState(item);
+      const marker = L.circleMarker(item.loc, {
+        radius:state === 'alert' ? 8 : 6,
+        color:'#fff',weight:1.3,
+        fillColor: state === 'alert' ? '#ff8a50' : state === 'stale' ? '#888888' : '#ffd600',
+        fillOpacity:0.9
+      });
       marker.bindPopup('<strong>' + safe(item.location) + '</strong>' +
         details(item).map(line => '<div>' + safe(line) + '</div>').join(''));
       marker.addTo(supplementalMarkers);
+      marker.on('click', () => { selectGauge(id); Array.from(list.querySelectorAll('[data-gauge-id]')).find(el => el.dataset.gaugeId === id)?.scrollIntoView({block:'nearest'}); });
+      markersById.set(id,marker);
     });
+    if (showMarkers.checked) supplementalMarkers.addTo(map);
+    else map.removeLayer(supplementalMarkers);
+    list.querySelectorAll('[data-gauge-id]').forEach(el => el.addEventListener('click', () => selectGauge(el.dataset.gaugeId)));
   }
+  showMarkers.addEventListener('change', () => {
+    if (showMarkers.checked) supplementalMarkers.addTo(map);
+    else map.removeLayer(supplementalMarkers);
+  });
+  currentOnly.addEventListener('change', render);
   async function refresh() {
     if (busy) return;
     busy = true;
@@ -113,7 +173,7 @@
       const successes = responses.filter(r => r.status === 'fulfilled').length;
       const failures = responses.map((r,i) => r.status === 'rejected' ? sources[i].name + ': unavailable or unsupported' : null).filter(Boolean);
       render();
-      status.textContent = successes + '/' + sources.length + ' sources responding · ' + latest.length + ' supplemental records' +
+      status.textContent = successes + '/' + sources.length + ' sources responding · ' + latest.filter(item => item.type === 'sensor').length + ' gauges · ' + latest.filter(item => item.type === 'alert').length + ' alerts' +
         (failures.length ? ' · DATA INCOMPLETE (' + failures.join('; ') + ')' : '') +
         ' · Checked ' + new Date().toLocaleTimeString();
       status.style.color = failures.length ? '#ffba55' : '';
