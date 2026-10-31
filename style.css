@@ -422,3 +422,27 @@ button:hover {
     height: 58vh;
   }
 }
+
+/* Compact monitoring overview — separate from confirmed 21F incident reports. */
+#gaugeCount {font-size:12px}
+.gauge-summary {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:10px 0}
+.gauge-summary>span {background:#303030;border:1px solid var(--border);padding:9px 6px;border-radius:9px;text-align:center;color:var(--muted);font-size:11px}
+.gauge-summary strong {display:block;font-size:20px;color:var(--text);margin-bottom:3px}
+.gauge-toolbar {display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+.gauge-toggle {font-size:12px;color:var(--text);display:flex;align-items:center;gap:5px;cursor:pointer}
+.gauge-toggle input {accent-color:var(--yellow)}
+.gauge-list {display:grid;gap:6px;max-height:350px;overflow-y:auto;padding-right:3px}
+.gauge-item {display:block;width:100%;text-align:left;background:#303030;color:var(--text);border:1px solid var(--border);border-radius:9px;padding:10px 11px;font-weight:400}
+.gauge-item:hover,.gauge-item:focus-visible {border-color:var(--yellow);filter:none}
+.gauge-item.selected {border-color:var(--yellow);background:#373525}
+.gauge-item-top,.gauge-item-bottom {display:flex;justify-content:space-between;align-items:center;gap:8px}
+.gauge-name {font-size:13px;font-weight:800;overflow-wrap:anywhere}
+.gauge-reading {font-size:18px;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
+.gauge-item-bottom {font-size:11px;color:var(--muted);margin-top:6px}
+.gauge-indicator {font-weight:800}
+.gauge-indicator.current {color:#91dab4}
+.gauge-indicator.stale {color:#efbe77}
+.gauge-indicator.alert {color:#ffac7a}
+.gauge-subline {display:block;margin-top:5px;color:var(--muted);font-size:11px;line-height:1.4}
+.gauge-disclaimer {font-size:11px;color:var(--muted);line-height:1.45;margin-top:10px}
+@media(max-width:900px){.gauge-list{max-height:320px}}
