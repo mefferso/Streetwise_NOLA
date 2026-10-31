@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-31",
+  "records": [
+    {
+      "location": "CANAL UNDERPASS",
+      "reported_time_local": "2026-10-31T10:25:00-05:00",
+      "status": "UNDERPASS CLOSED",
+      "source": "User-supplied screenshot of streetwise.nola.gov",
+      "verification": "Screenshot-visible listing; not independently recovered from City API",
+      "coordinates": null
+    }
+  ]
+}
