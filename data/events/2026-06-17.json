@@ -30,13 +30,13 @@
       "lat": 29.980536990000076,
       "lon": -90.11225638999997,
       "object_id": 2867,
-      "observations": 58,
+      "observations": 59,
       "source_layer": 3,
       "time_create": 1781688253000,
       "time_create_utc": 1781706253000,
       "title": "911 CENTER"
     }
   ],
-  "last_archive_run_utc": "2026-11-13T07:14:49.623689Z",
+  "last_archive_run_utc": "2026-11-14T08:06:42.284013Z",
   "timezone": "America/Chicago"
 }

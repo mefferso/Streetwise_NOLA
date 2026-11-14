@@ -30,13 +30,13 @@
       "lat": 30.040440130000036,
       "lon": -89.99475196999998,
       "object_id": 2866,
-      "observations": 58,
+      "observations": 59,
       "source_layer": 3,
       "time_create": 1779703588000,
       "time_create_utc": 1779721588000,
       "title": "FLOOD EVENT"
     }
   ],
-  "last_archive_run_utc": "2026-11-13T07:14:49.623689Z",
+  "last_archive_run_utc": "2026-11-14T08:06:42.284013Z",
   "timezone": "America/Chicago"
 }
