@@ -30,13 +30,13 @@
       "lat": 29.930807120000054,
       "lon": -90.02465652999996,
       "object_id": 2195,
-      "observations": 53,
+      "observations": 54,
       "source_layer": 3,
       "time_create": 1789849682000,
       "time_create_utc": 1789867682000,
       "title": "BLK OF"
     }
   ],
-  "last_archive_run_utc": "2026-11-16T19:45:59.974972Z",
+  "last_archive_run_utc": "2026-11-17T19:50:46.120239Z",
   "timezone": "America/Chicago"
 }
