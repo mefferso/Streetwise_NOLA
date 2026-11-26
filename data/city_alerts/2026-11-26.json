@@ -1,0 +1,8 @@
+{
+  "active_count": 0,
+  "alert_count": 0,
+  "alerts": [],
+  "date": "2026-11-26",
+  "last_success_utc": "2026-11-26T10:58:56.199267Z",
+  "source_url": "https://gis.nola.gov/apps/flood_alerts/api/get_alerts"
+}
